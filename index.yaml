@@ -2,23 +2,8 @@ apiVersion: v1
 entries:
   consul:
   - apiVersion: v1
-    appVersion: 1.9.1
-    created: "2020-12-14T22:20:11.515852+02:00"
-    description: VP Custom from Official HashiCorp Consul Chart
-    digest: dc93641538f76359e5517e6b35ea00587be6861f6fcd13d45d31c0a6056a70e6
-    home: https://www.consul.io
-    icon: https://raw.githubusercontent.com/hashicorp/consul-helm/master/assets/icon.png
-    name: consul
-    sources:
-    - https://github.com/hashicorp/consul
-    - https://github.com/hashicorp/consul-helm
-    - https://github.com/hashicorp/consul-k8s
-    urls:
-    - https://vdmpo.github.io/helm/consul-1.9.1.tgz
-    version: 1.9.1
-  - apiVersion: v1
     appVersion: 1.9.0
-    created: "2020-12-14T22:20:11.509712+02:00"
+    created: "2020-12-14T22:40:32.801191+02:00"
     description: VP Custom from Official HashiCorp Consul Chart
     digest: ec345726ac9c6d873a64ee41791c9382097a07816cff97b8fcfa613f6716f47b
     home: https://www.consul.io
@@ -34,7 +19,7 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2020-12-14T22:20:11.516463+02:00"
+    created: "2020-12-14T22:40:32.801818+02:00"
     deprecated: true
     description: DEPRECATED - nfs-client is an automatic provisioner that used your
       *already configured* NFS server, automatically creating Persistent Volumes.
@@ -49,4 +34,4 @@ entries:
     urls:
     - https://vdmpo.github.io/helm/nfs-client-provisioner-1.2.11.tgz
     version: 1.2.11
-generated: "2020-12-14T22:20:11.503291+02:00"
+generated: "2020-12-14T22:40:32.795041+02:00"
