@@ -3,7 +3,7 @@ entries:
   consul:
   - apiVersion: v1
     appVersion: 1.9.0
-    created: "2020-12-14T22:40:32.801191+02:00"
+    created: "2020-12-27T11:10:43.743208+02:00"
     description: VP Custom from Official HashiCorp Consul Chart
     digest: ec345726ac9c6d873a64ee41791c9382097a07816cff97b8fcfa613f6716f47b
     home: https://www.consul.io
@@ -16,10 +16,32 @@ entries:
     urls:
     - https://vdmpo.github.io/helm/consul-1.9.0.tgz
     version: 1.9.0
+  external-dns:
+  - apiVersion: v1
+    appVersion: 0.7.0
+    created: "2020-12-27T11:10:43.745077+02:00"
+    deprecated: true
+    description: DEPRECATED ExternalDNS is a Kubernetes addon that configures public
+      DNS servers with information about exposed Kubernetes services to make them
+      discoverable.
+    digest: 7260365ef62cea43272997b3efde917f56ab8edda2ffc4ba12c2ec07f440cfc3
+    home: https://github.com/kubernetes-sigs/external-dns
+    icon: https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-110x117.png
+    keywords:
+    - external-dns
+    - network
+    - dns
+    name: external-dns
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    - https://github.com/bitnami/bitnami-docker-external-dns
+    urls:
+    - https://vdmpo.github.io/helm/external-dns-2.20.4.tgz
+    version: 2.20.4
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2020-12-14T22:40:32.801818+02:00"
+    created: "2020-12-27T11:10:43.746177+02:00"
     deprecated: true
     description: DEPRECATED - nfs-client is an automatic provisioner that used your
       *already configured* NFS server, automatically creating Persistent Volumes.
@@ -34,4 +56,4 @@ entries:
     urls:
     - https://vdmpo.github.io/helm/nfs-client-provisioner-1.2.11.tgz
     version: 1.2.11
-generated: "2020-12-14T22:40:32.795041+02:00"
+generated: "2020-12-27T11:10:43.736389+02:00"
