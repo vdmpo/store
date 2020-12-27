@@ -1,9 +1,25 @@
 apiVersion: v1
 entries:
+  chartmuseum:
+  - apiVersion: v1
+    appVersion: 0.12.0
+    created: "2020-12-27T16:45:50.475542+02:00"
+    description: Host your own Helm Chart Repository
+    digest: 3342039b07c4d6487c29110484be0c599ec2e92ca01fa5681b5e4ce3f2131b9d
+    home: https://github.com/helm/chartmuseum
+    icon: https://raw.githubusercontent.com/chartmuseum/charts/main/logo.jpg
+    keywords:
+    - chartmuseum
+    - helm
+    - charts repo
+    name: chartmuseum
+    urls:
+    - https://vdmpo.github.io/helm/chartmuseum-2.15.0.tgz
+    version: 2.15.0
   consul:
   - apiVersion: v1
     appVersion: 1.9.0
-    created: "2020-12-27T11:10:43.743208+02:00"
+    created: "2020-12-27T16:45:50.480834+02:00"
     description: VP Custom from Official HashiCorp Consul Chart
     digest: ec345726ac9c6d873a64ee41791c9382097a07816cff97b8fcfa613f6716f47b
     home: https://www.consul.io
@@ -19,7 +35,7 @@ entries:
   external-dns:
   - apiVersion: v1
     appVersion: 0.7.0
-    created: "2020-12-27T11:10:43.745077+02:00"
+    created: "2020-12-27T16:45:50.483427+02:00"
     deprecated: true
     description: DEPRECATED ExternalDNS is a Kubernetes addon that configures public
       DNS servers with information about exposed Kubernetes services to make them
@@ -41,7 +57,7 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2020-12-27T11:10:43.746177+02:00"
+    created: "2020-12-27T16:45:50.484433+02:00"
     deprecated: true
     description: DEPRECATED - nfs-client is an automatic provisioner that used your
       *already configured* NFS server, automatically creating Persistent Volumes.
@@ -56,4 +72,4 @@ entries:
     urls:
     - https://vdmpo.github.io/helm/nfs-client-provisioner-1.2.11.tgz
     version: 1.2.11
-generated: "2020-12-27T11:10:43.736389+02:00"
+generated: "2020-12-27T16:45:50.471572+02:00"
