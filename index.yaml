@@ -3,7 +3,7 @@ entries:
   chartmuseum:
   - apiVersion: v1
     appVersion: 0.12.0
-    created: "2020-12-27T16:45:50.475542+02:00"
+    created: "2020-12-29T18:36:56.231177+02:00"
     description: Host your own Helm Chart Repository
     digest: 3342039b07c4d6487c29110484be0c599ec2e92ca01fa5681b5e4ce3f2131b9d
     home: https://github.com/helm/chartmuseum
@@ -19,7 +19,7 @@ entries:
   consul:
   - apiVersion: v1
     appVersion: 1.9.0
-    created: "2020-12-27T16:45:50.480834+02:00"
+    created: "2020-12-29T18:36:56.239943+02:00"
     description: VP Custom from Official HashiCorp Consul Chart
     digest: ec345726ac9c6d873a64ee41791c9382097a07816cff97b8fcfa613f6716f47b
     home: https://www.consul.io
@@ -35,7 +35,7 @@ entries:
   external-dns:
   - apiVersion: v1
     appVersion: 0.7.0
-    created: "2020-12-27T16:45:50.483427+02:00"
+    created: "2020-12-29T18:36:56.242231+02:00"
     deprecated: true
     description: DEPRECATED ExternalDNS is a Kubernetes addon that configures public
       DNS servers with information about exposed Kubernetes services to make them
@@ -54,10 +54,36 @@ entries:
     urls:
     - https://vdmpo.github.io/helm/external-dns-2.20.4.tgz
     version: 2.20.4
+  kubernetes-dashboard:
+  - apiVersion: v1
+    appVersion: 2.1.0
+    created: "2020-12-29T18:36:56.245317+02:00"
+    dependencies:
+    - condition: metrics-server.enabled
+      name: metrics-server
+      repository: https://charts.helm.sh/stable/
+      version: 2.11.1
+    description: General-purpose web UI for Kubernetes clusters
+    digest: 5a6ac3a9fef8b6236730d5bd2ac2b96461ec566eb2f17f46c96085924ab08a0b
+    home: https://github.com/kubernetes/dashboard
+    icon: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg
+    keywords:
+    - kubernetes
+    - dashboard
+    kubeVersion: '>=1.14.0-0'
+    maintainers:
+    - email: cdesaintmartin@wiremind.fr
+      name: desaintmartin
+    name: kubernetes-dashboard
+    sources:
+    - https://github.com/kubernetes/dashboard
+    urls:
+    - https://vdmpo.github.io/helm/kubernetes-dashboard-3.0.2.tgz
+    version: 3.0.2
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2020-12-27T16:45:50.484433+02:00"
+    created: "2020-12-29T18:36:56.246327+02:00"
     deprecated: true
     description: DEPRECATED - nfs-client is an automatic provisioner that used your
       *already configured* NFS server, automatically creating Persistent Volumes.
@@ -72,4 +98,4 @@ entries:
     urls:
     - https://vdmpo.github.io/helm/nfs-client-provisioner-1.2.11.tgz
     version: 1.2.11
-generated: "2020-12-27T16:45:50.471572+02:00"
+generated: "2020-12-29T18:36:56.22892+02:00"
