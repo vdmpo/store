@@ -3,7 +3,7 @@ entries:
   chartmuseum:
   - apiVersion: v1
     appVersion: 0.12.0
-    created: "2021-01-04T19:33:38.279827+02:00"
+    created: "2021-01-04T19:36:03.323932+02:00"
     description: Host your own Helm Chart Repository
     digest: 3342039b07c4d6487c29110484be0c599ec2e92ca01fa5681b5e4ce3f2131b9d
     home: https://github.com/helm/chartmuseum
@@ -19,9 +19,9 @@ entries:
   consul:
   - apiVersion: v1
     appVersion: 1.9.0
-    created: "2021-01-04T19:33:38.288071+02:00"
+    created: "2021-01-04T19:36:03.329889+02:00"
     description: VP Custom from Official HashiCorp Consul Chart
-    digest: ec345726ac9c6d873a64ee41791c9382097a07816cff97b8fcfa613f6716f47b
+    digest: 80f405cf257fc60a809bf8d157d966dd2d323949ddce95111c5dc4a7d6184c09
     home: https://www.consul.io
     icon: https://raw.githubusercontent.com/hashicorp/consul-helm/master/assets/icon.png
     name: consul
@@ -30,14 +30,14 @@ entries:
     - https://github.com/hashicorp/consul-helm
     - https://github.com/hashicorp/consul-k8s
     urls:
-    - https://vdmpo.github.io/helm/consul-1.9.0.tgz
-    version: 1.9.0
+    - https://vdmpo.github.io/helm/consul-0.1.0.tgz
+    version: 0.1.0
   external-dns:
   - annotations:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.7.5
-    created: "2021-01-04T19:33:38.294571+02:00"
+    created: "2021-01-04T19:36:03.335982+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -66,7 +66,7 @@ entries:
     version: 4.5.0
   - apiVersion: v1
     appVersion: 0.7.0
-    created: "2021-01-04T19:33:38.291493+02:00"
+    created: "2021-01-04T19:36:03.331613+02:00"
     deprecated: true
     description: DEPRECATED ExternalDNS is a Kubernetes addon that configures public
       DNS servers with information about exposed Kubernetes services to make them
@@ -88,7 +88,7 @@ entries:
   kubernetes-dashboard:
   - apiVersion: v1
     appVersion: 2.1.0
-    created: "2021-01-04T19:33:38.298388+02:00"
+    created: "2021-01-04T19:36:03.337641+02:00"
     dependencies:
     - condition: metrics-server.enabled
       name: metrics-server
@@ -116,7 +116,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 4.4.3
-    created: "2021-01-04T19:33:38.302374+02:00"
+    created: "2021-01-04T19:36:03.340648+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -149,7 +149,7 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2021-01-04T19:33:38.303727+02:00"
+    created: "2021-01-04T19:36:03.341223+02:00"
     deprecated: true
     description: DEPRECATED - nfs-client is an automatic provisioner that used your
       *already configured* NFS server, automatically creating Persistent Volumes.
@@ -164,4 +164,4 @@ entries:
     urls:
     - https://vdmpo.github.io/helm/nfs-client-provisioner-1.2.11.tgz
     version: 1.2.11
-generated: "2021-01-04T19:33:38.277125+02:00"
+generated: "2021-01-04T19:36:03.321405+02:00"
