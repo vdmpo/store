@@ -3,7 +3,7 @@ entries:
   chartmuseum:
   - apiVersion: v1
     appVersion: 0.12.0
-    created: "2021-01-06T12:50:30.15597+02:00"
+    created: "2021-01-06T22:47:20.341385+02:00"
     description: Host your own Helm Chart Repository
     digest: 3342039b07c4d6487c29110484be0c599ec2e92ca01fa5681b5e4ce3f2131b9d
     home: https://github.com/helm/chartmuseum
@@ -19,7 +19,7 @@ entries:
   consul:
   - apiVersion: v1
     appVersion: 1.9.0
-    created: "2021-01-06T12:50:30.162672+02:00"
+    created: "2021-01-06T22:47:20.346366+02:00"
     description: VP Custom from Official HashiCorp Consul Chart
     digest: 80f405cf257fc60a809bf8d157d966dd2d323949ddce95111c5dc4a7d6184c09
     home: https://www.consul.io
@@ -34,24 +34,8 @@ entries:
     version: 0.1.0
   elasticsearch:
   - apiVersion: v1
-    appVersion: 7.10.1
-    created: "2021-01-06T12:50:30.181309+02:00"
-    description: Official Elastic helm chart for Elasticsearch
-    digest: 38b3cc63a0d1ba7079cee3469f97813b2555c35c9cde9b72b629c3c765cbb02b
-    home: https://github.com/elastic/helm-charts
-    icon: https://helm.elastic.co/icons/elasticsearch.png
-    maintainers:
-    - email: helm-charts@elastic.co
-      name: Elastic
-    name: elasticsearch
-    sources:
-    - https://github.com/elastic/elasticsearch
-    urls:
-    - https://vdmpo.github.io/helm/elk/elasticsearch-7.10.1.tgz
-    version: 7.10.1
-  - apiVersion: v1
     appVersion: 7.8.0
-    created: "2021-01-06T12:50:30.183052+02:00"
+    created: "2021-01-06T22:47:20.363216+02:00"
     description: Official Elastic helm chart for Elasticsearch
     digest: f4ca22842484aa97e175247db09babd05cf9d8909aad78a506b3d954d3edd12e
     home: https://github.com/elastic/helm-charts
@@ -70,7 +54,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.7.5
-    created: "2021-01-06T12:50:30.167715+02:00"
+    created: "2021-01-06T22:47:20.350105+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -99,7 +83,7 @@ entries:
     version: 4.5.0
   - apiVersion: v1
     appVersion: 0.7.0
-    created: "2021-01-06T12:50:30.19146+02:00"
+    created: "2021-01-06T22:47:20.369419+02:00"
     deprecated: true
     description: DEPRECATED ExternalDNS is a Kubernetes addon that configures public
       DNS servers with information about exposed Kubernetes services to make them
@@ -118,43 +102,10 @@ entries:
     urls:
     - https://vdmpo.github.io/helm/old/external-dns-2.20.4.tgz
     version: 2.20.4
-  filebeat:
-  - apiVersion: v1
-    appVersion: 7.10.1
-    created: "2021-01-06T12:50:30.183974+02:00"
-    description: Official Elastic helm chart for Filebeat
-    digest: 12f2cdddd70fd8a2c037f36c1292a512e1a41fd23a8ce0396f23e9cc20cca3b3
-    home: https://github.com/elastic/helm-charts
-    icon: https://helm.elastic.co/icons/beats.png
-    maintainers:
-    - email: helm-charts@elastic.co
-      name: Elastic
-    name: filebeat
-    sources:
-    - https://github.com/elastic/beats
-    urls:
-    - https://vdmpo.github.io/helm/elk/filebeat-7.10.1.tgz
-    version: 7.10.1
   kibana:
   - apiVersion: v1
-    appVersion: 7.10.1
-    created: "2021-01-06T12:50:30.184896+02:00"
-    description: Official Elastic helm chart for Kibana
-    digest: 37a3122b2522b8851648cf1ed24a69ff191ac9e96cd4f25804390e3624c1fc1f
-    home: https://github.com/elastic/helm-charts
-    icon: https://helm.elastic.co/icons/kibana.png
-    maintainers:
-    - email: helm-charts@elastic.co
-      name: Elastic
-    name: kibana
-    sources:
-    - https://github.com/elastic/kibana
-    urls:
-    - https://vdmpo.github.io/helm/elk/kibana-7.10.1.tgz
-    version: 7.10.1
-  - apiVersion: v1
     appVersion: 7.8.0
-    created: "2021-01-06T12:50:30.185805+02:00"
+    created: "2021-01-06T22:47:20.365693+02:00"
     description: Official Elastic helm chart for Kibana
     digest: f75c441d91add3df102b69e85317b331ca8adeae08014a03cb3bd194c1f31c46
     home: https://github.com/elastic/helm-charts
@@ -171,7 +122,7 @@ entries:
   kubernetes-dashboard:
   - apiVersion: v1
     appVersion: 2.1.0
-    created: "2021-01-06T12:50:30.170092+02:00"
+    created: "2021-01-06T22:47:20.351933+02:00"
     dependencies:
     - condition: metrics-server.enabled
       name: metrics-server
@@ -196,24 +147,8 @@ entries:
     version: 3.0.2
   logstash:
   - apiVersion: v1
-    appVersion: 7.10.1
-    created: "2021-01-06T12:50:30.187029+02:00"
-    description: Official Elastic helm chart for Logstash
-    digest: b74000dbdc6b0e2f06e064402c9ee4c95a52676ec253c9af7fb622ddc038d019
-    home: https://github.com/elastic/helm-charts
-    icon: https://helm.elastic.co/icons/logstash.png
-    maintainers:
-    - email: helm-charts@elastic.co
-      name: Elastic
-    name: logstash
-    sources:
-    - https://github.com/elastic/logstash
-    urls:
-    - https://vdmpo.github.io/helm/elk/logstash-7.10.1.tgz
-    version: 7.10.1
-  - apiVersion: v1
     appVersion: 7.8.0
-    created: "2021-01-06T12:50:30.188416+02:00"
+    created: "2021-01-06T22:47:20.367495+02:00"
     description: Official Elastic helm chart for Logstash
     digest: a96466708f6e8a70675f1a77e996825c0dcac7f9754f64429f6d48d2fa3d2f99
     home: https://github.com/elastic/helm-charts
@@ -232,7 +167,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 4.4.3
-    created: "2021-01-06T12:50:30.173848+02:00"
+    created: "2021-01-06T22:47:20.35523+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -265,7 +200,7 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2021-01-06T12:50:30.174996+02:00"
+    created: "2021-01-06T22:47:20.356231+02:00"
     deprecated: true
     description: DEPRECATED - nfs-client is an automatic provisioner that used your
       *already configured* NFS server, automatically creating Persistent Volumes.
@@ -285,7 +220,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.9
-    created: "2021-01-06T12:50:30.179479+02:00"
+    created: "2021-01-06T22:47:20.360877+02:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -308,4 +243,4 @@ entries:
     urls:
     - https://vdmpo.github.io/helm/redis-12.3.0.tgz
     version: 12.3.0
-generated: "2021-01-06T12:50:30.152779+02:00"
+generated: "2021-01-06T22:47:20.337898+02:00"
