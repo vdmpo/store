@@ -1,9 +1,36 @@
 apiVersion: v1
 entries:
+  argo-cd:
+  - apiVersion: v1
+    appVersion: 1.7.6
+    created: "2021-01-10T10:28:42.019803+02:00"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://kubernetes-charts.storage.googleapis.com
+      version: 4.4.2
+    description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: 1d640fcb9c69440b9131812a14f73006d125c742b427c3660155075e48ad51a0
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    maintainers:
+    - name: alexec
+    - name: alexmt
+    - name: jessesuen
+    - name: seanson
+    name: argo-cd
+    urls:
+    - https://vdmpo.github.io/helm/argo-cd-2.11.0.tgz
+    version: 2.11.0
   chartmuseum:
   - apiVersion: v1
     appVersion: 0.12.0
-    created: "2021-01-07T13:43:13.069461+02:00"
+    created: "2021-01-10T10:28:42.022238+02:00"
     description: Host your own Helm Chart Repository
     digest: 3342039b07c4d6487c29110484be0c599ec2e92ca01fa5681b5e4ce3f2131b9d
     home: https://github.com/helm/chartmuseum
@@ -19,7 +46,7 @@ entries:
   consul:
   - apiVersion: v1
     appVersion: 1.9.0
-    created: "2021-01-07T13:43:13.075051+02:00"
+    created: "2021-01-10T10:28:42.029606+02:00"
     description: VP Custom from Official HashiCorp Consul Chart
     digest: 80f405cf257fc60a809bf8d157d966dd2d323949ddce95111c5dc4a7d6184c09
     home: https://www.consul.io
@@ -35,7 +62,7 @@ entries:
   elasticsearch:
   - apiVersion: v1
     appVersion: 7.8.0
-    created: "2021-01-07T13:43:13.091981+02:00"
+    created: "2021-01-10T10:28:42.047771+02:00"
     description: Official Elastic helm chart for Elasticsearch
     digest: f4ca22842484aa97e175247db09babd05cf9d8909aad78a506b3d954d3edd12e
     home: https://github.com/elastic/helm-charts
@@ -54,7 +81,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.7.5
-    created: "2021-01-07T13:43:13.07999+02:00"
+    created: "2021-01-10T10:28:42.033471+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -83,7 +110,7 @@ entries:
     version: 4.5.0
   - apiVersion: v1
     appVersion: 0.7.0
-    created: "2021-01-07T13:43:13.097413+02:00"
+    created: "2021-01-10T10:28:42.058835+02:00"
     deprecated: true
     description: DEPRECATED ExternalDNS is a Kubernetes addon that configures public
       DNS servers with information about exposed Kubernetes services to make them
@@ -105,7 +132,7 @@ entries:
   filebeat:
   - apiVersion: v1
     appVersion: 7.10.1
-    created: "2021-01-07T13:43:13.093115+02:00"
+    created: "2021-01-10T10:28:42.049741+02:00"
     description: (Customized) Official Elastic helm chart for Filebeat
     digest: 7ce0a0de910911ebb31bc787efc6885831f90d3b02175966298dc05cf9e64b59
     home: https://github.com/elastic/helm-charts
@@ -122,7 +149,7 @@ entries:
   kibana:
   - apiVersion: v1
     appVersion: 7.8.0
-    created: "2021-01-07T13:43:13.094168+02:00"
+    created: "2021-01-10T10:28:42.051746+02:00"
     description: Official Elastic helm chart for Kibana
     digest: f75c441d91add3df102b69e85317b331ca8adeae08014a03cb3bd194c1f31c46
     home: https://github.com/elastic/helm-charts
@@ -139,7 +166,7 @@ entries:
   kubernetes-dashboard:
   - apiVersion: v1
     appVersion: 2.1.0
-    created: "2021-01-07T13:43:13.081847+02:00"
+    created: "2021-01-10T10:28:42.035698+02:00"
     dependencies:
     - condition: metrics-server.enabled
       name: metrics-server
@@ -165,7 +192,7 @@ entries:
   logstash:
   - apiVersion: v1
     appVersion: 7.8.0
-    created: "2021-01-07T13:43:13.095433+02:00"
+    created: "2021-01-10T10:28:42.053854+02:00"
     description: Official Elastic helm chart for Logstash
     digest: a96466708f6e8a70675f1a77e996825c0dcac7f9754f64429f6d48d2fa3d2f99
     home: https://github.com/elastic/helm-charts
@@ -184,7 +211,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 4.4.3
-    created: "2021-01-07T13:43:13.084924+02:00"
+    created: "2021-01-10T10:28:42.039382+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -217,7 +244,7 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2021-01-07T13:43:13.086123+02:00"
+    created: "2021-01-10T10:28:42.040468+02:00"
     deprecated: true
     description: DEPRECATED - nfs-client is an automatic provisioner that used your
       *already configured* NFS server, automatically creating Persistent Volumes.
@@ -237,7 +264,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.9
-    created: "2021-01-07T13:43:13.090122+02:00"
+    created: "2021-01-10T10:28:42.045175+02:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -260,4 +287,4 @@ entries:
     urls:
     - https://vdmpo.github.io/helm/redis-12.3.0.tgz
     version: 12.3.0
-generated: "2021-01-07T13:43:13.065073+02:00"
+generated: "2021-01-10T10:28:42.014389+02:00"
