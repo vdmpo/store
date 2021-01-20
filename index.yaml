@@ -3,7 +3,7 @@ entries:
   argo-cd:
   - apiVersion: v1
     appVersion: 1.7.6
-    created: "2021-01-17T16:00:19.410984+02:00"
+    created: "2021-01-20T23:47:21.260866+02:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -25,12 +25,12 @@ entries:
     - name: seanson
     name: argo-cd
     urls:
-    - https://vdmpo.github.io/helm/argo-cd-2.11.0.tgz
+    - https://vdmpo.github.io/helm/services/argo-cd-2.11.0.tgz
     version: 2.11.0
   chartmuseum:
   - apiVersion: v1
     appVersion: 0.12.0
-    created: "2021-01-17T16:00:19.412989+02:00"
+    created: "2021-01-20T23:47:21.261966+02:00"
     description: Host your own Helm Chart Repository
     digest: 3342039b07c4d6487c29110484be0c599ec2e92ca01fa5681b5e4ce3f2131b9d
     home: https://github.com/helm/chartmuseum
@@ -41,12 +41,12 @@ entries:
     - charts repo
     name: chartmuseum
     urls:
-    - https://vdmpo.github.io/helm/chartmuseum-2.15.0.tgz
+    - https://vdmpo.github.io/helm/services/chartmuseum-2.15.0.tgz
     version: 2.15.0
   consul:
   - apiVersion: v1
     appVersion: 1.9.0
-    created: "2021-01-17T16:00:19.420061+02:00"
+    created: "2021-01-20T23:47:21.266784+02:00"
     description: VP Custom from Official HashiCorp Consul Chart
     digest: 80f405cf257fc60a809bf8d157d966dd2d323949ddce95111c5dc4a7d6184c09
     home: https://www.consul.io
@@ -57,12 +57,12 @@ entries:
     - https://github.com/hashicorp/consul-helm
     - https://github.com/hashicorp/consul-k8s
     urls:
-    - https://vdmpo.github.io/helm/consul-0.1.0.tgz
+    - https://vdmpo.github.io/helm/services/consul-0.1.0.tgz
     version: 0.1.0
   elasticsearch:
   - apiVersion: v1
     appVersion: 7.8.0
-    created: "2021-01-17T16:00:19.462169+02:00"
+    created: "2021-01-20T23:47:21.230754+02:00"
     description: Official Elastic helm chart for Elasticsearch
     digest: f4ca22842484aa97e175247db09babd05cf9d8909aad78a506b3d954d3edd12e
     home: https://github.com/elastic/helm-charts
@@ -81,7 +81,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.7.5
-    created: "2021-01-17T16:00:19.423358+02:00"
+    created: "2021-01-20T23:47:21.240574+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -106,33 +106,12 @@ entries:
     - https://github.com/bitnami/bitnami-docker-external-dns
     - https://github.com/kubernetes-sigs/external-dns
     urls:
-    - https://vdmpo.github.io/helm/external-dns-4.5.0.tgz
+    - https://vdmpo.github.io/helm/kubernetes/external-dns-4.5.0.tgz
     version: 4.5.0
-  - apiVersion: v1
-    appVersion: 0.7.0
-    created: "2021-01-17T16:00:19.469987+02:00"
-    deprecated: true
-    description: DEPRECATED ExternalDNS is a Kubernetes addon that configures public
-      DNS servers with information about exposed Kubernetes services to make them
-      discoverable.
-    digest: 7260365ef62cea43272997b3efde917f56ab8edda2ffc4ba12c2ec07f440cfc3
-    home: https://github.com/kubernetes-sigs/external-dns
-    icon: https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-110x117.png
-    keywords:
-    - external-dns
-    - network
-    - dns
-    name: external-dns
-    sources:
-    - https://github.com/kubernetes-sigs/external-dns
-    - https://github.com/bitnami/bitnami-docker-external-dns
-    urls:
-    - https://vdmpo.github.io/helm/old/external-dns-2.20.4.tgz
-    version: 2.20.4
   filebeat:
   - apiVersion: v1
     appVersion: 7.10.1
-    created: "2021-01-17T16:00:19.463391+02:00"
+    created: "2021-01-20T23:47:21.232114+02:00"
     description: (Customized) Official Elastic helm chart for Filebeat
     digest: 7ce0a0de910911ebb31bc787efc6885831f90d3b02175966298dc05cf9e64b59
     home: https://github.com/elastic/helm-charts
@@ -149,7 +128,7 @@ entries:
   grafana:
   - apiVersion: v2
     appVersion: 7.3.5
-    created: "2021-01-17T16:00:19.425986+02:00"
+    created: "2021-01-20T23:47:21.247509+02:00"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: 9f8d80ae5be610a30aa375fb21ae71248c1ea850ae6401b48532b255bae96586
     home: https://grafana.net
@@ -171,7 +150,7 @@ entries:
     - https://github.com/grafana/grafana
     type: application
     urls:
-    - https://vdmpo.github.io/helm/grafana-6.1.17.tgz
+    - https://vdmpo.github.io/helm/monitoring/grafana-6.1.17.tgz
     version: 6.1.17
   ingress-nginx:
   - annotations:
@@ -180,7 +159,7 @@ entries:
         - Fix KEDA v2 definition
     apiVersion: v2
     appVersion: 0.43.0
-    created: "2021-01-17T16:00:19.430299+02:00"
+    created: "2021-01-20T23:47:21.243585+02:00"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: 42b25dc4c178cefc912c00f63d556333b84afeb30fefa1fa634367521ad1d1c4
@@ -197,12 +176,12 @@ entries:
     - https://github.com/kubernetes/ingress-nginx
     type: application
     urls:
-    - https://vdmpo.github.io/helm/ingress-nginx-3.20.1.tgz
+    - https://vdmpo.github.io/helm/kubernetes/ingress-nginx-3.20.1.tgz
     version: 3.20.1
   kibana:
   - apiVersion: v1
     appVersion: 7.8.0
-    created: "2021-01-17T16:00:19.46511+02:00"
+    created: "2021-01-20T23:47:21.233447+02:00"
     description: Official Elastic helm chart for Kibana
     digest: f75c441d91add3df102b69e85317b331ca8adeae08014a03cb3bd194c1f31c46
     home: https://github.com/elastic/helm-charts
@@ -221,7 +200,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 0.44.1
-    created: "2021-01-17T16:00:19.44225+02:00"
+    created: "2021-01-20T23:47:21.256885+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -257,12 +236,12 @@ entries:
     - https://github.com/bitnami/bitnami-docker-alertmanager
     - https://github.com/prometheus-operator/kube-prometheus
     urls:
-    - https://vdmpo.github.io/helm/kube-prometheus-3.4.0.tgz
+    - https://vdmpo.github.io/helm/monitoring/kube-prometheus-3.4.0.tgz
     version: 3.4.0
   kubernetes-dashboard:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2021-01-17T16:00:19.446599+02:00"
+    created: "2021-01-20T23:47:21.245161+02:00"
     dependencies:
     - condition: metrics-server.enabled
       name: metrics-server
@@ -283,37 +262,12 @@ entries:
     sources:
     - https://github.com/kubernetes/dashboard
     urls:
-    - https://vdmpo.github.io/helm/kubernetes-dashboard-4.0.0.tgz
+    - https://vdmpo.github.io/helm/kubernetes/kubernetes-dashboard-4.0.0.tgz
     version: 4.0.0
-  - apiVersion: v1
-    appVersion: 2.1.0
-    created: "2021-01-17T16:00:19.444464+02:00"
-    dependencies:
-    - condition: metrics-server.enabled
-      name: metrics-server
-      repository: https://charts.helm.sh/stable/
-      version: 2.11.1
-    description: General-purpose web UI for Kubernetes clusters
-    digest: 5a6ac3a9fef8b6236730d5bd2ac2b96461ec566eb2f17f46c96085924ab08a0b
-    home: https://github.com/kubernetes/dashboard
-    icon: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg
-    keywords:
-    - kubernetes
-    - dashboard
-    kubeVersion: '>=1.14.0-0'
-    maintainers:
-    - email: cdesaintmartin@wiremind.fr
-      name: desaintmartin
-    name: kubernetes-dashboard
-    sources:
-    - https://github.com/kubernetes/dashboard
-    urls:
-    - https://vdmpo.github.io/helm/kubernetes-dashboard-3.0.2.tgz
-    version: 3.0.2
   logstash:
   - apiVersion: v1
     appVersion: 7.8.0
-    created: "2021-01-17T16:00:19.466513+02:00"
+    created: "2021-01-20T23:47:21.235266+02:00"
     description: Official Elastic helm chart for Logstash
     digest: a96466708f6e8a70675f1a77e996825c0dcac7f9754f64429f6d48d2fa3d2f99
     home: https://github.com/elastic/helm-charts
@@ -332,7 +286,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 4.4.3
-    created: "2021-01-17T16:00:19.450969+02:00"
+    created: "2021-01-20T23:47:21.269343+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -360,12 +314,12 @@ entries:
     - https://github.com/bitnami/bitnami-docker-mongodb
     - https://mongodb.org
     urls:
-    - https://vdmpo.github.io/helm/mongodb-10.3.3.tgz
+    - https://vdmpo.github.io/helm/services/mongodb-10.3.3.tgz
     version: 10.3.3
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2021-01-17T16:00:19.452194+02:00"
+    created: "2021-01-20T23:47:21.24569+02:00"
     deprecated: true
     description: DEPRECATED - nfs-client is an automatic provisioner that used your
       *already configured* NFS server, automatically creating Persistent Volumes.
@@ -378,12 +332,12 @@ entries:
     sources:
     - https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
     urls:
-    - https://vdmpo.github.io/helm/nfs-client-provisioner-1.2.11.tgz
+    - https://vdmpo.github.io/helm/kubernetes/nfs-client-provisioner-1.2.11.tgz
     version: 1.2.11
   prometheus-elasticsearch-exporter:
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2021-01-17T16:00:19.467293+02:00"
+    created: "2021-01-20T23:47:21.23655+02:00"
     description: Elasticsearch stats exporter for Prometheus
     digest: ad2b0f2e70d618aeb0595d620129fc94e0bab1dc22ef7966f51d39aace906832
     home: https://github.com/justwatchcom/elasticsearch_exporter
@@ -410,7 +364,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.9
-    created: "2021-01-17T16:00:19.456938+02:00"
+    created: "2021-01-20T23:47:21.271886+02:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -431,12 +385,12 @@ entries:
     - https://github.com/bitnami/bitnami-docker-redis
     - http://redis.io/
     urls:
-    - https://vdmpo.github.io/helm/redis-12.3.0.tgz
+    - https://vdmpo.github.io/helm/services/redis-12.3.0.tgz
     version: 12.3.0
   vault:
   - apiVersion: v2
     appVersion: 1.6.1
-    created: "2021-01-17T16:00:19.459897+02:00"
+    created: "2021-01-20T23:47:21.274301+02:00"
     description: Official HashiCorp Vault Chart
     digest: 21598807a49610ea5431175c2f1b04db22c945ffff23a1f4bf8cde33ed61af34
     home: https://www.vaultproject.io
@@ -455,6 +409,6 @@ entries:
     - https://github.com/hashicorp/vault-helm
     - https://github.com/hashicorp/vault-k8s
     urls:
-    - https://vdmpo.github.io/helm/vault-0.9.0.tgz
+    - https://vdmpo.github.io/helm/services/vault-0.9.0.tgz
     version: 0.9.0
-generated: "2021-01-17T16:00:19.402923+02:00"
+generated: "2021-01-20T23:47:21.225473+02:00"
