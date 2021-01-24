@@ -3,7 +3,7 @@ entries:
   argo-cd:
   - apiVersion: v1
     appVersion: 1.7.6
-    created: "2021-01-21T14:56:30.786111+02:00"
+    created: "2021-01-24T12:29:02.809908+02:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -30,7 +30,7 @@ entries:
   chartmuseum:
   - apiVersion: v1
     appVersion: 0.12.0
-    created: "2021-01-21T14:56:30.787949+02:00"
+    created: "2021-01-24T12:29:02.812408+02:00"
     description: Host your own Helm Chart Repository
     digest: 3342039b07c4d6487c29110484be0c599ec2e92ca01fa5681b5e4ce3f2131b9d
     home: https://github.com/helm/chartmuseum
@@ -46,7 +46,7 @@ entries:
   consul:
   - apiVersion: v1
     appVersion: 1.9.0
-    created: "2021-01-21T14:56:30.794944+02:00"
+    created: "2021-01-24T12:29:02.817845+02:00"
     description: VP Custom from Official HashiCorp Consul Chart
     digest: 80f405cf257fc60a809bf8d157d966dd2d323949ddce95111c5dc4a7d6184c09
     home: https://www.consul.io
@@ -61,8 +61,24 @@ entries:
     version: 0.1.0
   elasticsearch:
   - apiVersion: v1
+    appVersion: 7.10.2
+    created: "2021-01-24T12:29:02.76852+02:00"
+    description: Official Elastic helm chart for Elasticsearch
+    digest: 4878ec40349facff82bae671911ebe0c311b2ace5cbe9c3df27084180010d2fd
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/elasticsearch.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: elasticsearch
+    sources:
+    - https://github.com/elastic/elasticsearch
+    urls:
+    - https://vdmpo.github.io/helm/elk/elasticsearch-7.10.2.tgz
+    version: 7.10.2
+  - apiVersion: v1
     appVersion: 7.8.0
-    created: "2021-01-21T14:56:30.75008+02:00"
+    created: "2021-01-24T12:29:02.771327+02:00"
     description: Official Elastic helm chart for Elasticsearch
     digest: f4ca22842484aa97e175247db09babd05cf9d8909aad78a506b3d954d3edd12e
     home: https://github.com/elastic/helm-charts
@@ -81,7 +97,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.7.5
-    created: "2021-01-21T14:56:30.762046+02:00"
+    created: "2021-01-24T12:29:02.78487+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -110,8 +126,24 @@ entries:
     version: 4.5.0
   filebeat:
   - apiVersion: v1
+    appVersion: 7.10.2
+    created: "2021-01-24T12:29:02.764116+02:00"
+    description: Official Elastic helm chart for Filebeat
+    digest: b1dd948fa4669a8f92eb7def11e2ea7e24c527db4ae549ef384c3ce81b56e971
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/beats.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: filebeat
+    sources:
+    - https://github.com/elastic/beats
+    urls:
+    - https://vdmpo.github.io/helm/filebeat-7.10.2.tgz
+    version: 7.10.2
+  - apiVersion: v1
     appVersion: 7.10.1
-    created: "2021-01-21T14:56:30.752123+02:00"
+    created: "2021-01-24T12:29:02.772879+02:00"
     description: (Customized) Official Elastic helm chart for Filebeat
     digest: 7ce0a0de910911ebb31bc787efc6885831f90d3b02175966298dc05cf9e64b59
     home: https://github.com/elastic/helm-charts
@@ -128,7 +160,7 @@ entries:
   grafana:
   - apiVersion: v2
     appVersion: 7.3.5
-    created: "2021-01-21T14:56:30.770047+02:00"
+    created: "2021-01-24T12:29:02.793324+02:00"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: 9f8d80ae5be610a30aa375fb21ae71248c1ea850ae6401b48532b255bae96586
     home: https://grafana.net
@@ -159,7 +191,7 @@ entries:
         - Fix KEDA v2 definition
     apiVersion: v2
     appVersion: 0.43.0
-    created: "2021-01-21T14:56:30.764592+02:00"
+    created: "2021-01-24T12:29:02.787691+02:00"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: 42b25dc4c178cefc912c00f63d556333b84afeb30fefa1fa634367521ad1d1c4
@@ -180,8 +212,24 @@ entries:
     version: 3.20.1
   kibana:
   - apiVersion: v1
+    appVersion: 7.10.2
+    created: "2021-01-24T12:29:02.774285+02:00"
+    description: Official Elastic helm chart for Kibana
+    digest: 46094d5119dab4ab61e6bace7c589742d3c726ca379d5b573ecad77b3ca35766
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/kibana.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: kibana
+    sources:
+    - https://github.com/elastic/kibana
+    urls:
+    - https://vdmpo.github.io/helm/elk/kibana-7.10.2.tgz
+    version: 7.10.2
+  - apiVersion: v1
     appVersion: 7.8.0
-    created: "2021-01-21T14:56:30.753374+02:00"
+    created: "2021-01-24T12:29:02.775635+02:00"
     description: Official Elastic helm chart for Kibana
     digest: f75c441d91add3df102b69e85317b331ca8adeae08014a03cb3bd194c1f31c46
     home: https://github.com/elastic/helm-charts
@@ -200,7 +248,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 0.44.1
-    created: "2021-01-21T14:56:30.781389+02:00"
+    created: "2021-01-24T12:29:02.804938+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -241,7 +289,7 @@ entries:
   kubernetes-dashboard:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2021-01-21T14:56:30.7665+02:00"
+    created: "2021-01-24T12:29:02.789759+02:00"
     dependencies:
     - condition: metrics-server.enabled
       name: metrics-server
@@ -266,8 +314,24 @@ entries:
     version: 4.0.0
   logstash:
   - apiVersion: v1
+    appVersion: 7.10.2
+    created: "2021-01-24T12:29:02.777235+02:00"
+    description: Official Elastic helm chart for Logstash
+    digest: b01e5a09edc2999ca7b358ab12d3ed5c9c436ef9cdd456dd68b6827c4cd0150f
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/logstash.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: logstash
+    sources:
+    - https://github.com/elastic/logstash
+    urls:
+    - https://vdmpo.github.io/helm/elk/logstash-7.10.2.tgz
+    version: 7.10.2
+  - apiVersion: v1
     appVersion: 7.8.0
-    created: "2021-01-21T14:56:30.755202+02:00"
+    created: "2021-01-24T12:29:02.77849+02:00"
     description: Official Elastic helm chart for Logstash
     digest: a96466708f6e8a70675f1a77e996825c0dcac7f9754f64429f6d48d2fa3d2f99
     home: https://github.com/elastic/helm-charts
@@ -286,7 +350,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 4.4.3
-    created: "2021-01-21T14:56:30.799073+02:00"
+    created: "2021-01-24T12:29:02.822038+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -319,7 +383,7 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2021-01-21T14:56:30.767637+02:00"
+    created: "2021-01-24T12:29:02.790782+02:00"
     deprecated: true
     description: DEPRECATED - nfs-client is an automatic provisioner that used your
       *already configured* NFS server, automatically creating Persistent Volumes.
@@ -339,7 +403,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
-    created: "2021-01-21T14:56:30.802433+02:00"
+    created: "2021-01-24T12:29:02.825696+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -372,7 +436,7 @@ entries:
   prometheus-elasticsearch-exporter:
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2021-01-21T14:56:30.756929+02:00"
+    created: "2021-01-24T12:29:02.780111+02:00"
     description: Elasticsearch stats exporter for Prometheus
     digest: ad2b0f2e70d618aeb0595d620129fc94e0bab1dc22ef7966f51d39aace906832
     home: https://github.com/justwatchcom/elasticsearch_exporter
@@ -399,7 +463,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.9
-    created: "2021-01-21T14:56:30.806567+02:00"
+    created: "2021-01-24T12:29:02.830436+02:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -425,7 +489,7 @@ entries:
   vault:
   - apiVersion: v2
     appVersion: 1.6.1
-    created: "2021-01-21T14:56:30.808954+02:00"
+    created: "2021-01-24T12:29:02.833233+02:00"
     description: Official HashiCorp Vault Chart
     digest: 21598807a49610ea5431175c2f1b04db22c945ffff23a1f4bf8cde33ed61af34
     home: https://www.vaultproject.io
@@ -446,4 +510,4 @@ entries:
     urls:
     - https://vdmpo.github.io/helm/services/vault-0.9.0.tgz
     version: 0.9.0
-generated: "2021-01-21T14:56:30.747814+02:00"
+generated: "2021-01-24T12:29:02.76294+02:00"
