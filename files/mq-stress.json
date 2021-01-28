@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 8,
   "links": [],
   "panels": [
     {
@@ -334,8 +333,14 @@
         {
           "expr": "avg(kube_pod_container_resource_limits_cpu_cores{exported_pod=~\"mongodb-.*\", exported_namespace=\"str\"})",
           "interval": "",
-          "legendFormat": "Limit 1 core",
+          "legendFormat": "Limit: Mongo",
           "refId": "B"
+        },
+        {
+          "expr": "avg(kube_pod_container_resource_limits_cpu_cores{exported_pod=~\"redis-.*\", exported_namespace=\"str\"})",
+          "interval": "",
+          "legendFormat": "Limit: Redis",
+          "refId": "C"
         }
       ],
       "thresholds": [],
@@ -359,6 +364,7 @@
       },
       "yaxes": [
         {
+          "$$hashKey": "object:625",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -367,6 +373,7 @@
           "show": true
         },
         {
+          "$$hashKey": "object:626",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -434,13 +441,13 @@
           "expr": "container_memory_working_set_bytes{pod=~\"mongodb-.*\", namespace=\"str\", image!=\"\", container!=\"POD\", container!=\"metrics\"}",
           "instant": false,
           "interval": "",
-          "legendFormat": "{{ container }}",
+          "legendFormat": "{{ pod }}",
           "refId": "A"
         },
         {
           "expr": "container_memory_working_set_bytes{pod=~\"redis-.*\", namespace=\"str\", image!=\"\", container!=\"POD\", container!=\"metrics\"}",
           "interval": "",
-          "legendFormat": "{{ container }}",
+          "legendFormat": "{{ pod }}",
           "refId": "B"
         }
       ],
@@ -465,6 +472,7 @@
       },
       "yaxes": [
         {
+          "$$hashKey": "object:361",
           "format": "bytes",
           "label": null,
           "logBase": 1,
@@ -473,6 +481,7 @@
           "show": true
         },
         {
+          "$$hashKey": "object:362",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -697,6 +706,7 @@
       },
       "yaxes": [
         {
+          "$$hashKey": "object:449",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -705,6 +715,7 @@
           "show": true
         },
         {
+          "$$hashKey": "object:450",
           "decimals": null,
           "format": "short",
           "label": null,
@@ -720,6 +731,7 @@
       }
     }
   ],
+  "refresh": false,
   "schemaVersion": 26,
   "style": "dark",
   "tags": [],
@@ -732,7 +744,7 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "MQ - Stress",
+  "title": "MQ - Stress Tests",
   "uid": "RZY7tnLMz",
-  "version": 30
+  "version": 32
 }
