@@ -3,7 +3,7 @@ entries:
   argo-cd:
   - apiVersion: v1
     appVersion: 1.7.6
-    created: "2021-01-25T01:06:49.109792+02:00"
+    created: "2021-01-28T16:14:09.408703+02:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -30,7 +30,7 @@ entries:
   chartmuseum:
   - apiVersion: v1
     appVersion: 0.12.0
-    created: "2021-01-25T01:06:49.111908+02:00"
+    created: "2021-01-28T16:14:09.410607+02:00"
     description: Host your own Helm Chart Repository
     digest: 3342039b07c4d6487c29110484be0c599ec2e92ca01fa5681b5e4ce3f2131b9d
     home: https://github.com/helm/chartmuseum
@@ -46,7 +46,7 @@ entries:
   consul:
   - apiVersion: v1
     appVersion: 1.9.0
-    created: "2021-01-25T01:06:49.117752+02:00"
+    created: "2021-01-28T16:14:09.416202+02:00"
     description: VP Custom from Official HashiCorp Consul Chart
     digest: 80f405cf257fc60a809bf8d157d966dd2d323949ddce95111c5dc4a7d6184c09
     home: https://www.consul.io
@@ -62,7 +62,7 @@ entries:
   elasticsearch:
   - apiVersion: v1
     appVersion: 7.10.2
-    created: "2021-01-25T01:06:49.071859+02:00"
+    created: "2021-01-28T16:14:09.36629+02:00"
     description: Official Elastic helm chart for Elasticsearch
     digest: 4878ec40349facff82bae671911ebe0c311b2ace5cbe9c3df27084180010d2fd
     home: https://github.com/elastic/helm-charts
@@ -81,7 +81,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.7.5
-    created: "2021-01-25T01:06:49.084158+02:00"
+    created: "2021-01-28T16:14:09.379418+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -111,7 +111,7 @@ entries:
   filebeat:
   - apiVersion: v1
     appVersion: 7.10.1
-    created: "2021-01-25T01:06:49.073066+02:00"
+    created: "2021-01-28T16:14:09.369133+02:00"
     description: (Customized) Official Elastic helm chart for Filebeat
     digest: 7ce0a0de910911ebb31bc787efc6885831f90d3b02175966298dc05cf9e64b59
     home: https://github.com/elastic/helm-charts
@@ -128,7 +128,7 @@ entries:
   grafana:
   - apiVersion: v2
     appVersion: 7.3.5
-    created: "2021-01-25T01:06:49.093628+02:00"
+    created: "2021-01-28T16:14:09.391076+02:00"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: 9f8d80ae5be610a30aa375fb21ae71248c1ea850ae6401b48532b255bae96586
     home: https://grafana.net
@@ -159,7 +159,7 @@ entries:
         - Fix KEDA v2 definition
     apiVersion: v2
     appVersion: 0.43.0
-    created: "2021-01-25T01:06:49.087077+02:00"
+    created: "2021-01-28T16:14:09.383547+02:00"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: 42b25dc4c178cefc912c00f63d556333b84afeb30fefa1fa634367521ad1d1c4
@@ -181,7 +181,7 @@ entries:
   kibana:
   - apiVersion: v1
     appVersion: 7.10.2
-    created: "2021-01-25T01:06:49.077028+02:00"
+    created: "2021-01-28T16:14:09.370963+02:00"
     description: Official Elastic helm chart for Kibana
     digest: 46094d5119dab4ab61e6bace7c589742d3c726ca379d5b573ecad77b3ca35766
     home: https://github.com/elastic/helm-charts
@@ -200,7 +200,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 0.44.1
-    created: "2021-01-25T01:06:49.104139+02:00"
+    created: "2021-01-28T16:14:09.402848+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -241,7 +241,7 @@ entries:
   kubernetes-dashboard:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2021-01-25T01:06:49.089893+02:00"
+    created: "2021-01-28T16:14:09.386566+02:00"
     dependencies:
     - condition: metrics-server.enabled
       name: metrics-server
@@ -267,7 +267,7 @@ entries:
   logstash:
   - apiVersion: v1
     appVersion: 7.10.2
-    created: "2021-01-25T01:06:49.079449+02:00"
+    created: "2021-01-28T16:14:09.37379+02:00"
     description: (Customized) Official Elastic helm chart for Logstash
     digest: 7541179705edd0aa1615516369940f946d2a5f83fba62bfa7a4f956cd0e9af3c
     home: https://github.com/elastic/helm-charts
@@ -286,7 +286,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 4.4.3
-    created: "2021-01-25T01:06:49.1218+02:00"
+    created: "2021-01-28T16:14:09.419743+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -319,7 +319,7 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2021-01-25T01:06:49.09105+02:00"
+    created: "2021-01-28T16:14:09.3878+02:00"
     deprecated: true
     description: DEPRECATED - nfs-client is an automatic provisioner that used your
       *already configured* NFS server, automatically creating Persistent Volumes.
@@ -339,7 +339,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
-    created: "2021-01-25T01:06:49.125585+02:00"
+    created: "2021-01-28T16:14:09.422908+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -372,7 +372,7 @@ entries:
   prometheus-elasticsearch-exporter:
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2021-01-25T01:06:49.080569+02:00"
+    created: "2021-01-28T16:14:09.375212+02:00"
     description: Elasticsearch stats exporter for Prometheus
     digest: ad2b0f2e70d618aeb0595d620129fc94e0bab1dc22ef7966f51d39aace906832
     home: https://github.com/justwatchcom/elasticsearch_exporter
@@ -398,8 +398,41 @@ entries:
   - annotations:
       category: Database
     apiVersion: v2
+    appVersion: 6.0.10
+    created: "2021-01-28T16:14:09.429841+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: 919ee947da36f4d352fb8f4231c7733df457b4708f95636afe53491e3c07c5da
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    - http://redis.io/
+    urls:
+    - https://vdmpo.github.io/helm/services/redis-12.6.4.tgz
+    version: 12.6.4
+  - annotations:
+      category: Database
+    apiVersion: v2
     appVersion: 6.0.9
-    created: "2021-01-25T01:06:49.129961+02:00"
+    created: "2021-01-28T16:14:09.426764+02:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -425,7 +458,7 @@ entries:
   vault:
   - apiVersion: v2
     appVersion: 1.6.1
-    created: "2021-01-25T01:06:49.132568+02:00"
+    created: "2021-01-28T16:14:09.432558+02:00"
     description: Official HashiCorp Vault Chart
     digest: 21598807a49610ea5431175c2f1b04db22c945ffff23a1f4bf8cde33ed61af34
     home: https://www.vaultproject.io
@@ -446,4 +479,4 @@ entries:
     urls:
     - https://vdmpo.github.io/helm/services/vault-0.9.0.tgz
     version: 0.9.0
-generated: "2021-01-25T01:06:49.069512+02:00"
+generated: "2021-01-28T16:14:09.363416+02:00"
