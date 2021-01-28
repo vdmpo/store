@@ -16,7 +16,7 @@
   "editable": true,
   "gnetId": 11835,
   "graphTooltip": 0,
-  "iteration": 1611872087645,
+  "iteration": 1611877478870,
   "links": [],
   "panels": [
     {
@@ -281,8 +281,9 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "100 * (redis_memory_used_bytes{instance=~\"$instance\"}  / redis_memory_max_bytes{instance=~\"$instance\"} )",
+          "expr": "100 * (redis_memory_used_bytes{instance=~\"$instance\"}  / 536870912 )",
           "format": "time_series",
+          "interval": "",
           "intervalFactor": 2,
           "legendFormat": "",
           "metric": "",
@@ -293,7 +294,7 @@
       "thresholds": "80,95",
       "timeFrom": "1m",
       "timeShift": null,
-      "title": "Memory Usage",
+      "title": "Memory Usage (max: 512Mb)",
       "type": "singlestat",
       "valueFontSize": "80%",
       "valueMaps": [
@@ -1395,7 +1396,7 @@
       {
         "allValue": null,
         "current": {
-          "selected": true,
+          "selected": false,
           "text": "redis-node-0",
           "value": "redis-node-0"
         },
