@@ -16,8 +16,8 @@
   "editable": true,
   "gnetId": 315,
   "graphTooltip": 0,
-  "id": 9,
-  "iteration": 1611871683378,
+  "id": 6,
+  "iteration": 1611915420688,
   "links": [],
   "panels": [
     {
@@ -84,9 +84,10 @@
       "pluginVersion": "7.3.5",
       "targets": [
         {
-          "expr": "sum (container_memory_working_set_bytes{id=\"/\",node=~\"^$Node$\"}) / sum (machine_memory_bytes{node=~\"^$Node$\"}) * 100",
+          "expr": "sum (container_memory_working_set_bytes{id=\"/\",node=~\"^$Node$\"}) / sum (kube_node_status_allocatable_memory_bytes{node=~\"^$Node$\"}) * 100",
           "interval": "10s",
           "intervalFactor": 1,
+          "legendFormat": "",
           "refId": "A",
           "step": 10
         }
@@ -160,9 +161,10 @@
       "pluginVersion": "7.3.5",
       "targets": [
         {
-          "expr": "sum (rate (container_cpu_usage_seconds_total{id=\"/\",node=~\"^$Node$\"}[1m])) / sum (machine_cpu_cores{node=~\"^$Node$\"}) * 100",
+          "expr": "sum (rate (container_cpu_usage_seconds_total{id=\"/\",node=~\"^$Node$\"}[1m])) / sum (kube_node_status_capacity_cpu_cores{node=~\"^$Node$\"}) * 100",
           "interval": "10s",
           "intervalFactor": 1,
+          "legendFormat": "",
           "refId": "A",
           "step": 10
         }
@@ -413,9 +415,10 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "sum (machine_memory_bytes{node=~\"^$Node$\"})",
+          "expr": "sum (kube_node_status_allocatable_memory_bytes{node=~\"^$Node$\"})",
           "interval": "10s",
           "intervalFactor": 1,
+          "legendFormat": "",
           "refId": "A",
           "step": 10
         }
@@ -597,9 +600,10 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "sum (machine_cpu_cores{node=~\"^$Node$\"})",
+          "expr": "sum (kube_node_status_capacity_cpu_cores{node=~\"^$Node$\"})",
           "interval": "10s",
           "intervalFactor": 1,
+          "legendFormat": "",
           "refId": "A",
           "step": 10
         }
@@ -1313,7 +1317,7 @@
             "h": 17,
             "w": 24,
             "x": 0,
-            "y": 15
+            "y": 22
           },
           "height": "",
           "hiddenSeries": false,
@@ -2141,18 +2145,15 @@
   "refresh": "10s",
   "schemaVersion": 26,
   "style": "dark",
-  "tags": [
-    "kubernetes",
-    "node"
-  ],
+  "tags": [],
   "templating": {
     "list": [
       {
         "allValue": ".*",
         "current": {
           "selected": true,
-          "text": "All",
-          "value": "$__all"
+          "text": "k8s-master-mgmt-03",
+          "value": "k8s-master-mgmt-03"
         },
         "datasource": "Prometheus",
         "definition": "label_values(node)",
@@ -2207,6 +2208,6 @@
   },
   "timezone": "browser",
   "title": "K8S Cluster Monitoring",
-  "uid": "WhshnABMz",
-  "version": 8
+  "uid": "AEGn0vLGk",
+  "version": 4
 }
