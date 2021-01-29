@@ -16,7 +16,7 @@
   "editable": true,
   "gnetId": 11835,
   "graphTooltip": 0,
-  "iteration": 1611877478870,
+  "iteration": 1611932279151,
   "links": [],
   "panels": [
     {
@@ -28,7 +28,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 0,
       "editable": true,
       "error": false,
@@ -122,7 +122,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 0,
       "editable": true,
       "error": false,
@@ -218,7 +218,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(245, 54, 54, 0.9)"
       ],
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 0,
       "editable": true,
       "error": false,
@@ -311,7 +311,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "editable": true,
       "error": false,
       "fieldConfig": {
@@ -420,7 +420,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -543,7 +543,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "editable": true,
       "error": false,
       "fieldConfig": {
@@ -663,7 +663,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "editable": true,
       "error": false,
       "fieldConfig": {
@@ -781,7 +781,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "editable": true,
       "error": false,
       "fieldConfig": {
@@ -791,8 +791,8 @@
         },
         "overrides": []
       },
-      "fill": 5,
-      "fillGradient": 0,
+      "fill": 1,
+      "fillGradient": 8,
       "grid": {},
       "gridPos": {
         "h": 7,
@@ -891,7 +891,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "editable": true,
       "error": false,
       "fieldConfig": {
@@ -901,8 +901,8 @@
         },
         "overrides": []
       },
-      "fill": 7,
-      "fillGradient": 0,
+      "fill": 4,
+      "fillGradient": 3,
       "grid": {},
       "gridPos": {
         "h": 7,
@@ -923,7 +923,7 @@
         "values": false
       },
       "lines": true,
-      "linewidth": 2,
+      "linewidth": 1,
       "links": [],
       "nullPointMode": "connected",
       "options": {
@@ -1011,7 +1011,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "editable": true,
       "error": false,
       "fieldConfig": {
@@ -1022,7 +1022,7 @@
         "overrides": []
       },
       "fill": 1,
-      "fillGradient": 0,
+      "fillGradient": 5,
       "grid": {},
       "gridPos": {
         "h": 7,
@@ -1043,7 +1043,7 @@
         "values": false
       },
       "lines": true,
-      "linewidth": 2,
+      "linewidth": 1,
       "links": [],
       "nullPointMode": "connected",
       "options": {
@@ -1133,7 +1133,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "editable": true,
       "error": false,
       "fieldConfig": {
@@ -1144,7 +1144,7 @@
         "overrides": []
       },
       "fill": 5,
-      "fillGradient": 0,
+      "fillGradient": 4,
       "grid": {},
       "gridPos": {
         "h": 7,
@@ -1241,7 +1241,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -1349,9 +1349,9 @@
     "list": [
       {
         "current": {
-          "selected": false,
-          "text": "Prometheus",
-          "value": "Prometheus"
+          "selected": true,
+          "text": "Prometheus-Dev",
+          "value": "Prometheus-Dev"
         },
         "error": null,
         "hide": 0,
@@ -1361,6 +1361,7 @@
         "name": "DS_PROMETHEUS",
         "options": [],
         "query": "prometheus",
+        "queryValue": "",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
@@ -1370,8 +1371,8 @@
         "allValue": null,
         "current": {
           "selected": false,
-          "text": "redis",
-          "value": "redis"
+          "text": "str",
+          "value": "str"
         },
         "datasource": "$DS_PROMETHEUS",
         "definition": "label_values(redis_up, namespace)",
@@ -1397,8 +1398,8 @@
         "allValue": null,
         "current": {
           "selected": false,
-          "text": "redis-node-0",
-          "value": "redis-node-0"
+          "text": "redis-master-0",
+          "value": "redis-master-0"
         },
         "datasource": "$DS_PROMETHEUS",
         "definition": "label_values(redis_up{namespace=\"$namespace\"}, pod)",
@@ -1424,8 +1425,8 @@
         "allValue": null,
         "current": {
           "selected": false,
-          "text": "10.233.72.53:9121",
-          "value": "10.233.72.53:9121"
+          "text": "10.233.109.103:9121",
+          "value": "10.233.109.103:9121"
         },
         "datasource": "$DS_PROMETHEUS",
         "definition": "label_values(redis_up{namespace=\"$namespace\", pod=\"$pod_name\"}, instance)",
@@ -1450,8 +1451,8 @@
     ]
   },
   "time": {
-    "from": "2021-01-28T14:17:49.688Z",
-    "to": "2021-01-28T22:16:25.390Z"
+    "from": "now-15m",
+    "to": "now"
   },
   "timepicker": {
     "refresh_intervals": [

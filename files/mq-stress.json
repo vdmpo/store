@@ -15,6 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
+  "iteration": 1611931997501,
   "links": [],
   "panels": [
     {
@@ -22,7 +23,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -54,12 +55,12 @@
       "linewidth": 1,
       "nullPointMode": "connected",
       "options": {
-        "alertThreshold": true
+        "alertThreshold": false
       },
       "percentage": false,
       "pluginVersion": "7.3.5",
       "pointradius": 2,
-      "points": true,
+      "points": false,
       "renderer": "flot",
       "seriesOverrides": [],
       "spaceLength": 10,
@@ -145,7 +146,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -183,7 +184,7 @@
       "percentage": false,
       "pluginVersion": "7.3.5",
       "pointradius": 1,
-      "points": true,
+      "points": false,
       "renderer": "flot",
       "seriesOverrides": [],
       "spaceLength": 10,
@@ -273,7 +274,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -311,7 +312,7 @@
       "percentage": false,
       "pluginVersion": "7.3.5",
       "pointradius": 2,
-      "points": true,
+      "points": false,
       "renderer": "flot",
       "seriesOverrides": [],
       "spaceLength": 10,
@@ -392,7 +393,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -430,7 +431,7 @@
       "percentage": false,
       "pluginVersion": "7.3.5",
       "pointradius": 1,
-      "points": true,
+      "points": false,
       "renderer": "flot",
       "seriesOverrides": [],
       "spaceLength": 10,
@@ -500,7 +501,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -538,7 +539,7 @@
       "percentage": false,
       "pluginVersion": "7.3.5",
       "pointradius": 2,
-      "points": true,
+      "points": false,
       "renderer": "flot",
       "seriesOverrides": [],
       "spaceLength": 10,
@@ -627,7 +628,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -660,12 +661,12 @@
       "linewidth": 1,
       "nullPointMode": "null as zero",
       "options": {
-        "alertThreshold": true
+        "alertThreshold": false
       },
       "percentage": false,
       "pluginVersion": "7.3.5",
       "pointradius": 2,
-      "points": true,
+      "points": false,
       "renderer": "flot",
       "seriesOverrides": [],
       "spaceLength": 10,
@@ -736,15 +737,36 @@
   "style": "dark",
   "tags": [],
   "templating": {
-    "list": []
+    "list": [
+      {
+        "current": {
+          "selected": true,
+          "text": "Prometheus-Dev",
+          "value": "Prometheus-Dev"
+        },
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": "datasource",
+        "multi": false,
+        "name": "DS_PROMETHEUS",
+        "options": [],
+        "query": "prometheus",
+        "queryValue": "",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "type": "datasource"
+      }
+    ]
   },
   "time": {
-    "from": "now-5m",
+    "from": "now-1h",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "MQ - Stress Tests",
   "uid": "RZY7tnLMz",
-  "version": 32
+  "version": 1
 }

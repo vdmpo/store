@@ -16,13 +16,12 @@
   "editable": true,
   "gnetId": 315,
   "graphTooltip": 0,
-  "id": 6,
-  "iteration": 1611915420688,
+  "iteration": 1611932959231,
   "links": [],
   "panels": [
     {
       "cacheTimeout": null,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -98,7 +97,7 @@
     },
     {
       "cacheTimeout": null,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -175,7 +174,7 @@
     },
     {
       "cacheTimeout": null,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -260,7 +259,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(245, 54, 54, 0.9)"
       ],
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -352,7 +351,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(245, 54, 54, 0.9)"
       ],
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -445,7 +444,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(245, 54, 54, 0.9)"
       ],
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -537,7 +536,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(245, 54, 54, 0.9)"
       ],
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -630,7 +629,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(245, 54, 54, 0.9)"
       ],
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -722,7 +721,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(245, 54, 54, 0.9)"
       ],
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -807,7 +806,7 @@
     },
     {
       "cacheTimeout": null,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -884,7 +883,7 @@
     },
     {
       "cacheTimeout": null,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -961,7 +960,7 @@
     },
     {
       "cacheTimeout": null,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -1056,7 +1055,7 @@
     },
     {
       "cacheTimeout": null,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -1168,7 +1167,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -1300,7 +1299,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "Prometheus",
+          "datasource": "$DS_PROMETHEUS",
           "decimals": 3,
           "editable": true,
           "error": false,
@@ -1426,7 +1425,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "Prometheus",
+          "datasource": "$DS_PROMETHEUS",
           "decimals": 3,
           "editable": true,
           "error": false,
@@ -1575,7 +1574,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "Prometheus",
+          "datasource": "$DS_PROMETHEUS",
           "decimals": 2,
           "editable": true,
           "error": false,
@@ -1701,7 +1700,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "Prometheus",
+          "datasource": "$DS_PROMETHEUS",
           "decimals": 2,
           "editable": true,
           "error": false,
@@ -1845,7 +1844,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "Prometheus",
+          "datasource": "$DS_PROMETHEUS",
           "decimals": 2,
           "editable": true,
           "error": false,
@@ -1980,7 +1979,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "Prometheus",
+          "datasource": "$DS_PROMETHEUS",
           "decimals": 2,
           "editable": true,
           "error": false,
@@ -2149,18 +2148,38 @@
   "templating": {
     "list": [
       {
-        "allValue": ".*",
         "current": {
           "selected": true,
-          "text": "k8s-master-mgmt-03",
-          "value": "k8s-master-mgmt-03"
+          "text": "Prometheus",
+          "value": "Prometheus"
         },
-        "datasource": "Prometheus",
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": "datasource",
+        "multi": false,
+        "name": "DS_PROMETHEUS",
+        "options": [],
+        "query": "prometheus",
+        "queryValue": "",
+        "refresh": 1,
+        "regex": "P.*",
+        "skipUrlSync": false,
+        "type": "datasource"
+      },
+      {
+        "allValue": ".*",
+        "current": {
+          "selected": false,
+          "text": "k8s-inf-master-01",
+          "value": "k8s-inf-master-01"
+        },
+        "datasource": "$DS_PROMETHEUS",
         "definition": "label_values(node)",
         "error": null,
         "hide": 0,
         "includeAll": true,
-        "label": null,
+        "label": "node",
         "multi": false,
         "name": "Node",
         "options": [],
@@ -2209,5 +2228,5 @@
   "timezone": "browser",
   "title": "K8S Cluster Monitoring",
   "uid": "AEGn0vLGk",
-  "version": 4
+  "version": 1
 }
