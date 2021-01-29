@@ -294,7 +294,7 @@
       "thresholds": "80,95",
       "timeFrom": "1m",
       "timeShift": null,
-      "title": "Memory Usage (max: 512Mb)",
+      "title": "Memory Usage (max: 512M)",
       "type": "singlestat",
       "valueFontSize": "80%",
       "valueMaps": [
