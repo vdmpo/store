@@ -3,7 +3,7 @@ entries:
   argo-cd:
   - apiVersion: v1
     appVersion: 1.8.4
-    created: "2021-02-22T12:56:02.018376+02:00"
+    created: "2021-02-23T10:34:30.980795+02:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -29,7 +29,7 @@ entries:
     version: 2.14.6
   - apiVersion: v1
     appVersion: 1.7.6
-    created: "2021-02-22T12:56:02.012381+02:00"
+    created: "2021-02-23T10:34:30.974648+02:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -56,7 +56,7 @@ entries:
   aws-load-balancer-controller:
   - apiVersion: v1
     appVersion: v2.1.2
-    created: "2021-02-22T12:56:02.006452+02:00"
+    created: "2021-02-23T10:34:30.968534+02:00"
     description: AWS Load Balancer Controller Helm chart for Kubernetes
     digest: 7483dea37797f2ce73d3d31a0768adf33259b4a67584af94eeec2d94f02817a0
     home: https://github.com/aws/eks-charts
@@ -83,7 +83,7 @@ entries:
   cert-manager:
   - apiVersion: v1
     appVersion: v1.2.0
-    created: "2021-02-22T12:56:02.035027+02:00"
+    created: "2021-02-23T10:34:30.996467+02:00"
     description: A Helm chart for cert-manager
     digest: c77c8ac25e59f219a67a1a30313a0e87a814474cf41155cc3e72c6a3bb04cf89
     home: https://github.com/jetstack/cert-manager
@@ -104,7 +104,7 @@ entries:
     version: v1.2.0
   - apiVersion: v1
     appVersion: v1.1.0
-    created: "2021-02-22T12:56:02.027721+02:00"
+    created: "2021-02-23T10:34:30.989319+02:00"
     description: A Helm chart for cert-manager
     digest: 8251763e5eba1d03ae46efbbd4e6f4f827dc980c10ee80d350a0eaeb69fe317a
     home: https://github.com/jetstack/cert-manager
@@ -126,7 +126,7 @@ entries:
   chartmuseum:
   - apiVersion: v1
     appVersion: 0.12.0
-    created: "2021-02-22T12:56:02.037004+02:00"
+    created: "2021-02-23T10:34:30.998617+02:00"
     description: Host your own Helm Chart Repository
     digest: 3342039b07c4d6487c29110484be0c599ec2e92ca01fa5681b5e4ce3f2131b9d
     home: https://github.com/helm/chartmuseum
@@ -142,7 +142,7 @@ entries:
   consul:
   - apiVersion: v1
     appVersion: 1.9.0
-    created: "2021-02-22T12:56:02.043188+02:00"
+    created: "2021-02-23T10:34:31.004629+02:00"
     description: VP Custom from Official HashiCorp Consul Chart
     digest: 80f405cf257fc60a809bf8d157d966dd2d323949ddce95111c5dc4a7d6184c09
     home: https://www.consul.io
@@ -158,7 +158,7 @@ entries:
   docker-registry:
   - apiVersion: v1
     appVersion: 2.7.1
-    created: "2021-02-22T12:56:02.044515+02:00"
+    created: "2021-02-23T10:34:31.006775+02:00"
     description: A Helm chart for Docker Registry
     digest: c3a8ae4ea8668a9ed021b70b13ee51b98dbdf51a53ad4b63e39556de1f305a19
     home: https://hub.docker.com/_/registry/
@@ -176,7 +176,7 @@ entries:
   elasticsearch:
   - apiVersion: v1
     appVersion: 7.11.1
-    created: "2021-02-22T12:56:02.048047+02:00"
+    created: "2021-02-23T10:34:31.009087+02:00"
     description: Official Elastic helm chart for Elasticsearch
     digest: 8078cbabdb849d54b62cecdb843fb60a172ad1b16ab087b6221705e451d40418
     home: https://github.com/elastic/helm-charts
@@ -195,7 +195,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.7.5
-    created: "2021-02-22T12:56:02.052079+02:00"
+    created: "2021-02-23T10:34:31.012699+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -225,7 +225,7 @@ entries:
   filebeat:
   - apiVersion: v1
     appVersion: 7.10.1
-    created: "2021-02-22T12:56:02.054634+02:00"
+    created: "2021-02-23T10:34:31.014078+02:00"
     description: (Customized) Official Elastic helm chart for Filebeat
     digest: 7ce0a0de910911ebb31bc787efc6885831f90d3b02175966298dc05cf9e64b59
     home: https://github.com/elastic/helm-charts
@@ -242,7 +242,7 @@ entries:
   gitlab-runner:
   - apiVersion: v1
     appVersion: 13.8.0
-    created: "2021-02-22T12:56:02.056332+02:00"
+    created: "2021-02-23T10:34:31.015851+02:00"
     description: GitLab Runner
     digest: 8ba94f0f993df4c7a2c1a80c54237f87e09e28af5e4a7078187068e37ca74923
     icon: https://gitlab.com/uploads/-/system/project/avatar/250833/runner_logo.png
@@ -263,7 +263,7 @@ entries:
   grafana:
   - apiVersion: v2
     appVersion: 7.3.5
-    created: "2021-02-22T12:56:02.058837+02:00"
+    created: "2021-02-23T10:34:31.018423+02:00"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: 9f8d80ae5be610a30aa375fb21ae71248c1ea850ae6401b48532b255bae96586
     home: https://grafana.net
@@ -293,7 +293,7 @@ entries:
         - Update ingress-nginx v0.44.0
     apiVersion: v2
     appVersion: 0.44.0
-    created: "2021-02-22T12:56:02.061537+02:00"
+    created: "2021-02-23T10:34:31.021091+02:00"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: a1999d0ed90ab34418fb3f3e54024a9ff74d77c9ea3b7d3ec42e0bd5adc5e6f8
@@ -315,7 +315,7 @@ entries:
   kibana:
   - apiVersion: v1
     appVersion: 7.11.1
-    created: "2021-02-22T12:56:02.062633+02:00"
+    created: "2021-02-23T10:34:31.022271+02:00"
     description: Official Elastic helm chart for Kibana
     digest: cdfede02bd49799887c37a977c04f32a81c7b21983d625a2c0d7aa5d6ffd8981
     home: https://github.com/elastic/helm-charts
@@ -334,7 +334,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 0.44.1
-    created: "2021-02-22T12:56:02.073167+02:00"
+    created: "2021-02-23T10:34:31.033639+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -375,7 +375,7 @@ entries:
   kubernetes-dashboard:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2021-02-22T12:56:02.077065+02:00"
+    created: "2021-02-23T10:34:31.037886+02:00"
     dependencies:
     - condition: metrics-server.enabled
       name: metrics-server
@@ -400,7 +400,7 @@ entries:
     version: 4.0.0
   - apiVersion: v1
     appVersion: 2.1.0
-    created: "2021-02-22T12:56:02.075223+02:00"
+    created: "2021-02-23T10:34:31.035876+02:00"
     dependencies:
     - condition: metrics-server.enabled
       name: metrics-server
@@ -426,7 +426,7 @@ entries:
   logstash:
   - apiVersion: v1
     appVersion: 7.11.1
-    created: "2021-02-22T12:56:02.080582+02:00"
+    created: "2021-02-23T10:34:31.040993+02:00"
     description: Official Elastic helm chart for Logstash
     digest: 1b18295cd49314b2e1559e8b50080afb9b4c2559e0df0f631904def7d64c38f6
     home: https://github.com/elastic/helm-charts
@@ -442,7 +442,7 @@ entries:
     version: 7.11.1
   - apiVersion: v1
     appVersion: 7.10.2
-    created: "2021-02-22T12:56:02.078941+02:00"
+    created: "2021-02-23T10:34:31.039489+02:00"
     description: (Customized) Official Elastic helm chart for Logstash
     digest: 7541179705edd0aa1615516369940f946d2a5f83fba62bfa7a4f956cd0e9af3c
     home: https://github.com/elastic/helm-charts
@@ -461,7 +461,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 0.9.5
-    created: "2021-02-22T12:56:02.083083+02:00"
+    created: "2021-02-23T10:34:31.043262+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -498,7 +498,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 4.4.3
-    created: "2021-02-22T12:56:02.087034+02:00"
+    created: "2021-02-23T10:34:31.046621+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -531,7 +531,7 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2021-02-22T12:56:02.088151+02:00"
+    created: "2021-02-23T10:34:31.048099+02:00"
     deprecated: true
     description: DEPRECATED - nfs-client is an automatic provisioner that used your
       *already configured* NFS server, automatically creating Persistent Volumes.
@@ -551,7 +551,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
-    created: "2021-02-22T12:56:02.091466+02:00"
+    created: "2021-02-23T10:34:31.05126+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -584,7 +584,7 @@ entries:
   prometheus:
   - apiVersion: v2
     appVersion: 2.24.0
-    created: "2021-02-22T12:56:02.096209+02:00"
+    created: "2021-02-23T10:34:31.05606+02:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -619,7 +619,7 @@ entries:
   prometheus-elasticsearch-exporter:
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2021-02-22T12:56:02.097477+02:00"
+    created: "2021-02-23T10:34:31.057421+02:00"
     description: Elasticsearch stats exporter for Prometheus
     digest: ad2b0f2e70d618aeb0595d620129fc94e0bab1dc22ef7966f51d39aace906832
     home: https://github.com/justwatchcom/elasticsearch_exporter
@@ -646,7 +646,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.10
-    created: "2021-02-22T12:56:02.101233+02:00"
+    created: "2021-02-23T10:34:31.061098+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -679,7 +679,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.9
-    created: "2021-02-22T12:56:02.1094+02:00"
+    created: "2021-02-23T10:34:31.071393+02:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -705,7 +705,7 @@ entries:
   vault:
   - apiVersion: v2
     appVersion: 1.6.1
-    created: "2021-02-22T12:56:02.10363+02:00"
+    created: "2021-02-23T10:34:31.063584+02:00"
     description: Official HashiCorp Vault Chart
     digest: 21598807a49610ea5431175c2f1b04db22c945ffff23a1f4bf8cde33ed61af34
     home: https://www.vaultproject.io
@@ -726,10 +726,35 @@ entries:
     urls:
     - https://vdmpo.github.io/helm/charts/vault-0.9.0.tgz
     version: 0.9.0
+  velero:
+  - apiVersion: v1
+    appVersion: 1.5.3
+    created: "2021-02-23T10:34:31.065184+02:00"
+    description: A Helm chart for velero
+    digest: 1cd5bfe340bee648b3a222add9c2774f553a4429fd5ac787fb373d169085ecde
+    home: https://github.com/vmware-tanzu/velero
+    icon: https://cdn-images-1.medium.com/max/1600/1*-9mb3AKnKdcL_QD3CMnthQ.png
+    maintainers:
+    - email: ashisham@vmware.com
+      name: ashish-amarnath
+    - email: carlisiac@vmware.com
+      name: carlisia
+    - email: ctadeu@gmail.com
+      name: cpanato
+    - email: brubakern@vmware.com
+      name: nrb
+    - email: krisss@vmware.com
+      name: skriss
+    name: velero
+    sources:
+    - https://github.com/vmware-tanzu/velero
+    urls:
+    - https://vdmpo.github.io/helm/charts/velero-2.14.8.tgz
+    version: 2.14.8
   victoria-metrics-cluster:
   - apiVersion: v1
     appVersion: 1.53.1
-    created: "2021-02-22T12:56:02.105511+02:00"
+    created: "2021-02-23T10:34:31.067426+02:00"
     description: Victoria Metrics Cluster version - high-performance, cost-effective
       and scalable TSDB, long-term remote storage for Prometheus
     digest: 4cdb2425398af2e94c5e9ea2694eb62f346040b4b716bfe297b72bd4a71fb0bc
@@ -737,4 +762,4 @@ entries:
     urls:
     - https://vdmpo.github.io/helm/charts/victoria-metrics-cluster-0.8.12.tgz
     version: 0.8.12
-generated: "2021-02-22T12:56:02.004722+02:00"
+generated: "2021-02-23T10:34:30.966399+02:00"
