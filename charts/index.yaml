@@ -1,0 +1,853 @@
+apiVersion: v1
+entries:
+  argo-cd:
+  - apiVersion: v1
+    appVersion: 1.8.4
+    created: "2021-03-10T21:03:08.50221+02:00"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.10.4
+    description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: 4e2c4154c938de433066dfaf78f5b5517fe9cd47e927fd4cee944c7ee6ec9d80
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    maintainers:
+    - name: alexec
+    - name: alexmt
+    - name: jessesuen
+    - name: seanson
+    name: argo-cd
+    urls:
+    - https://vdmpo.github.io/helm/argo-cd-2.15.0.tgz
+    version: 2.15.0
+  - apiVersion: v1
+    appVersion: 1.7.6
+    created: "2021-03-10T21:03:08.496733+02:00"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://kubernetes-charts.storage.googleapis.com
+      version: 4.4.2
+    description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: 1d640fcb9c69440b9131812a14f73006d125c742b427c3660155075e48ad51a0
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    maintainers:
+    - name: alexec
+    - name: alexmt
+    - name: jessesuen
+    - name: seanson
+    name: argo-cd
+    urls:
+    - https://vdmpo.github.io/helm/argo-cd-2.11.0.tgz
+    version: 2.11.0
+  cert-manager:
+  - apiVersion: v1
+    appVersion: v1.2.0
+    created: "2021-03-10T21:03:08.517852+02:00"
+    description: A Helm chart for cert-manager
+    digest: c77c8ac25e59f219a67a1a30313a0e87a814474cf41155cc3e72c6a3bb04cf89
+    home: https://github.com/jetstack/cert-manager
+    icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    maintainers:
+    - email: james@jetstack.io
+      name: munnerz
+    name: cert-manager
+    sources:
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - https://vdmpo.github.io/helm/cert-manager-v1.2.0.tgz
+    version: v1.2.0
+  - apiVersion: v1
+    appVersion: v1.1.0
+    created: "2021-03-10T21:03:08.511452+02:00"
+    description: A Helm chart for cert-manager
+    digest: 8251763e5eba1d03ae46efbbd4e6f4f827dc980c10ee80d350a0eaeb69fe317a
+    home: https://github.com/jetstack/cert-manager
+    icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    maintainers:
+    - email: james@jetstack.io
+      name: munnerz
+    name: cert-manager
+    sources:
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - https://vdmpo.github.io/helm/cert-manager-v1.1.0.tgz
+    version: v1.1.0
+  chartmuseum:
+  - apiVersion: v1
+    appVersion: 0.13.0
+    created: "2021-03-10T21:03:08.521992+02:00"
+    description: Host your own Helm Chart Repository
+    digest: f39257a448716bb970bbc44c25919bdad20008e7c7c19b4d5b72eb7b4ed49488
+    home: https://github.com/helm/chartmuseum
+    icon: https://raw.githubusercontent.com/chartmuseum/charts/main/logo.jpg
+    keywords:
+    - chartmuseum
+    - helm
+    - charts repo
+    name: chartmuseum
+    urls:
+    - https://vdmpo.github.io/helm/chartmuseum-2.16.0.tgz
+    version: 2.16.0
+  - apiVersion: v1
+    appVersion: 0.12.0
+    created: "2021-03-10T21:03:08.519776+02:00"
+    description: Host your own Helm Chart Repository
+    digest: 3342039b07c4d6487c29110484be0c599ec2e92ca01fa5681b5e4ce3f2131b9d
+    home: https://github.com/helm/chartmuseum
+    icon: https://raw.githubusercontent.com/chartmuseum/charts/main/logo.jpg
+    keywords:
+    - chartmuseum
+    - helm
+    - charts repo
+    name: chartmuseum
+    urls:
+    - https://vdmpo.github.io/helm/chartmuseum-2.15.0.tgz
+    version: 2.15.0
+  consul:
+  - apiVersion: v1
+    appVersion: 1.9.0
+    created: "2021-03-10T21:03:08.527964+02:00"
+    description: VP Custom from Official HashiCorp Consul Chart
+    digest: 80f405cf257fc60a809bf8d157d966dd2d323949ddce95111c5dc4a7d6184c09
+    home: https://www.consul.io
+    icon: https://raw.githubusercontent.com/hashicorp/consul-helm/master/assets/icon.png
+    name: consul
+    sources:
+    - https://github.com/hashicorp/consul
+    - https://github.com/hashicorp/consul-helm
+    - https://github.com/hashicorp/consul-k8s
+    urls:
+    - https://vdmpo.github.io/helm/consul-0.1.0.tgz
+    version: 0.1.0
+  docker-registry:
+  - apiVersion: v1
+    appVersion: 2.7.1
+    created: "2021-03-10T21:03:08.529346+02:00"
+    description: A Helm chart for Docker Registry
+    digest: ba7d21cf60c4e54379e22a601139c50af66e315bb0804bd23a84da6d26a3e3a2
+    home: https://hub.docker.com/_/registry/
+    icon: https://hub.docker.com/public/images/logos/mini-logo.svg
+    maintainers:
+    - email: devin@canterberry.cc
+      name: Devin Canterberry
+      url: https://canterberry.cc/
+    name: docker-registry
+    sources:
+    - https://github.com/docker/distribution-library-image
+    urls:
+    - https://vdmpo.github.io/helm/docker-registry-1.10.1.tgz
+    version: 1.10.1
+  elasticsearch:
+  - apiVersion: v1
+    appVersion: 7.11.1
+    created: "2021-03-10T21:03:08.531767+02:00"
+    description: Official Elastic helm chart for Elasticsearch
+    digest: 8078cbabdb849d54b62cecdb843fb60a172ad1b16ab087b6221705e451d40418
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/elasticsearch.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: elasticsearch
+    sources:
+    - https://github.com/elastic/elasticsearch
+    urls:
+    - https://vdmpo.github.io/helm/elasticsearch-7.11.1.tgz
+    version: 7.11.1
+  external-dns:
+  - annotations:
+      category: DeveloperTools
+    apiVersion: v2
+    appVersion: 0.7.5
+    created: "2021-03-10T21:03:08.535205+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: ExternalDNS is a Kubernetes addon that configures public DNS servers
+      with information about exposed Kubernetes services to make them discoverable.
+    digest: 4b83a84fc45e7e6a2b8014397970c48207ae17e1d9b7977c054aa99ba7563578
+    home: https://github.com/bitnami/charts/tree/master/bitnami/external-dns
+    icon: https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-110x117.png
+    keywords:
+    - external-dns
+    - network
+    - dns
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: external-dns
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    - https://github.com/bitnami/bitnami-docker-external-dns
+    - https://github.com/kubernetes-sigs/external-dns
+    urls:
+    - https://vdmpo.github.io/helm/external-dns-4.5.0.tgz
+    version: 4.5.0
+  filebeat:
+  - apiVersion: v1
+    appVersion: 7.10.1
+    created: "2021-03-10T21:03:08.536381+02:00"
+    description: (Customized) Official Elastic helm chart for Filebeat
+    digest: 7ce0a0de910911ebb31bc787efc6885831f90d3b02175966298dc05cf9e64b59
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/beats.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: filebeat
+    sources:
+    - https://github.com/elastic/beats
+    urls:
+    - https://vdmpo.github.io/helm/filebeat-7.10.1.tgz
+    version: 7.10.1
+  gitlab-runner:
+  - apiVersion: v1
+    appVersion: 13.8.0
+    created: "2021-03-10T21:03:08.537844+02:00"
+    description: GitLab Runner
+    digest: 8ba94f0f993df4c7a2c1a80c54237f87e09e28af5e4a7078187068e37ca74923
+    icon: https://gitlab.com/uploads/-/system/project/avatar/250833/runner_logo.png
+    keywords:
+    - git
+    - ci
+    - deploy
+    maintainers:
+    - email: support@gitlab.com
+      name: GitLab Inc.
+    name: gitlab-runner
+    sources:
+    - https://hub.docker.com/r/gitlab/gitlab-runner/
+    - https://docs.gitlab.com/runner/
+    urls:
+    - https://vdmpo.github.io/helm/gitlab-runner-0.25.0.tgz
+    version: 0.25.0
+  grafana:
+  - apiVersion: v2
+    appVersion: 7.3.5
+    created: "2021-03-10T21:03:08.540109+02:00"
+    description: The leading tool for querying and visualizing time series and metrics.
+    digest: 9f8d80ae5be610a30aa375fb21ae71248c1ea850ae6401b48532b255bae96586
+    home: https://grafana.net
+    icon: https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png
+    kubeVersion: ^1.8.0-0
+    maintainers:
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rluckie@cisco.com
+      name: rtluckie
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    name: grafana
+    sources:
+    - https://github.com/grafana/grafana
+    type: application
+    urls:
+    - https://vdmpo.github.io/helm/grafana-6.1.17.tgz
+    version: 6.1.17
+  ingress-nginx:
+  - annotations:
+      artifacthub.io/changes: |
+        - Update ingress-nginx v0.44.0
+    apiVersion: v2
+    appVersion: 0.44.0
+    created: "2021-03-10T21:03:08.54256+02:00"
+    description: Ingress controller for Kubernetes using NGINX as a reverse proxy
+      and load balancer
+    digest: a1999d0ed90ab34418fb3f3e54024a9ff74d77c9ea3b7d3ec42e0bd5adc5e6f8
+    home: https://github.com/kubernetes/ingress-nginx
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+    keywords:
+    - ingress
+    - nginx
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: ChiefAlexander
+    name: ingress-nginx
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    type: application
+    urls:
+    - https://vdmpo.github.io/helm/ingress-nginx-3.23.0.tgz
+    version: 3.23.0
+  kafka:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.7.0
+    created: "2021-03-10T21:03:08.547185+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://charts.bitnami.com/bitnami
+      version: 6.x.x
+    description: Apache Kafka is a distributed streaming platform.
+    digest: 5200e028780fa522fdc52e4b098b69ae6cc638ad318cd52cc8410882c7440264
+    home: https://github.com/bitnami/charts/tree/master/bitnami/kafka
+    icon: https://bitnami.com/assets/stacks/kafka/img/kafka-stack-220x234.png
+    keywords:
+    - kafka
+    - zookeeper
+    - streaming
+    - producer
+    - consumer
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: kafka
+    sources:
+    - https://github.com/bitnami/bitnami-docker-kafka
+    - https://kafka.apache.org/
+    urls:
+    - https://vdmpo.github.io/helm/kafka-12.10.0.tgz
+    version: 12.10.0
+  kibana:
+  - apiVersion: v1
+    appVersion: 7.11.1
+    created: "2021-03-10T21:03:08.548147+02:00"
+    description: Official Elastic helm chart for Kibana
+    digest: cdfede02bd49799887c37a977c04f32a81c7b21983d625a2c0d7aa5d6ffd8981
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/kibana.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: kibana
+    sources:
+    - https://github.com/elastic/kibana
+    urls:
+    - https://vdmpo.github.io/helm/kibana-7.11.1.tgz
+    version: 7.11.1
+  kube-prometheus:
+  - annotations:
+      category: Analytics
+    apiVersion: v2
+    appVersion: 0.44.1
+    created: "2021-03-10T21:03:08.557465+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    - condition: exporters.enabled,exporters.node-exporter.enabled
+      name: node-exporter
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.x.x
+    - condition: exporters.enabled,exporters.kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: (CUSTOMIZED) kube-prometheus collects Kubernetes manifests to provide
+      easy to operate end-to-end Kubernetes cluster monitoring with Prometheus using
+      the Prometheus Operator.
+    digest: d857f5ec2f832e7f2084aa7048bdce6784f823a34341ba084b775b96564073aa
+    home: https://github.com/bitnami/charts/tree/master/bitnami/kube-prometheus
+    icon: https://bitnami.com/assets/stacks/prometheus-operator/img/prometheus-operator-stack-220x234.png
+    keywords:
+    - prometheus
+    - alertmanager
+    - operator
+    - monitoring
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: kube-prometheus
+    sources:
+    - https://github.com/bitnami/bitnami-docker-prometheus-operator
+    - https://github.com/bitnami/bitnami-docker-prometheus
+    - https://github.com/bitnami/bitnami-docker-alertmanager
+    - https://github.com/prometheus-operator/kube-prometheus
+    urls:
+    - https://vdmpo.github.io/helm/kube-prometheus-3.4.0.tgz
+    version: 3.4.0
+  kubernetes-dashboard:
+  - apiVersion: v2
+    appVersion: 2.1.0
+    created: "2021-03-10T21:03:08.561643+02:00"
+    dependencies:
+    - condition: metrics-server.enabled
+      name: metrics-server
+      repository: https://charts.helm.sh/stable/
+      version: 2.11.1
+    description: General-purpose web UI for Kubernetes clusters
+    digest: b609a649b10c9d58184d4883b72271b377cf196f8c9bcaa700f570938e2d0939
+    home: https://github.com/kubernetes/dashboard
+    icon: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg
+    keywords:
+    - kubernetes
+    - dashboard
+    kubeVersion: '>=1.14.0-0'
+    maintainers:
+    - email: cdesaintmartin@wiremind.fr
+      name: desaintmartin
+    name: kubernetes-dashboard
+    sources:
+    - https://github.com/kubernetes/dashboard
+    urls:
+    - https://vdmpo.github.io/helm/kubernetes-dashboard-4.0.0.tgz
+    version: 4.0.0
+  - apiVersion: v1
+    appVersion: 2.1.0
+    created: "2021-03-10T21:03:08.559313+02:00"
+    dependencies:
+    - condition: metrics-server.enabled
+      name: metrics-server
+      repository: https://charts.helm.sh/stable/
+      version: 2.11.1
+    description: General-purpose web UI for Kubernetes clusters
+    digest: 5a6ac3a9fef8b6236730d5bd2ac2b96461ec566eb2f17f46c96085924ab08a0b
+    home: https://github.com/kubernetes/dashboard
+    icon: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg
+    keywords:
+    - kubernetes
+    - dashboard
+    kubeVersion: '>=1.14.0-0'
+    maintainers:
+    - email: cdesaintmartin@wiremind.fr
+      name: desaintmartin
+    name: kubernetes-dashboard
+    sources:
+    - https://github.com/kubernetes/dashboard
+    urls:
+    - https://vdmpo.github.io/helm/kubernetes-dashboard-3.0.2.tgz
+    version: 3.0.2
+  logstash:
+  - apiVersion: v1
+    appVersion: 7.11.1
+    created: "2021-03-10T21:03:08.564819+02:00"
+    description: Official Elastic helm chart for Logstash
+    digest: 1b18295cd49314b2e1559e8b50080afb9b4c2559e0df0f631904def7d64c38f6
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/logstash.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: logstash
+    sources:
+    - https://github.com/elastic/logstash
+    urls:
+    - https://vdmpo.github.io/helm/logstash-7.11.1.tgz
+    version: 7.11.1
+  - apiVersion: v1
+    appVersion: 7.10.2
+    created: "2021-03-10T21:03:08.563327+02:00"
+    description: (Customized) Official Elastic helm chart for Logstash
+    digest: 7541179705edd0aa1615516369940f946d2a5f83fba62bfa7a4f956cd0e9af3c
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/logstash.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: logstash
+    sources:
+    - https://github.com/elastic/logstash
+    urls:
+    - https://vdmpo.github.io/helm/logstash-7.10.2.tgz
+    version: 7.10.2
+  metallb:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 0.9.5
+    created: "2021-03-10T21:03:08.566946+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: The Metal LB for Kubernetes
+    digest: 34f48c651d5623dce7967c3ad686c317b61ba1f72624abca5ca1fafdcd37bf98
+    home: https://github.com/bitnami/charts/tree/master/bitnami/metallb
+    icon: https://bitnami.com/assets/stacks/metallb-speaker/img/metallb-speaker-stack-220x234.png
+    keywords:
+    - load-balancer
+    - balancer
+    - lb
+    - bgp
+    - arp
+    - vrrp
+    - vip
+    maintainers:
+    - email: cellebyte@gmail.com
+      name: cellebyte
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: metallb
+    sources:
+    - https://github.com/metallb/metallb
+    - https://github.com/bitnami/bitnami-docker-metallb
+    - https://metallb.universe.tf
+    urls:
+    - https://vdmpo.github.io/helm/metallb-2.2.0.tgz
+    version: 2.2.0
+  mongodb:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 4.4.4
+    created: "2021-03-10T21:03:08.573953+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: NoSQL document-oriented database that stores JSON-like documents
+      with dynamic schemas, simplifying the integration of data in content-driven
+      applications.
+    digest: 16a2efcdf3c1bd9ca70e88c3cfb5240a860da4cc616d7996ace576013554f3fc
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mongodb
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mongodb
+    - https://mongodb.org
+    urls:
+    - https://vdmpo.github.io/helm/mongodb-10.7.1.tgz
+    version: 10.7.1
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 4.4.3
+    created: "2021-03-10T21:03:08.570562+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: NoSQL document-oriented database that stores JSON-like documents
+      with dynamic schemas, simplifying the integration of data in content-driven
+      applications.
+    digest: 1f93c3fdd39dec873e322645d8d635962e61a94a2c59f630cc80b5d34b48ac3c
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mongodb
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mongodb
+    - https://mongodb.org
+    urls:
+    - https://vdmpo.github.io/helm/mongodb-10.3.3.tgz
+    version: 10.3.3
+  nfs-client-provisioner:
+  - apiVersion: v1
+    appVersion: 3.1.0
+    created: "2021-03-10T21:03:08.574995+02:00"
+    deprecated: true
+    description: DEPRECATED - nfs-client is an automatic provisioner that used your
+      *already configured* NFS server, automatically creating Persistent Volumes.
+    digest: fdafe0deebdc4cec8a0e8b3e1c7b4f287a0282d54692cd43e7d045f242791334
+    home: https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    keywords:
+    - nfs
+    - storage
+    name: nfs-client-provisioner
+    sources:
+    - https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    urls:
+    - https://vdmpo.github.io/helm/nfs-client-provisioner-1.2.11.tgz
+    version: 1.2.11
+  postgresql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 11.11.0
+    created: "2021-03-10T21:03:08.578271+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Chart for PostgreSQL, an object-relational database management system
+      (ORDBMS) with an emphasis on extensibility and on standards-compliance.
+    digest: 078a9972e018ba8e5aebbf7a325ee73c75043c655f6b6e7c43b26ebff3db51e3
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    - https://www.postgresql.org/
+    urls:
+    - https://vdmpo.github.io/helm/postgresql-10.3.7.tgz
+    version: 10.3.7
+  postgresql-ha:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 11.10.0
+    created: "2021-03-10T21:03:08.581604+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Chart for PostgreSQL with HA architecture (using Replication Manager
+      (repmgr) and Pgpool).
+    digest: 7d1a723e5c4ca372a235ff8fdd46b18b95e27dfa7e64b8a9714c22a1d501788b
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql-ha
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-110x117.png
+    keywords:
+    - postgresql
+    - repmgr
+    - pgpool
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    - high availability
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: postgresql-ha
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    - https://www.postgresql.org/
+    urls:
+    - https://vdmpo.github.io/helm/postgresql-ha-6.3.7.tgz
+    version: 6.3.7
+  prometheus:
+  - apiVersion: v2
+    appVersion: 2.24.0
+    created: "2021-03-10T21:03:08.58585+02:00"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://kubernetes.github.io/kube-state-metrics
+      version: 2.9.*
+    description: Prometheus is a monitoring system and time series database.
+    digest: 9f08f27a5863aec9b3e249f6d61ec1dbb58164677fd42fe4ba22e4dc4431dc7b
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    maintainers:
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: monotek23@gmail.com
+      name: monotek
+    - email: naseem@transit.app
+      name: naseemkullah
+    name: prometheus
+    sources:
+    - https://github.com/prometheus/alertmanager
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus/pushgateway
+    - https://github.com/prometheus/node_exporter
+    - https://github.com/kubernetes/kube-state-metrics
+    type: application
+    urls:
+    - https://vdmpo.github.io/helm/prometheus-13.3.3.tgz
+    version: 13.3.3
+  prometheus-elasticsearch-exporter:
+  - apiVersion: v1
+    appVersion: 1.1.0
+    created: "2021-03-10T21:03:08.587022+02:00"
+    description: Elasticsearch stats exporter for Prometheus
+    digest: ad2b0f2e70d618aeb0595d620129fc94e0bab1dc22ef7966f51d39aace906832
+    home: https://github.com/justwatchcom/elasticsearch_exporter
+    keywords:
+    - metrics
+    - elasticsearch
+    - monitoring
+    kubeVersion: '>=1.10.0-0'
+    maintainers:
+    - email: sven.mueller@commercetools.com
+      name: svenmueller
+    - email: carlos@carlosbecker.com
+      name: caarlos0
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: prometheus-elasticsearch-exporter
+    sources:
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-elasticsearch-exporter
+    urls:
+    - https://vdmpo.github.io/helm/prometheus-elasticsearch-exporter-4.0.1.tgz
+    version: 4.0.1
+  redis:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 6.0.10
+    created: "2021-03-10T21:03:08.591264+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: 190452bd9b3123fe216b9aafba3e868cdfff9657e41833733cd6d6cac177d880
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    - http://redis.io/
+    urls:
+    - https://vdmpo.github.io/helm/redis-12.7.5.tgz
+    version: 12.7.5
+  vault:
+  - apiVersion: v2
+    appVersion: 1.6.2
+    created: "2021-03-10T21:03:08.595858+02:00"
+    description: Official HashiCorp Vault Chart
+    digest: fedf152b8fe46b08399fe3012aec8919c6db75f1853d046016b3d69c1fa9fd36
+    home: https://www.vaultproject.io
+    icon: https://github.com/hashicorp/vault/raw/f22d202cde2018f9455dec755118a9b84586e082/Vault_PrimaryLogo_Black.png
+    keywords:
+    - vault
+    - security
+    - encryption
+    - secrets
+    - management
+    - automation
+    - infrastructure
+    name: vault
+    sources:
+    - https://github.com/hashicorp/vault
+    - https://github.com/hashicorp/vault-helm
+    - https://github.com/hashicorp/vault-k8s
+    urls:
+    - https://vdmpo.github.io/helm/vault-0.9.1.tgz
+    version: 0.9.1
+  - apiVersion: v2
+    appVersion: 1.6.1
+    created: "2021-03-10T21:03:08.593591+02:00"
+    description: Official HashiCorp Vault Chart
+    digest: 21598807a49610ea5431175c2f1b04db22c945ffff23a1f4bf8cde33ed61af34
+    home: https://www.vaultproject.io
+    icon: https://github.com/hashicorp/vault/raw/f22d202cde2018f9455dec755118a9b84586e082/Vault_PrimaryLogo_Black.png
+    keywords:
+    - vault
+    - security
+    - encryption
+    - secrets
+    - management
+    - automation
+    - infrastructure
+    name: vault
+    sources:
+    - https://github.com/hashicorp/vault
+    - https://github.com/hashicorp/vault-helm
+    - https://github.com/hashicorp/vault-k8s
+    urls:
+    - https://vdmpo.github.io/helm/vault-0.9.0.tgz
+    version: 0.9.0
+  velero:
+  - apiVersion: v1
+    appVersion: 1.5.3
+    created: "2021-03-10T21:03:08.597813+02:00"
+    description: A Helm chart for velero
+    digest: 1cd5bfe340bee648b3a222add9c2774f553a4429fd5ac787fb373d169085ecde
+    home: https://github.com/vmware-tanzu/velero
+    icon: https://cdn-images-1.medium.com/max/1600/1*-9mb3AKnKdcL_QD3CMnthQ.png
+    maintainers:
+    - email: ashisham@vmware.com
+      name: ashish-amarnath
+    - email: carlisiac@vmware.com
+      name: carlisia
+    - email: ctadeu@gmail.com
+      name: cpanato
+    - email: brubakern@vmware.com
+      name: nrb
+    - email: krisss@vmware.com
+      name: skriss
+    name: velero
+    sources:
+    - https://github.com/vmware-tanzu/velero
+    urls:
+    - https://vdmpo.github.io/helm/velero-2.14.8.tgz
+    version: 2.14.8
+  victoria-metrics-cluster:
+  - apiVersion: v1
+    appVersion: 1.53.1
+    created: "2021-03-10T21:03:08.599934+02:00"
+    description: Victoria Metrics Cluster version - high-performance, cost-effective
+      and scalable TSDB, long-term remote storage for Prometheus
+    digest: 4cdb2425398af2e94c5e9ea2694eb62f346040b4b716bfe297b72bd4a71fb0bc
+    name: victoria-metrics-cluster
+    urls:
+    - https://vdmpo.github.io/helm/victoria-metrics-cluster-0.8.12.tgz
+    version: 0.8.12
+generated: "2021-03-10T21:03:08.490703+02:00"
