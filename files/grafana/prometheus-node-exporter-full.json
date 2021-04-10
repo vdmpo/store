@@ -17,7 +17,7 @@
   "editable": true,
   "gnetId": 1860,
   "graphTooltip": 0,
-  "iteration": 1611871503278,
+  "iteration": 1618083854766,
   "links": [],
   "panels": [
     {
@@ -13665,9 +13665,9 @@
     "list": [
       {
         "current": {
-          "selected": false,
-          "text": "default",
-          "value": "default"
+          "selected": true,
+          "text": "Prometheus-MGMT-VM",
+          "value": "Prometheus-MGMT-VM"
         },
         "error": null,
         "hide": 0,
@@ -13677,6 +13677,7 @@
         "name": "DS_PROMETHEUS",
         "options": [],
         "query": "prometheus",
+        "queryValue": "",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
@@ -13686,8 +13687,8 @@
         "allValue": null,
         "current": {
           "selected": false,
-          "text": "node-exporter",
-          "value": "node-exporter"
+          "text": "kubernetes-pods",
+          "value": "kubernetes-pods"
         },
         "datasource": "$DS_PROMETHEUS",
         "definition": "",
@@ -13712,9 +13713,9 @@
       {
         "allValue": null,
         "current": {
-          "selected": true,
-          "text": "172.16.150.217:9100",
-          "value": "172.16.150.217:9100"
+          "selected": false,
+          "text": "172.16.150.211:9100",
+          "value": "172.16.150.211:9100"
         },
         "datasource": "$DS_PROMETHEUS",
         "definition": "label_values(node_uname_info{job=\"$job\"}, instance)",
@@ -13763,7 +13764,7 @@
     ]
   },
   "time": {
-    "from": "now-24h",
+    "from": "now-1h",
     "to": "now"
   },
   "timepicker": {
