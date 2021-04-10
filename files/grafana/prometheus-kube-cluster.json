@@ -2431,7 +2431,9 @@
     "list": [
       {
         "current": {
-          "selected": false
+          "selected": true,
+          "text": "MGMT-Prometheus",
+          "value": "MGMT-Prometheus"
         },
         "error": null,
         "hide": 0,
@@ -2443,7 +2445,7 @@
         "query": "prometheus",
         "queryValue": "",
         "refresh": 1,
-        "regex": "P.*",
+        "regex": "/.*Prom.*$/",
         "skipUrlSync": false,
         "type": "datasource"
       },

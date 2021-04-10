@@ -31,7 +31,7 @@
   "editable": true,
   "gnetId": 9614,
   "graphTooltip": 0,
-  "iteration": 1618083065056,
+  "iteration": 1618093819323,
   "links": [],
   "panels": [
     {
@@ -1410,7 +1410,9 @@
     "list": [
       {
         "current": {
-          "selected": true
+          "selected": true,
+          "text": "MGMT-Prometheus",
+          "value": "MGMT-Prometheus"
         },
         "error": null,
         "hide": 0,
@@ -1422,7 +1424,7 @@
         "query": "prometheus",
         "queryValue": "",
         "refresh": 1,
-        "regex": "P.*",
+        "regex": "/.*Prom.*$/",
         "skipUrlSync": false,
         "type": "datasource"
       },

@@ -13666,8 +13666,8 @@
       {
         "current": {
           "selected": true,
-          "text": "Prometheus-MGMT-VM",
-          "value": "Prometheus-MGMT-VM"
+          "text": "MGMT-Prometheus",
+          "value": "MGMT-Prometheus"
         },
         "error": null,
         "hide": 0,
@@ -13679,7 +13679,7 @@
         "query": "prometheus",
         "queryValue": "",
         "refresh": 1,
-        "regex": "",
+        "regex": "/.*Prom.*$/",
         "skipUrlSync": false,
         "type": "datasource"
       },

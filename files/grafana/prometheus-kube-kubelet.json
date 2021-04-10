@@ -16,8 +16,8 @@
   "editable": true,
   "gnetId": 12123,
   "graphTooltip": 0,
-  "id": 15,
-  "iteration": 1618091942780,
+  "id": 6,
+  "iteration": 1618094122915,
   "links": [],
   "panels": [
     {
@@ -2135,7 +2135,9 @@
     "list": [
       {
         "current": {
-          "selected": false
+          "selected": true,
+          "text": "MGMT-Prometheus",
+          "value": "MGMT-Prometheus"
         },
         "error": null,
         "hide": 0,
@@ -2147,7 +2149,7 @@
         "query": "prometheus",
         "queryValue": "",
         "refresh": 1,
-        "regex": "",
+        "regex": "/.*Prom.*$/",
         "skipUrlSync": false,
         "type": "datasource"
       },
@@ -2212,5 +2214,5 @@
   "timezone": "",
   "title": "K8S Kubelet",
   "uid": "5138fa155d5915769fbded898ac09fd9",
-  "version": 2
+  "version": 1
 }
