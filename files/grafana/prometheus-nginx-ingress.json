@@ -31,7 +31,7 @@
   "editable": true,
   "gnetId": 9614,
   "graphTooltip": 0,
-  "iteration": 1611932787620,
+  "iteration": 1618083065056,
   "links": [],
   "panels": [
     {
@@ -474,7 +474,7 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "$DS_PROMETHEUS",
-      "decimals": 2,
+      "decimals": 1,
       "editable": true,
       "error": false,
       "fieldConfig": {
@@ -499,14 +499,14 @@
       "legend": {
         "alignAsTable": true,
         "avg": true,
-        "current": false,
+        "current": true,
         "hideEmpty": false,
         "hideZero": true,
         "max": false,
         "min": false,
         "rightSide": true,
         "show": true,
-        "sideWidth": 300,
+        "sideWidth": null,
         "sort": "current",
         "sortDesc": true,
         "total": false,
@@ -548,7 +548,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "Ingress Request Volume",
+      "title": "Ingress: Requests Per Second",
       "tooltip": {
         "msResolution": false,
         "shared": true,
@@ -565,14 +565,17 @@
       },
       "yaxes": [
         {
+          "$$hashKey": "object:2298",
+          "decimals": 1,
           "format": "reqps",
-          "label": null,
+          "label": "",
           "logBase": 1,
           "max": null,
-          "min": null,
+          "min": "0",
           "show": true
         },
         {
+          "$$hashKey": "object:2299",
           "format": "Bps",
           "label": null,
           "logBase": 1,
@@ -683,14 +686,16 @@
       },
       "yaxes": [
         {
+          "$$hashKey": "object:2219",
           "format": "percentunit",
           "label": null,
           "logBase": 1,
           "max": null,
-          "min": null,
+          "min": "0",
           "show": true
         },
         {
+          "$$hashKey": "object:2220",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -923,14 +928,16 @@
       },
       "yaxes": [
         {
+          "$$hashKey": "object:1965",
           "format": "bytes",
           "label": null,
           "logBase": 1,
           "max": null,
-          "min": null,
+          "min": "0",
           "show": true
         },
         {
+          "$$hashKey": "object:1966",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -1044,14 +1051,16 @@
       },
       "yaxes": [
         {
+          "$$hashKey": "object:2081",
           "format": "none",
           "label": "cores",
           "logBase": 1,
           "max": null,
-          "min": null,
+          "min": "0",
           "show": true
         },
         {
+          "$$hashKey": "object:2082",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -1076,7 +1085,7 @@
       },
       "fontSize": "100%",
       "gridPos": {
-        "h": 8,
+        "h": 9,
         "w": 24,
         "x": 0,
         "y": 16
@@ -1315,10 +1324,10 @@
       },
       "fontSize": "100%",
       "gridPos": {
-        "h": 8,
+        "h": 9,
         "w": 24,
         "x": 0,
-        "y": 24
+        "y": 25
       },
       "height": "1024",
       "id": 85,
@@ -1389,7 +1398,7 @@
       "type": "table-old"
     }
   ],
-  "refresh": "5s",
+  "refresh": "2m",
   "schemaVersion": 26,
   "style": "dark",
   "tags": [
@@ -1402,8 +1411,8 @@
       {
         "current": {
           "selected": true,
-          "text": "Prometheus",
-          "value": "Prometheus"
+          "text": "Prometheus-Dev",
+          "value": "Prometheus-Dev"
         },
         "error": null,
         "hide": 0,
@@ -1530,7 +1539,7 @@
     ]
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-30m",
     "to": "now"
   },
   "timepicker": {
