@@ -1410,9 +1410,7 @@
     "list": [
       {
         "current": {
-          "selected": true,
-          "text": "Prometheus-Dev",
-          "value": "Prometheus-Dev"
+          "selected": true
         },
         "error": null,
         "hide": 0,

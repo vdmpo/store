@@ -13,11 +13,11 @@
     ]
   },
   "description": "After selecting your namespace and container you get a wealth of metrics like request rate, error rate, response times, pod count, cpu and memory usage. You can view cpu and memory usage in a variety of ways, compared to the limit, compared to the request, per pod, average per pod, etc.",
-  "editable": false,
+  "editable": true,
   "gnetId": 11143,
   "graphTooltip": 1,
   "id": 12,
-  "iteration": 1618088966714,
+  "iteration": 1618092668838,
   "links": [],
   "panels": [
     {
@@ -208,16 +208,7 @@
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
-      "seriesOverrides": [
-        {
-          "alias": "elasticsearch-logging-data-20170207a (logging) - system",
-          "color": "#BF1B00"
-        },
-        {
-          "alias": "elasticsearch-logging-data-20170207a (logging) - user",
-          "color": "#508642"
-        }
-      ],
+      "seriesOverrides": [],
       "spaceLength": 10,
       "stack": true,
       "steppedLine": false,
@@ -302,7 +293,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus-MGMT-VM",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 0,
       "editable": true,
       "error": false,
@@ -411,7 +402,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus-MGMT-VM",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 0,
       "editable": true,
       "error": false,
@@ -535,7 +526,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus-MGMT-VM",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 2,
       "fieldConfig": {
         "defaults": {
@@ -654,7 +645,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus-MGMT-VM",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 1,
       "fieldConfig": {
         "defaults": {
@@ -781,7 +772,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus-MGMT-VM",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -904,7 +895,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus-MGMT-VM",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 1,
       "editable": true,
       "error": false,
@@ -1034,7 +1025,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus-MGMT-VM",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -1158,7 +1149,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus-MGMT-VM",
+      "datasource": "$DS_PROMETHEUS",
       "decimals": 1,
       "editable": true,
       "error": false,
@@ -1282,9 +1273,7 @@
     "list": [
       {
         "current": {
-          "selected": true,
-          "text": "Prometheus-MGMT-VM",
-          "value": "Prometheus-MGMT-VM"
+          "selected": false
         },
         "error": null,
         "hide": 0,
@@ -1303,9 +1292,9 @@
       {
         "allValue": ".+",
         "current": {
-          "selected": true,
-          "text": "logging",
-          "value": "logging"
+          "selected": false,
+          "text": "None",
+          "value": ""
         },
         "datasource": "$DS_PROMETHEUS",
         "definition": "label_values(container_memory_usage_bytes{namespace=~\".+\",container!=\"POD\"},namespace)",
@@ -1330,9 +1319,9 @@
       {
         "allValue": ".+",
         "current": {
-          "selected": true,
-          "text": "kibana",
-          "value": "kibana"
+          "selected": false,
+          "text": "None",
+          "value": ""
         },
         "datasource": "$DS_PROMETHEUS",
         "definition": "label_values(container_memory_usage_bytes{namespace=~\"$namespace\",container!=\"POD\"},container)",
@@ -1385,5 +1374,5 @@
   "timezone": "browser",
   "title": "K8S Apps Metrics",
   "uid": "VKL0YH1Zz",
-  "version": 8
+  "version": 9
 }

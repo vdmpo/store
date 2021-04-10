@@ -2431,9 +2431,7 @@
     "list": [
       {
         "current": {
-          "selected": false,
-          "text": "Prometheus-MGMT-VM",
-          "value": "Prometheus-MGMT-VM"
+          "selected": false
         },
         "error": null,
         "hide": 0,
