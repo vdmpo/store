@@ -1350,8 +1350,8 @@
       {
         "current": {
           "selected": true,
-          "text": "Prometheus-Dev",
-          "value": "Prometheus-Dev"
+          "text": "MQ-DEV-Prometheus",
+          "value": "MQ-DEV-Prometheus"
         },
         "error": null,
         "hide": 0,
@@ -1363,7 +1363,7 @@
         "query": "prometheus",
         "queryValue": "",
         "refresh": 1,
-        "regex": "",
+        "regex": "/.*Prom.*$/",
         "skipUrlSync": false,
         "type": "datasource"
       },
