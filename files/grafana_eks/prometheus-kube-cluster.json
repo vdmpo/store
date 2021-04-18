@@ -16,7 +16,7 @@
   "editable": true,
   "gnetId": 315,
   "graphTooltip": 0,
-  "iteration": 1618084738064,
+  "iteration": 1618720956230,
   "links": [],
   "panels": [
     {
@@ -176,7 +176,6 @@
     {
       "cacheTimeout": null,
       "datasource": "$DS_PROMETHEUS",
-      "description": "",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -220,7 +219,7 @@
         "x": 16,
         "y": 0
       },
-      "id": 51,
+      "id": 7,
       "interval": null,
       "links": [],
       "maxDataPoints": 100,
@@ -239,7 +238,7 @@
       "pluginVersion": "7.3.5",
       "targets": [
         {
-          "expr": "avg(kubelet_volume_stats_used_bytes / kubelet_volume_stats_capacity_bytes * 100)",
+          "expr": "sum (container_fs_usage_bytes{device=~\"^/dev/nvme[a-z0-9]*$\",id=\"/\",instance=~\"^$Node$\"}) / sum (container_fs_limit_bytes{device=~\"^/dev/nvme[a-z0-9]*$\",id=\"/\",instance=~\"^$Node$\"}) * 100",
           "interval": "10s",
           "intervalFactor": 1,
           "legendFormat": "",
@@ -248,7 +247,7 @@
           "step": 10
         }
       ],
-      "title": "NFS Storage (Persistent Volumes)",
+      "title": "Filesystem usage",
       "transparent": true,
       "type": "gauge"
     },
@@ -635,7 +634,6 @@
       ],
       "datasource": "$DS_PROMETHEUS",
       "decimals": 2,
-      "description": "",
       "editable": true,
       "error": false,
       "fieldConfig": {
@@ -659,7 +657,7 @@
         "y": 6
       },
       "height": "1px",
-      "id": 13,
+      "id": 52,
       "interval": null,
       "isNew": true,
       "links": [],
@@ -697,7 +695,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "avg(kubelet_volume_stats_used_bytes)",
+          "expr": "sum (container_fs_usage_bytes{device=~\"^/dev/[a-z0-9]*$\",id=\"/\",instance=~\"^$Node$\"})",
           "interval": "10s",
           "intervalFactor": 1,
           "legendFormat": "",
@@ -706,7 +704,7 @@
         }
       ],
       "thresholds": "",
-      "title": "NFS: Used",
+      "title": "Used",
       "type": "singlestat",
       "valueFontSize": "50%",
       "valueMaps": [
@@ -729,6 +727,7 @@
       ],
       "datasource": "$DS_PROMETHEUS",
       "decimals": 2,
+      "description": "",
       "editable": true,
       "error": false,
       "fieldConfig": {
@@ -752,7 +751,7 @@
         "y": 6
       },
       "height": "1px",
-      "id": 14,
+      "id": 53,
       "interval": null,
       "isNew": true,
       "links": [],
@@ -790,7 +789,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "avg(kubelet_volume_stats_capacity_bytes)",
+          "expr": "sum (container_fs_limit_bytes{device=~\"^/dev/[a-z0-9]*$\",id=\"/\",instance=~\"^$Node$\"})",
           "interval": "10s",
           "intervalFactor": 1,
           "legendFormat": "",
@@ -799,7 +798,7 @@
         }
       ],
       "thresholds": "",
-      "title": "NFS: Total",
+      "title": "Total",
       "type": "singlestat",
       "valueFontSize": "50%",
       "valueMaps": [
@@ -1154,273 +1153,6 @@
       "title": "Limits",
       "transparent": true,
       "type": "gauge"
-    },
-    {
-      "cacheTimeout": null,
-      "datasource": "$DS_PROMETHEUS",
-      "fieldConfig": {
-        "defaults": {
-          "custom": {},
-          "decimals": 0,
-          "mappings": [
-            {
-              "id": 0,
-              "op": "=",
-              "text": "N/A",
-              "type": 1,
-              "value": "null"
-            }
-          ],
-          "max": 100,
-          "min": 0,
-          "nullValueMode": "connected",
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "rgba(50, 172, 45, 0.97)",
-                "value": null
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "value": 65
-              },
-              {
-                "color": "rgba(245, 54, 54, 0.9)",
-                "value": 90
-              }
-            ]
-          },
-          "unit": "percent"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 4,
-        "w": 4,
-        "x": 16,
-        "y": 9
-      },
-      "id": 7,
-      "interval": null,
-      "links": [],
-      "maxDataPoints": 100,
-      "options": {
-        "orientation": "horizontal",
-        "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "showThresholdLabels": false,
-        "showThresholdMarkers": true
-      },
-      "pluginVersion": "7.3.5",
-      "targets": [
-        {
-          "expr": "sum (container_fs_usage_bytes{device=~\"^/dev/[sv]d[a-z][1-9]$\",id=\"/\",instance=~\"^$Node$\"}) / sum (container_fs_limit_bytes{device=~\"^/dev/[sv]d[a-z][1-9]$\",id=\"/\",instance=~\"^$Node$\"}) * 100",
-          "interval": "10s",
-          "intervalFactor": 1,
-          "legendFormat": "",
-          "metric": "",
-          "refId": "A",
-          "step": 10
-        }
-      ],
-      "title": "Node(s) Filesystem usage",
-      "transparent": true,
-      "type": "gauge"
-    },
-    {
-      "cacheTimeout": null,
-      "colorBackground": false,
-      "colorValue": false,
-      "colors": [
-        "rgba(50, 172, 45, 0.97)",
-        "rgba(237, 129, 40, 0.89)",
-        "rgba(245, 54, 54, 0.9)"
-      ],
-      "datasource": "$DS_PROMETHEUS",
-      "decimals": 2,
-      "editable": true,
-      "error": false,
-      "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
-        "overrides": []
-      },
-      "format": "bytes",
-      "gauge": {
-        "maxValue": 100,
-        "minValue": 0,
-        "show": false,
-        "thresholdLabels": false,
-        "thresholdMarkers": true
-      },
-      "gridPos": {
-        "h": 2,
-        "w": 4,
-        "x": 20,
-        "y": 9
-      },
-      "height": "1px",
-      "id": 52,
-      "interval": null,
-      "isNew": true,
-      "links": [],
-      "mappingType": 1,
-      "mappingTypes": [
-        {
-          "name": "value to text",
-          "value": 1
-        },
-        {
-          "name": "range to text",
-          "value": 2
-        }
-      ],
-      "maxDataPoints": 100,
-      "nullPointMode": "connected",
-      "nullText": null,
-      "postfix": "",
-      "postfixFontSize": "50%",
-      "prefix": "",
-      "prefixFontSize": "50%",
-      "rangeMaps": [
-        {
-          "from": "null",
-          "text": "N/A",
-          "to": "null"
-        }
-      ],
-      "sparkline": {
-        "fillColor": "rgba(31, 118, 189, 0.18)",
-        "full": false,
-        "lineColor": "rgb(31, 120, 193)",
-        "show": false
-      },
-      "tableColumn": "",
-      "targets": [
-        {
-          "expr": "sum (container_fs_usage_bytes{device=~\"^/dev/[sv]d[a-z][1-9]$\",id=\"/\",instance=~\"^$Node$\"})",
-          "interval": "10s",
-          "intervalFactor": 1,
-          "legendFormat": "",
-          "refId": "A",
-          "step": 10
-        }
-      ],
-      "thresholds": "",
-      "title": "Used",
-      "transparent": true,
-      "type": "singlestat",
-      "valueFontSize": "50%",
-      "valueMaps": [
-        {
-          "op": "=",
-          "text": "N/A",
-          "value": "null"
-        }
-      ],
-      "valueName": "current"
-    },
-    {
-      "cacheTimeout": null,
-      "colorBackground": false,
-      "colorValue": false,
-      "colors": [
-        "rgba(50, 172, 45, 0.97)",
-        "rgba(237, 129, 40, 0.89)",
-        "rgba(245, 54, 54, 0.9)"
-      ],
-      "datasource": "$DS_PROMETHEUS",
-      "decimals": 2,
-      "description": "",
-      "editable": true,
-      "error": false,
-      "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
-        "overrides": []
-      },
-      "format": "bytes",
-      "gauge": {
-        "maxValue": 100,
-        "minValue": 0,
-        "show": false,
-        "thresholdLabels": false,
-        "thresholdMarkers": true
-      },
-      "gridPos": {
-        "h": 2,
-        "w": 4,
-        "x": 20,
-        "y": 11
-      },
-      "height": "1px",
-      "id": 53,
-      "interval": null,
-      "isNew": true,
-      "links": [],
-      "mappingType": 1,
-      "mappingTypes": [
-        {
-          "name": "value to text",
-          "value": 1
-        },
-        {
-          "name": "range to text",
-          "value": 2
-        }
-      ],
-      "maxDataPoints": 100,
-      "nullPointMode": "connected",
-      "nullText": null,
-      "postfix": "",
-      "postfixFontSize": "50%",
-      "prefix": "",
-      "prefixFontSize": "50%",
-      "rangeMaps": [
-        {
-          "from": "null",
-          "text": "N/A",
-          "to": "null"
-        }
-      ],
-      "sparkline": {
-        "fillColor": "rgba(31, 118, 189, 0.18)",
-        "full": false,
-        "lineColor": "rgb(31, 120, 193)",
-        "show": false
-      },
-      "tableColumn": "",
-      "targets": [
-        {
-          "expr": "sum (container_fs_limit_bytes{device=~\"^/dev/[sv]d[a-z][1-9]$\",id=\"/\",instance=~\"^$Node$\"})",
-          "interval": "10s",
-          "intervalFactor": 1,
-          "legendFormat": "",
-          "refId": "A",
-          "step": 10
-        }
-      ],
-      "thresholds": "",
-      "title": "Total",
-      "transparent": true,
-      "type": "singlestat",
-      "valueFontSize": "50%",
-      "valueMaps": [
-        {
-          "op": "=",
-          "text": "N/A",
-          "value": "null"
-        }
-      ],
-      "valueName": "current"
     },
     {
       "collapsed": false,
@@ -2431,7 +2163,7 @@
     "list": [
       {
         "current": {
-          "selected": true,
+          "selected": false,
           "text": "MGMT-Prometheus",
           "value": "MGMT-Prometheus"
         },
@@ -2452,7 +2184,7 @@
       {
         "allValue": ".*",
         "current": {
-          "selected": true,
+          "selected": false,
           "text": "All",
           "value": "$__all"
         },
@@ -2510,5 +2242,5 @@
   "timezone": "browser",
   "title": "K8S Cluster Monitoring",
   "uid": "AEGn0vLGk",
-  "version": 2
+  "version": 1
 }
