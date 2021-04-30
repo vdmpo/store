@@ -34,13 +34,12 @@
   "editable": false,
   "gnetId": null,
   "graphTooltip": 1,
-  "id": 13,
-  "iteration": 1619811285930,
+  "iteration": 1619817889975,
   "links": [],
   "panels": [
     {
       "collapsed": false,
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -62,7 +61,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#299c46"
       ],
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "fieldConfig": {
         "defaults": {
@@ -80,7 +79,7 @@
       },
       "gridPos": {
         "h": 2,
-        "w": 6,
+        "w": 8,
         "x": 0,
         "y": 1
       },
@@ -152,7 +151,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "",
       "fieldConfig": {
@@ -171,8 +170,8 @@
       },
       "gridPos": {
         "h": 2,
-        "w": 6,
-        "x": 6,
+        "w": 8,
+        "x": 8,
         "y": 1
       },
       "id": 1005,
@@ -243,7 +242,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "fieldConfig": {
         "defaults": {
@@ -261,8 +260,8 @@
       },
       "gridPos": {
         "h": 2,
-        "w": 6,
-        "x": 12,
+        "w": 8,
+        "x": 16,
         "y": 1
       },
       "id": 1007,
@@ -325,38 +324,11 @@
       "valueName": "current"
     },
     {
-      "cacheTimeout": null,
-      "datasource": null,
-      "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 2,
-        "w": 6,
-        "x": 18,
-        "y": 1
-      },
-      "id": 1003,
-      "links": [],
-      "options": {
-        "content": "<h5 style='color:#e68a00;font-weight:bold;text-align:center'><a href=\"/graph/d/mongodb-instance-summary/mongodb-instance-summary?var-node_name=$node_name&var-service_name=$service_name\" target=\"_blank\">$crop_service...</h5>",
-        "mode": "html"
-      },
-      "pluginVersion": "7.3.5",
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Service",
-      "type": "text"
-    },
-    {
       "aliasColors": {},
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "This shows the number of active connections on the server. Keep in mind the hard limit on the maximum number of connections set by your distribution.\n\nYou can read more about the [connection numbers](https://docs.mongodb.com/manual/administration/analyzing-mongodb-performance/#number-of-connections).",
       "editable": true,
@@ -483,7 +455,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "This shows the number of open cursors for each shard in the cluster. A cursor in MongoDB is a pointer to the result of a given query that can be iterated over. By default a cursor times out after 10 minutes.",
       "editable": true,
@@ -608,7 +580,7 @@
     },
     {
       "breadcrumbItemsMaxAmount": 6,
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -648,7 +620,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "This panel shows the amount of data currently being stored InMemory. This data is in its uncompressed format and differs from how the data is stored on disk or in the file system cache. This value will always be lower than the counter shown in the *InMemory Max Data Size* panel.",
       "editable": true,
@@ -669,7 +641,7 @@
       },
       "gridPos": {
         "h": 2,
-        "w": 6,
+        "w": 8,
         "x": 0,
         "y": 11
       },
@@ -742,7 +714,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "This is the maximum size that the InMemory data can grow to and this value can be changed from the default value by setting the `storage.wiredTiger.inMemory.cacheSizeGB` value in the config file or passing in the `--inMemoryCacheSizeGB` parameter on the command line.",
       "editable": true,
@@ -763,8 +735,8 @@
       },
       "gridPos": {
         "h": 2,
-        "w": 6,
-        "x": 6,
+        "w": 8,
+        "x": 8,
         "y": 11
       },
       "hideTimeOverride": true,
@@ -831,104 +803,11 @@
       "colorBackground": false,
       "colorValue": true,
       "colors": [
-        "rgba(50, 172, 45, 0.97)",
-        "rgba(237, 129, 40, 0.89)",
-        "rgba(245, 54, 54, 0.9)"
-      ],
-      "datasource": null,
-      "decimals": 0,
-      "description": "This panel shows the amount of memory left available for your InMemory databases.",
-      "editable": true,
-      "error": false,
-      "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
-        "overrides": []
-      },
-      "format": "percentunit",
-      "gauge": {
-        "maxValue": 100,
-        "minValue": 0,
-        "show": false,
-        "thresholdLabels": false,
-        "thresholdMarkers": true
-      },
-      "gridPos": {
-        "h": 2,
-        "w": 6,
-        "x": 12,
-        "y": 11
-      },
-      "height": "125px",
-      "id": 69,
-      "interval": "$interval",
-      "links": [],
-      "mappingType": 1,
-      "mappingTypes": [
-        {
-          "name": "value to text",
-          "value": 1
-        },
-        {
-          "name": "range to text",
-          "value": 2
-        }
-      ],
-      "maxDataPoints": 100,
-      "nullPointMode": "connected",
-      "nullText": null,
-      "postfix": "",
-      "postfixFontSize": "50%",
-      "prefix": "",
-      "prefixFontSize": "80%",
-      "rangeMaps": [
-        {
-          "from": "null",
-          "text": "N/A",
-          "to": "null"
-        }
-      ],
-      "sparkline": {
-        "fillColor": "rgba(31, 118, 189, 0.18)",
-        "full": true,
-        "lineColor": "rgb(31, 120, 193)",
-        "show": true,
-        "ymax": 1,
-        "ymin": 0
-      },
-      "tableColumn": "",
-      "targets": [
-        {
-          "calculatedInterval": "10m",
-          "datasourceErrors": {},
-          "errors": {},
-          "expr": "avg by (service_name) (1-(max(mongodb_mongod_wiredtiger_cache_bytes{service_name=~\"$service_name\", type=\"total\"})/max(mongodb_mongod_wiredtiger_cache_max_bytes{service_name=~\"$service_name\"})))",
-          "interval": "5m",
-          "intervalFactor": 1,
-          "legendFormat": "",
-          "metric": "node_mem",
-          "refId": "A",
-          "step": 300
-        }
-      ],
-      "thresholds": "90,95",
-      "title": "InMemory Available",
-      "type": "singlestat",
-      "valueFontSize": "50%",
-      "valueMaps": [],
-      "valueName": "current"
-    },
-    {
-      "cacheTimeout": null,
-      "colorBackground": false,
-      "colorValue": true,
-      "colors": [
         "rgba(42, 150, 37, 0.97)",
         "rgba(237, 129, 40, 0.89)",
         "rgba(245, 54, 54, 0.9)"
       ],
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 0,
       "description": "This panel shows the percentage of InMemory pages that have been changed and not yet had the modified data consolidated.",
       "editable": true,
@@ -949,8 +828,8 @@
       },
       "gridPos": {
         "h": 2,
-        "w": 6,
-        "x": 18,
+        "w": 8,
+        "x": 16,
         "y": 11
       },
       "height": "125px",
@@ -1017,7 +896,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "WiredTiger internal transactions",
       "editable": true,
@@ -1129,7 +1008,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "Configured max and current size of the WiredTiger cache.",
       "editable": true,
@@ -1254,7 +1133,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "Internal WiredTiger storage engine cursors and sessions currently open.",
       "editable": true,
@@ -1375,7 +1254,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "Pages in the WiredTiger cache",
       "editable": true,
@@ -1488,7 +1367,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "A WT 'ticket' is assigned out for every operation running simultaneously in the WT storage engine. \"Tickets available\" = hardcoded high value - \"Tickets Out\".",
       "editable": true,
@@ -1605,7 +1484,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "Operations queued due to a lock",
       "editable": true,
@@ -1716,7 +1595,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "Mixed metrics: Docs per second inserted, updated, deleted or returned on any type of node (primary or secondary); + replicated write Ops/sec; + TTL deletes per second.",
       "editable": true,
@@ -1865,7 +1744,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "This panel shows the number of pages that have been evicted from the WiredTiger cache for the given time period. The InMemory storage engine only evicts modified pages which signals a compaction of the data and removal of the dirty pages.",
       "editable": true,
@@ -1976,7 +1855,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "This panel shows the number of objects (both data (scanned_objects) and index (scanned)) as well as the number of documents that were moved to a new location due to the size of the document growing. Moved documents only apply to the MMAPv1 storage engine.",
       "editable": true,
@@ -2097,7 +1976,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
+      "datasource": "MGMT-Prometheus",
       "decimals": 2,
       "description": "Unix or Window memory page faults. Not necessarily from mongodb.",
       "editable": true,
@@ -2289,7 +2168,7 @@
         "datasource": "MGMT-Prometheus",
         "definition": "label_values(mongodb_up{environment=~\"$environment\"},cluster)",
         "error": null,
-        "hide": 0,
+        "hide": 2,
         "includeAll": true,
         "label": "Cluster",
         "multi": false,
@@ -2348,7 +2227,7 @@
         "datasource": "MGMT-Prometheus",
         "definition": "",
         "error": null,
-        "hide": 0,
+        "hide": 2,
         "includeAll": false,
         "label": "Service Name",
         "multi": false,
@@ -2648,7 +2527,7 @@
     ]
   },
   "timezone": "browser",
-  "title": "MongoDB InMemory Details",
+  "title": "MongoDB InMemory",
   "uid": "mongodb-inmemory",
-  "version": 5
+  "version": 1
 }
