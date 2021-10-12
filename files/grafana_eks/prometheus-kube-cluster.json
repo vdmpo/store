@@ -781,7 +781,8 @@
       "pluginVersion": "8.0.3",
       "targets": [
         {
-          "expr": "max(sum(kube_pod_container_resource_requests{node=~\"^$Node$\",resource=\"memory\",unit=\"byte\"} and on(pod, namespace) (kube_pod_status_phase{phase=\"Running\"}==1)) by(instance)\r\n) / min(sum(kube_node_status_allocatable{node=~\"^$Node$\"}) by (instance)) * 100",
+          "exemplar": true,
+          "expr": "max(sum(kube_pod_container_resource_requests{node=~\"^$Node$\",resource=\"memory\",unit=\"byte\"} and on(pod, namespace) (kube_pod_status_phase{phase=\"Running\"}==1)) by(instance)\n) / min(sum(kube_node_status_allocatable{node=~\"^$Node$\",resource=\"memory\",unit=\"byte\"}) by (instance)) * 100",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 2,
@@ -2115,7 +2116,7 @@
     ]
   },
   "timezone": "browser",
-  "title": "K8S Cluster Monitoring (New Prom)",
+  "title": "K8S Cluster Monitoring",
   "uid": "a7CPmjD7z",
-  "version": 12
+  "version": 13
 }
