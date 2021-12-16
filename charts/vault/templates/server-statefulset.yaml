@@ -93,8 +93,6 @@ spec:
                   fieldPath: metadata.namespace
             - name: VAULT_ADDR
               value: "{{ include "vault.scheme" . }}://127.0.0.1:8200"
-            - name: VAULT_API_ADDR
-              value: "https://$(HOSTNAME).{{ template "vault.fullname" . }}-internal:8200"
             - name: SKIP_CHOWN
               value: "true"
             - name: SKIP_SETCAP
@@ -105,6 +103,8 @@ spec:
                   fieldPath: metadata.name
             - name: VAULT_CLUSTER_ADDR
               value: "https://$(HOSTNAME).{{ template "vault.fullname" . }}-internal:8201"
+            - name: VAULT_API_ADDR
+              value: "https://$(HOSTNAME).{{ template "vault.fullname" . }}-internal:8200"
             {{- if and (eq (.Values.server.ha.raft.enabled | toString) "true") (eq (.Values.server.ha.raft.setNodeId | toString) "true") }}
             - name: VAULT_RAFT_NODE_ID
               valueFrom:
