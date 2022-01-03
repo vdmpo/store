@@ -19,11 +19,11 @@
     ]
   },
   "description": "Kafka resource usage and throughput",
-  "editable": true,
+  "editable": false,
   "gnetId": 721,
   "graphTooltip": 0,
   "id": 34,
-  "iteration": 1640703759725,
+  "iteration": 1641198708751,
   "links": [],
   "panels": [
     {
@@ -614,13 +614,112 @@
       "type": "stat"
     },
     {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "BTC-PRD-Prometheus",
+      "fill": 0,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 8
+      },
+      "hiddenSeries": false,
+      "id": 125,
+      "legend": {
+        "alignAsTable": true,
+        "avg": true,
+        "current": true,
+        "max": false,
+        "min": false,
+        "rightSide": true,
+        "show": true,
+        "sideWidth": 480,
+        "sort": "max",
+        "sortDesc": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "connected",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "8.0.3",
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "exemplar": true,
+          "expr": "sum(kafka_server_FetcherLagMetrics_Value{name=\"ConsumerLag\",topic!~\"^_.*\"}) by (topic)",
+          "format": "time_series",
+          "instant": false,
+          "interval": "",
+          "intervalFactor": 1,
+          "legendFormat": "topic: {{topic}}",
+          "refId": "A"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Lag by  Topic",
+      "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": "",
+          "logBase": 1,
+          "max": null,
+          "min": "0",
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
       "collapsed": false,
       "datasource": null,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 8
+        "y": 16
       },
       "id": 31,
       "panels": [],
@@ -661,7 +760,7 @@
         "h": 4,
         "w": 4,
         "x": 0,
-        "y": 9
+        "y": 17
       },
       "id": 93,
       "interval": null,
@@ -731,7 +830,7 @@
         "h": 4,
         "w": 4,
         "x": 4,
-        "y": 9
+        "y": 17
       },
       "id": 35,
       "interval": null,
@@ -801,7 +900,7 @@
         "h": 4,
         "w": 4,
         "x": 8,
-        "y": 9
+        "y": 17
       },
       "id": 37,
       "interval": null,
@@ -871,7 +970,7 @@
         "h": 4,
         "w": 4,
         "x": 12,
-        "y": 9
+        "y": 17
       },
       "id": 94,
       "interval": null,
@@ -941,7 +1040,7 @@
         "h": 4,
         "w": 4,
         "x": 16,
-        "y": 9
+        "y": 17
       },
       "id": 38,
       "interval": null,
@@ -1011,7 +1110,7 @@
         "h": 4,
         "w": 4,
         "x": 20,
-        "y": 9
+        "y": 17
       },
       "id": 36,
       "interval": null,
@@ -1054,7 +1153,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 13
+        "y": 21
       },
       "id": 40,
       "panels": [],
@@ -1135,7 +1234,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 14
+        "y": 22
       },
       "id": 27,
       "links": [],
@@ -1230,7 +1329,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 14
+        "y": 22
       },
       "id": 84,
       "links": [],
@@ -1285,7 +1384,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 23
+        "y": 31
       },
       "id": 123,
       "panels": [],
@@ -1347,7 +1446,7 @@
         "h": 10,
         "w": 24,
         "x": 0,
-        "y": 24
+        "y": 32
       },
       "id": 121,
       "links": [],
@@ -1391,7 +1490,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 34
+        "y": 42
       },
       "id": 29,
       "panels": [],
@@ -1454,7 +1553,7 @@
         "h": 8,
         "w": 8,
         "x": 0,
-        "y": 35
+        "y": 43
       },
       "id": 4,
       "links": [],
@@ -1549,7 +1648,7 @@
         "h": 8,
         "w": 8,
         "x": 8,
-        "y": 35
+        "y": 43
       },
       "id": 5,
       "links": [],
@@ -1645,7 +1744,7 @@
         "h": 8,
         "w": 8,
         "x": 16,
-        "y": 35
+        "y": 43
       },
       "id": 6,
       "links": [],
@@ -1740,7 +1839,7 @@
         "h": 8,
         "w": 8,
         "x": 0,
-        "y": 43
+        "y": 51
       },
       "id": 10,
       "links": [],
@@ -1835,7 +1934,7 @@
         "h": 8,
         "w": 8,
         "x": 8,
-        "y": 43
+        "y": 51
       },
       "id": 7,
       "links": [],
@@ -1931,7 +2030,7 @@
         "h": 8,
         "w": 8,
         "x": 16,
-        "y": 43
+        "y": 51
       },
       "id": 9,
       "links": [],
@@ -1973,7 +2072,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 51
+        "y": 59
       },
       "id": 82,
       "panels": [],
@@ -2040,7 +2139,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 52
+        "y": 60
       },
       "id": 80,
       "options": {
@@ -2132,7 +2231,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 52
+        "y": 60
       },
       "id": 83,
       "options": {
@@ -2172,7 +2271,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 61
+        "y": 69
       },
       "id": 53,
       "panels": [],
@@ -2237,7 +2336,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 62
+        "y": 70
       },
       "id": 55,
       "options": {
@@ -2327,7 +2426,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 62
+        "y": 70
       },
       "id": 56,
       "options": {
@@ -2366,7 +2465,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 71
+        "y": 79
       },
       "id": 58,
       "panels": [],
@@ -2432,7 +2531,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 72
+        "y": 80
       },
       "id": 60,
       "options": {
@@ -2524,7 +2623,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 72
+        "y": 80
       },
       "id": 61,
       "options": {
@@ -2616,7 +2715,7 @@
         "h": 10,
         "w": 8,
         "x": 0,
-        "y": 81
+        "y": 89
       },
       "id": 62,
       "options": {
@@ -2708,7 +2807,7 @@
         "h": 10,
         "w": 8,
         "x": 8,
-        "y": 81
+        "y": 89
       },
       "id": 63,
       "options": {
@@ -2801,7 +2900,7 @@
         "h": 10,
         "w": 8,
         "x": 16,
-        "y": 81
+        "y": 89
       },
       "id": 64,
       "options": {
@@ -2841,7 +2940,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 91
+        "y": 99
       },
       "id": 68,
       "panels": [],
@@ -2908,7 +3007,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 92
+        "y": 100
       },
       "id": 69,
       "options": {
@@ -3000,7 +3099,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 92
+        "y": 100
       },
       "id": 70,
       "options": {
@@ -3092,7 +3191,7 @@
         "h": 9,
         "w": 8,
         "x": 0,
-        "y": 101
+        "y": 109
       },
       "id": 71,
       "options": {
@@ -3185,7 +3284,7 @@
         "h": 9,
         "w": 8,
         "x": 8,
-        "y": 101
+        "y": 109
       },
       "id": 72,
       "options": {
@@ -3278,7 +3377,7 @@
         "h": 9,
         "w": 8,
         "x": 16,
-        "y": 101
+        "y": 109
       },
       "id": 73,
       "options": {
@@ -3318,7 +3417,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 110
+        "y": 118
       },
       "id": 102,
       "panels": [],
@@ -3383,7 +3482,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 111
+        "y": 119
       },
       "id": 98,
       "options": {
@@ -3473,7 +3572,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 111
+        "y": 119
       },
       "id": 100,
       "options": {
@@ -3563,7 +3662,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 119
+        "y": 127
       },
       "id": 104,
       "options": {
@@ -3653,7 +3752,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 119
+        "y": 127
       },
       "id": 106,
       "options": {
@@ -3743,7 +3842,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 127
+        "y": 135
       },
       "id": 108,
       "options": {
@@ -3833,7 +3932,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 127
+        "y": 135
       },
       "id": 110,
       "options": {
@@ -3925,7 +4024,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 135
+        "y": 143
       },
       "id": 112,
       "options": {
@@ -4015,7 +4114,7 @@
         "h": 8,
         "w": 12,
         "x": 12,
-        "y": 135
+        "y": 143
       },
       "id": 114,
       "options": {
@@ -4054,7 +4153,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 143
+        "y": 151
       },
       "id": 120,
       "panels": [],
@@ -4120,7 +4219,7 @@
         "h": 14,
         "w": 12,
         "x": 0,
-        "y": 144
+        "y": 152
       },
       "id": 116,
       "options": {
@@ -4212,7 +4311,7 @@
         "h": 14,
         "w": 12,
         "x": 12,
-        "y": 144
+        "y": 152
       },
       "id": 118,
       "options": {
@@ -4280,7 +4379,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 158
+        "y": 166
       },
       "id": 46,
       "panels": [],
@@ -4347,7 +4446,7 @@
         "h": 7,
         "w": 12,
         "x": 0,
-        "y": 159
+        "y": 167
       },
       "id": 48,
       "options": {
@@ -4440,7 +4539,7 @@
         "h": 7,
         "w": 12,
         "x": 12,
-        "y": 159
+        "y": 167
       },
       "id": 51,
       "options": {
@@ -4548,5 +4647,5 @@
   "timezone": "browser",
   "title": "Kafka MSK Cluster",
   "uid": "Fz6psiAnz",
-  "version": 20
+  "version": 24
 }
