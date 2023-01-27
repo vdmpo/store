@@ -21,7 +21,7 @@
   "links": [],
   "panels": [
     {
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -588,7 +588,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "description": "Returns how long the probe took to complete in seconds",
       "fieldConfig": {
         "defaults": {
@@ -686,7 +686,7 @@
     },
     {
       "collapsed": true,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -700,7 +700,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "MGMT-Prometheus",
+          "datasource": "AMPR-PRD-Prometheus",
           "description": "Duration of http request by phase, summed over all redirects",
           "fieldConfig": {
             "defaults": {
@@ -816,7 +816,7 @@
     },
     {
       "collapsed": true,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -830,7 +830,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "MGMT-Prometheus",
+          "datasource": "AMPR-PRD-Prometheus",
           "description": "Duration of http request by phase, summed over all redirects",
           "fieldConfig": {
             "defaults": {
@@ -950,7 +950,7 @@
     },
     {
       "collapsed": true,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -964,7 +964,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "MGMT-Prometheus",
+          "datasource": "AMPR-PRD-Prometheus",
           "description": "Duration of http request by phase, summed over all redirects",
           "fieldConfig": {
             "defaults": {
@@ -1084,7 +1084,7 @@
     },
     {
       "collapsed": true,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -1098,7 +1098,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "MGMT-Prometheus",
+          "datasource": "AMPR-PRD-Prometheus",
           "description": "Duration of http request by phase, summed over all redirects",
           "fieldConfig": {
             "defaults": {
@@ -1233,7 +1233,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values(probe_success, job)",
         "error": null,
         "hide": 0,
@@ -1260,7 +1260,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values(probe_success{job=~\"$job\"}, instance)",
         "error": null,
         "hide": 0,

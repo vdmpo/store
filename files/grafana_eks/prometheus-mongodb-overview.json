@@ -59,7 +59,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#299c46"
       ],
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "fieldConfig": {
         "defaults": {
@@ -150,7 +150,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 0,
       "fieldConfig": {
         "defaults": {
@@ -241,7 +241,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "",
       "fieldConfig": {
@@ -332,7 +332,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "fieldConfig": {
         "defaults": {
@@ -415,7 +415,7 @@
     },
     {
       "collapsed": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -432,7 +432,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "description": "Incoming connections to mongos nodes.",
       "editable": true,
       "error": false,
@@ -539,7 +539,7 @@
     },
     {
       "collapsed": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -556,7 +556,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "Operations are classified by legacy wire protocol type (insert, update, and delete only).",
       "editable": true,
@@ -707,7 +707,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "Docs per second inserted, updated, deleted or returned. (N.b. not 1-to-1 with operation counts.)",
       "editable": true,
@@ -850,7 +850,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 0,
       "description": "Helps identify why connections are increasing. Shows active cursors compared to cursors being automatically killed after 10 minutes due to an application not closing the connection.",
       "editable": true,
@@ -975,7 +975,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 0,
       "editable": true,
       "error": false,
@@ -1109,7 +1109,7 @@
           "text": "auto",
           "value": "$__auto_interval_interval"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "error": null,
         "hide": 0,
         "includeAll": false,
@@ -1174,7 +1174,7 @@
           "text": "None",
           "value": ""
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values(mongodb_up,cluster)",
         "error": null,
         "hide": 2,
@@ -1202,7 +1202,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values(mongodb_up{cluster=\"$cluster\"},service_name)",
         "error": null,
         "hide": 2,
@@ -1229,7 +1229,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values(mongodb_mongos_db_collections_total{cluster=\"$cluster\"},shard)",
         "error": null,
         "hide": 2,
@@ -1256,7 +1256,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values({__name__=~\"pg_up|mysql_up|mongodb_up|proxysql_mysql_status_active_transactions\"}, node_name)",
         "error": null,
         "hide": 2,
@@ -1283,7 +1283,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values({__name__=~\"pg_up|mysql_up|mongodb_up|proxysql_mysql_status_active_transactions\"}, environment)",
         "error": null,
         "hide": 2,
@@ -1310,7 +1310,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values({__name__=~\"pg_up|mysql_up|mongodb_up|proxysql_mysql_status_active_transactions\"}, replication_set)",
         "error": null,
         "hide": 2,
@@ -1337,7 +1337,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values(pg_stat_database_tup_fetched{service_name=~\"$service_name\",datname!~\"template.*|postgres\"},datname)",
         "error": null,
         "hide": 2,
@@ -1360,7 +1360,7 @@
       {
         "allValue": null,
         "current": {},
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values({__name__=~\"pg_up|mysql_up|mongodb_up|proxysql_mysql_status_active_transactions\"}, node_type)",
         "error": null,
         "hide": 2,
@@ -1383,7 +1383,7 @@
       {
         "allValue": null,
         "current": {},
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values({__name__=~\"pg_up|mysql_up|mongodb_up|proxysql_mysql_status_active_transactions\"}, service_type)",
         "error": null,
         "hide": 2,
@@ -1410,7 +1410,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values(mysql_info_schema_user_statistics_connected_time_seconds_total{service_name=\"$service_name\"},user)",
         "error": null,
         "hide": 2,

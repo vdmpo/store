@@ -2073,7 +2073,7 @@
         "options": [],
         "query": {
           "query": "label_values(node)",
-          "refId": "MGMT-Prometheus-Node-Variable-Query"
+          "refId": "AMPR-PRD-Prometheus-Node-Variable-Query"
         },
         "refresh": 1,
         "regex": "^.*",

@@ -1411,8 +1411,8 @@
       {
         "current": {
           "selected": true,
-          "text": "MGMT-Prometheus",
-          "value": "MGMT-Prometheus"
+          "text": "AMPR-PRD-Prometheus",
+          "value": "AMPR-PRD-Prometheus"
         },
         "error": null,
         "hide": 0,

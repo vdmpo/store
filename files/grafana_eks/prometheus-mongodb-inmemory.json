@@ -39,7 +39,7 @@
   "panels": [
     {
       "collapsed": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -61,7 +61,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#299c46"
       ],
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "fieldConfig": {
         "defaults": {
@@ -151,7 +151,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "",
       "fieldConfig": {
@@ -242,7 +242,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "fieldConfig": {
         "defaults": {
@@ -328,7 +328,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "This shows the number of active connections on the server. Keep in mind the hard limit on the maximum number of connections set by your distribution.\n\nYou can read more about the [connection numbers](https://docs.mongodb.com/manual/administration/analyzing-mongodb-performance/#number-of-connections).",
       "editable": true,
@@ -455,7 +455,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "This shows the number of open cursors for each shard in the cluster. A cursor in MongoDB is a pointer to the result of a given query that can be iterated over. By default a cursor times out after 10 minutes.",
       "editable": true,
@@ -580,7 +580,7 @@
     },
     {
       "breadcrumbItemsMaxAmount": 6,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -620,7 +620,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "This panel shows the amount of data currently being stored InMemory. This data is in its uncompressed format and differs from how the data is stored on disk or in the file system cache. This value will always be lower than the counter shown in the *InMemory Max Data Size* panel.",
       "editable": true,
@@ -714,7 +714,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "This is the maximum size that the InMemory data can grow to and this value can be changed from the default value by setting the `storage.wiredTiger.inMemory.cacheSizeGB` value in the config file or passing in the `--inMemoryCacheSizeGB` parameter on the command line.",
       "editable": true,
@@ -807,7 +807,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(245, 54, 54, 0.9)"
       ],
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 0,
       "description": "This panel shows the percentage of InMemory pages that have been changed and not yet had the modified data consolidated.",
       "editable": true,
@@ -896,7 +896,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "WiredTiger internal transactions",
       "editable": true,
@@ -1008,7 +1008,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "Configured max and current size of the WiredTiger cache.",
       "editable": true,
@@ -1133,7 +1133,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "Internal WiredTiger storage engine cursors and sessions currently open.",
       "editable": true,
@@ -1254,7 +1254,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "Pages in the WiredTiger cache",
       "editable": true,
@@ -1367,7 +1367,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "A WT 'ticket' is assigned out for every operation running simultaneously in the WT storage engine. \"Tickets available\" = hardcoded high value - \"Tickets Out\".",
       "editable": true,
@@ -1484,7 +1484,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "Operations queued due to a lock",
       "editable": true,
@@ -1595,7 +1595,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "Mixed metrics: Docs per second inserted, updated, deleted or returned on any type of node (primary or secondary); + replicated write Ops/sec; + TTL deletes per second.",
       "editable": true,
@@ -1744,7 +1744,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "This panel shows the number of pages that have been evicted from the WiredTiger cache for the given time period. The InMemory storage engine only evicts modified pages which signals a compaction of the data and removal of the dirty pages.",
       "editable": true,
@@ -1855,7 +1855,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "This panel shows the number of objects (both data (scanned_objects) and index (scanned)) as well as the number of documents that were moved to a new location due to the size of the document growing. Moved documents only apply to the MMAPv1 storage engine.",
       "editable": true,
@@ -1976,7 +1976,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "MGMT-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "decimals": 2,
       "description": "Unix or Window memory page faults. Not necessarily from mongodb.",
       "editable": true,
@@ -2102,7 +2102,7 @@
           "text": "auto",
           "value": "$__auto_interval_interval"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "error": null,
         "hide": 0,
         "includeAll": false,
@@ -2165,7 +2165,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values(mongodb_up{environment=~\"$environment\"},cluster)",
         "error": null,
         "hide": 2,
@@ -2194,7 +2194,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "",
         "error": null,
         "hide": 2,
@@ -2224,7 +2224,7 @@
           "text": "None",
           "value": ""
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "",
         "error": null,
         "hide": 2,
@@ -2253,7 +2253,7 @@
           "text": "None",
           "value": ""
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values(mongodb_up{service_name=~\"$service_name\"}, service_name)",
         "error": null,
         "hide": 2,
@@ -2282,7 +2282,7 @@
           "text": "None",
           "value": ""
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values(mongodb_up{node_name=\"$node_name\"},node_name)",
         "error": null,
         "hide": 2,
@@ -2311,7 +2311,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values({__name__=~\"pg_up|mysql_up|mongodb_up|proxysql_mysql_status_active_transactions\"}, environment)",
         "error": null,
         "hide": 2,
@@ -2338,7 +2338,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values({__name__=~\"pg_up|mysql_up|mongodb_up|proxysql_mysql_status_active_transactions\"}, replication_set)",
         "error": null,
         "hide": 2,
@@ -2365,7 +2365,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values(pg_stat_database_tup_fetched{service_name=~\"$service_name\",datname!~\"template.*|postgres\"},datname)",
         "error": null,
         "hide": 2,
@@ -2392,7 +2392,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values({__name__=~\"pg_up|mysql_up|mongodb_up|proxysql_mysql_status_active_transactions\"}, node_type)",
         "error": null,
         "hide": 2,
@@ -2419,7 +2419,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values({__name__=~\"pg_up|mysql_up|mongodb_up|proxysql_mysql_status_active_transactions\"}, service_type)",
         "error": null,
         "hide": 2,
@@ -2446,7 +2446,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values(mysql_info_schema_user_statistics_connected_time_seconds_total{service_name=\"$service_name\"},user)",
         "error": null,
         "hide": 2,
@@ -2473,7 +2473,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "MGMT-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values({__name__=~\"pg_up|mysql_up|mongodb_up|proxysql_mysql_status_active_transactions\"}, schema)",
         "error": null,
         "hide": 2,

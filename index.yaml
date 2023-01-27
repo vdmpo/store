@@ -3,7 +3,7 @@ entries:
   akhq:
   - apiVersion: v1
     appVersion: 0.18.0
-    created: "2023-01-27T17:51:42.816989+02:00"
+    created: "2023-01-27T17:58:36.718543+02:00"
     description: Kafka GUI for Apache Kafka to manage topics, topics data, consumers
       group, schema registry, connect and more...
     digest: 2a2c659a589ec962dba35f952b0ca2e711426c5d5f2db5c0c2503b766364255e
@@ -26,7 +26,7 @@ entries:
     version: 0.2.4
   - apiVersion: v1
     appVersion: 0.17.0
-    created: "2023-01-27T17:51:42.813939+02:00"
+    created: "2023-01-27T17:58:36.716538+02:00"
     description: Kafka GUI for Apache Kafka to manage topics, topics data, consumers
       group, schema registry, connect and more...
     digest: 385065f39d13078b807ab63ad22996af36b31a51ac2f83df3f2a19b09dc79cda
@@ -53,7 +53,7 @@ entries:
         - Allow to override init containers for downloading jdbc drivers
     apiVersion: v1
     appVersion: 3.14.0
-    created: "2023-01-27T17:51:42.822542+02:00"
+    created: "2023-01-27T17:58:36.724106+02:00"
     dependencies:
     - condition: mongodb-replicaset.enabled
       name: mongodb-replicaset
@@ -85,7 +85,7 @@ entries:
         - Add support for ILM managed indexes
     apiVersion: v1
     appVersion: 3.11.2
-    created: "2023-01-27T17:51:42.829385+02:00"
+    created: "2023-01-27T17:58:36.732735+02:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -118,7 +118,7 @@ entries:
         - "[Fixed]: Add missing templating for some service labels"
     apiVersion: v2
     appVersion: v2.4.12
-    created: "2023-01-27T17:51:42.847699+02:00"
+    created: "2023-01-27T17:58:36.752096+02:00"
     description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
     digest: 4229c988589df2d55dd28cb1ce4d91c7e3894baa940a332a36beffabc95d5e48
@@ -140,7 +140,7 @@ entries:
         - "[Fixed]: Add missing templating for some service labels"
     apiVersion: v2
     appVersion: v2.4.12
-    created: "2023-01-27T17:51:42.839923+02:00"
+    created: "2023-01-27T17:58:36.74205+02:00"
     description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
     digest: d7973b53bef99b4fae9fb4b8b26a47004af960984bf57dfa014235473a8a8640
@@ -164,7 +164,7 @@ entries:
           description: Custom controller.updateStrategy to set controller deployment strategy.
     apiVersion: v2
     appVersion: 1.13.0
-    created: "2023-01-27T17:51:42.804108+02:00"
+    created: "2023-01-27T17:58:36.705806+02:00"
     description: A Helm chart for AWS EBS CSI Driver
     digest: 1dd0fda73f45c1c0fa19b9aefc149b2667dd4f187992bcf78058a8aa0556f767
     home: https://github.com/kubernetes-sigs/aws-ebs-csi-driver
@@ -190,7 +190,7 @@ entries:
           description: Custom controller.updateStrategy to set controller deployment strategy.
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2023-01-27T17:51:42.805571+02:00"
+    created: "2023-01-27T17:58:36.707218+02:00"
     description: A Helm chart for AWS EBS CSI Driver
     digest: 3f51624c427c34eecee9b50fa8b9b91386804f5077f5e37474ed147dec5cdbfa
     home: https://github.com/kubernetes-sigs/aws-ebs-csi-driver
@@ -213,7 +213,7 @@ entries:
   aws-efs-csi-driver:
   - apiVersion: v2
     appVersion: 1.4.8
-    created: "2023-01-27T17:51:42.849762+02:00"
+    created: "2023-01-27T17:58:36.754864+02:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 45b3012f08fcbec9997208991324e5b0d8fe376dc2f1634915d8aea22f9e4b71
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -235,7 +235,7 @@ entries:
     version: 2.3.5
   - apiVersion: v1
     appVersion: 2.0.0
-    created: "2023-01-27T17:51:42.809603+02:00"
+    created: "2023-01-27T17:58:36.71165+02:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: ad9d0b588b52231b62fbd370dd2d4cd0480c1c25ebafbc255876ab53ff2546d5
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -257,7 +257,7 @@ entries:
     version: 2.0.0
   - apiVersion: v1
     appVersion: 1.1.1
-    created: "2023-01-27T17:51:42.808686+02:00"
+    created: "2023-01-27T17:58:36.710472+02:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: d2d6fa96266f08607d1e6155f05b16b4e4bbde7deb051d4304804bd4949c32ee
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -279,7 +279,7 @@ entries:
     version: 1.1.1
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2023-01-27T17:51:42.807671+02:00"
+    created: "2023-01-27T17:58:36.709268+02:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 2cccf824f43ce9e12c1d6b2f827a7a002234a51fefa2bae78d603f13d4c6b310
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -301,7 +301,7 @@ entries:
     version: 1.1.0
   - apiVersion: v1
     appVersion: 0.0.1
-    created: "2023-01-27T17:51:42.806625+02:00"
+    created: "2023-01-27T17:58:36.708208+02:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 3a3ff4b571a88e778c0a62357c2ea9c960a647985ddce28037f7e84b6341556a
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -324,7 +324,7 @@ entries:
   aws-load-balancer-controller:
   - apiVersion: v1
     appVersion: v2.1.2
-    created: "2023-01-27T17:51:42.810979+02:00"
+    created: "2023-01-27T17:58:36.71348+02:00"
     description: AWS Load Balancer Controller Helm chart for Kubernetes
     digest: 7483dea37797f2ce73d3d31a0768adf33259b4a67584af94eeec2d94f02817a0
     home: https://github.com/aws/eks-charts
@@ -351,7 +351,7 @@ entries:
   aws-vpc-cni:
   - apiVersion: v1
     appVersion: v1.9.0
-    created: "2023-01-27T17:51:42.812319+02:00"
+    created: "2023-01-27T17:58:36.714894+02:00"
     description: A Helm chart for the AWS VPC CNI
     digest: 015d879876f11ca5a84ef112bfc9d70d93fc3d6b0c74f3853caf1106fdad9809
     home: https://github.com/aws/amazon-vpc-cni-k8s
@@ -379,7 +379,7 @@ entries:
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v1
     appVersion: v1.10.0
-    created: "2023-01-27T17:51:42.855187+02:00"
+    created: "2023-01-27T17:58:36.759662+02:00"
     description: A Helm chart for cert-manager
     digest: a8a634b1d18ec73ea12fb1a2544f2f04edcb1e52bd6bd502a96b215b895f685e
     home: https://github.com/cert-manager/cert-manager
@@ -403,7 +403,7 @@ entries:
   cert-manager-webhook-dnsimple:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2023-01-27T17:51:42.859062+02:00"
+    created: "2023-01-27T17:58:36.763144+02:00"
     description: cert-manager webhook solver for ACME DNS01 challenge via DNSimple
     digest: 37be1590c54ae34f5cf27e3fddbc3aa8e9b5f594046420b7b0f7b1eefa5ec95b
     home: https://github.com/neoskop/cert-manager-webhook-dnsimple
@@ -419,7 +419,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2023-01-27T17:51:42.857602+02:00"
+    created: "2023-01-27T17:58:36.76184+02:00"
     description: cert-manager webhook solver for ACME DNS01 challenge via DNSimple
     digest: 059e463808c8d1420de8c533d258aee2aab8aaec95d124c2e51d51b468fd5dd7
     home: https://github.com/neoskop/cert-manager-webhook-dnsimple
@@ -435,7 +435,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2023-01-27T17:51:42.856421+02:00"
+    created: "2023-01-27T17:58:36.76055+02:00"
     description: cert-manager webhook solver for ACME DNS01 challenge via DNSimple
     digest: 321260a712faf8ccb80b9d8325b452fcba18e50d62337b67082540f388253265
     home: https://github.com/neoskop/cert-manager-webhook-dnsimple
@@ -452,7 +452,7 @@ entries:
   chartmuseum:
   - apiVersion: v2
     appVersion: 0.15.0
-    created: "2023-01-27T17:51:42.864813+02:00"
+    created: "2023-01-27T17:58:36.768637+02:00"
     description: Host your own Helm Chart Repository
     digest: a81a757d605d62158fac18403d3c4f05d10bf1235883ccc19f3a2b15704c4dc4
     home: https://github.com/helm/chartmuseum
@@ -474,7 +474,7 @@ entries:
     version: 3.9.1
   - apiVersion: v1
     appVersion: 0.13.0
-    created: "2023-01-27T17:51:42.861571+02:00"
+    created: "2023-01-27T17:58:36.765802+02:00"
     description: Host your own Helm Chart Repository
     digest: f39257a448716bb970bbc44c25919bdad20008e7c7c19b4d5b72eb7b4ed49488
     home: https://github.com/helm/chartmuseum
@@ -490,7 +490,7 @@ entries:
   debmirror:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-01-27T17:51:42.865786+02:00"
+    created: "2023-01-27T17:58:36.769637+02:00"
     description: Debmirror (RTRX in-house)
     digest: d3f7cdc6275a9fa36e445ec2fb07de41128feeab2974cb761cd216fac71b6d4b
     name: debmirror
@@ -501,7 +501,7 @@ entries:
   docker-registry:
   - apiVersion: v1
     appVersion: 2.8.1
-    created: "2023-01-27T17:51:42.870948+02:00"
+    created: "2023-01-27T17:58:36.774174+02:00"
     description: A Helm chart for Docker Registry
     digest: c6192bf4442a1d7bd81275d136bcf6b3b2b5c754513ebf2d5c09221a1b0ad604
     home: https://hub.docker.com/_/registry/
@@ -518,7 +518,7 @@ entries:
     version: 2.2.2
   - apiVersion: v1
     appVersion: 2.7.1
-    created: "2023-01-27T17:51:42.867809+02:00"
+    created: "2023-01-27T17:58:36.771925+02:00"
     description: A Helm chart for Docker Registry
     digest: ba7d21cf60c4e54379e22a601139c50af66e315bb0804bd23a84da6d26a3e3a2
     home: https://hub.docker.com/_/registry/
@@ -538,7 +538,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.13.1
-    created: "2023-01-27T17:51:42.888436+02:00"
+    created: "2023-01-27T17:58:36.788337+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -569,7 +569,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.12.2
-    created: "2023-01-27T17:51:42.883834+02:00"
+    created: "2023-01-27T17:58:36.783323+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -600,7 +600,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.12.2
-    created: "2023-01-27T17:51:42.912178+02:00"
+    created: "2023-01-27T17:58:36.81659+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -631,7 +631,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.12.0
-    created: "2023-01-27T17:51:42.907346+02:00"
+    created: "2023-01-27T17:58:36.811543+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -662,7 +662,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.12.0
-    created: "2023-01-27T17:51:42.902813+02:00"
+    created: "2023-01-27T17:58:36.806054+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -693,7 +693,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.11.1
-    created: "2023-01-27T17:51:42.898074+02:00"
+    created: "2023-01-27T17:58:36.799397+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -724,7 +724,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.11.0
-    created: "2023-01-27T17:51:42.893453+02:00"
+    created: "2023-01-27T17:58:36.794534+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -755,7 +755,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.9.0
-    created: "2023-01-27T17:51:42.878384+02:00"
+    created: "2023-01-27T17:58:36.778669+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -785,7 +785,7 @@ entries:
   gitea:
   - apiVersion: v2
     appVersion: 1.15.0
-    created: "2023-01-27T17:51:42.936559+02:00"
+    created: "2023-01-27T17:58:36.840085+02:00"
     dependencies:
     - condition: gitea.cache.builtIn.enabled
       name: memcached
@@ -835,7 +835,7 @@ entries:
     version: 4.1.1
   - apiVersion: v2
     appVersion: 1.15.0
-    created: "2023-01-27T17:51:42.92342+02:00"
+    created: "2023-01-27T17:58:36.828503+02:00"
     dependencies:
     - condition: gitea.cache.builtIn.enabled
       name: memcached
@@ -886,7 +886,7 @@ entries:
   gitlab-runner:
   - apiVersion: v1
     appVersion: 15.6.1
-    created: "2023-01-27T17:51:42.93947+02:00"
+    created: "2023-01-27T17:58:36.843047+02:00"
     description: GitLab Runner
     digest: 312be6f35112e71cfe2ae17a2ba404d791c9b0eea7248d354677e33fc83111a8
     icon: https://gitlab.com/uploads/-/system/project/avatar/250833/runner_logo.png
@@ -907,7 +907,7 @@ entries:
   grafana:
   - apiVersion: v2
     appVersion: 9.3.1
-    created: "2023-01-27T17:51:42.9443+02:00"
+    created: "2023-01-27T17:58:36.847857+02:00"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: 2c1a8cbedd79b00cee04b301f4a4001fe7257ca9c265b22a129d99711bd270d2
     home: https://grafana.net
@@ -941,7 +941,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 1.5.1
-    created: "2023-01-27T17:51:42.94879+02:00"
+    created: "2023-01-27T17:58:36.85241+02:00"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: 5c5ffcd4a19377f9e2eeb40fd8c0a2a7a9f851db74453247c357c83e1775c330
@@ -966,7 +966,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 0.5.2
-    created: "2023-01-27T17:51:42.951455+02:00"
+    created: "2023-01-27T17:58:36.855081+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -997,7 +997,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 0.4.2
-    created: "2023-01-27T17:51:42.954123+02:00"
+    created: "2023-01-27T17:58:36.857427+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -1027,7 +1027,7 @@ entries:
   mimir-distributed:
   - apiVersion: v2
     appVersion: 2.5.0
-    created: "2023-01-27T17:51:42.969959+02:00"
+    created: "2023-01-27T17:58:36.87252+02:00"
     dependencies:
     - alias: minio
       condition: minio.enabled
@@ -1056,7 +1056,7 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2023-01-27T17:51:42.972324+02:00"
+    created: "2023-01-27T17:58:36.874051+02:00"
     deprecated: true
     description: DEPRECATED - nfs-client is an automatic provisioner that used your
       *already configured* NFS server, automatically creating Persistent Volumes.
@@ -1074,7 +1074,7 @@ entries:
   nfs-subdir-external-provisioner:
   - apiVersion: v1
     appVersion: 4.0.1
-    created: "2023-01-27T17:51:42.973877+02:00"
+    created: "2023-01-27T17:58:36.875528+02:00"
     description: nfs-subdir-external-provisioner is an automatic provisioner that
       used your *already configured* NFS server, automatically creating Persistent
       Volumes.
@@ -1094,7 +1094,7 @@ entries:
   pgadmin4:
   - apiVersion: v1
     appVersion: "6.18"
-    created: "2023-01-27T17:51:42.976403+02:00"
+    created: "2023-01-27T17:58:36.878615+02:00"
     description: pgAdmin4 is a web based administration tool for PostgreSQL database
     digest: 47d22b208443fa191b1541a64f668611618de1b4f7c2394a24bfff8a84831c3a
     home: https://www.pgadmin.org/
@@ -1118,7 +1118,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2023-01-27T17:51:42.988144+02:00"
+    created: "2023-01-27T17:58:36.890865+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -1152,7 +1152,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 14.5.0
-    created: "2023-01-27T17:51:42.982453+02:00"
+    created: "2023-01-27T17:58:36.884955+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -1187,7 +1187,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 15.1.0
-    created: "2023-01-27T17:51:42.99525+02:00"
+    created: "2023-01-27T17:58:36.898424+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -1224,7 +1224,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 14.5.0
-    created: "2023-01-27T17:51:43.002192+02:00"
+    created: "2023-01-27T17:58:36.903951+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -1267,7 +1267,7 @@ entries:
           url: https://github.com/prometheus/prometheus
     apiVersion: v2
     appVersion: v2.41.0
-    created: "2023-01-27T17:51:43.015959+02:00"
+    created: "2023-01-27T17:58:36.916993+02:00"
     dependencies:
     - condition: alertmanager.enabled
       name: alertmanager
@@ -1315,7 +1315,7 @@ entries:
     version: 19.3.3
   - apiVersion: v2
     appVersion: 2.31.1
-    created: "2023-01-27T17:51:43.00859+02:00"
+    created: "2023-01-27T17:58:36.909656+02:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -1350,7 +1350,7 @@ entries:
   prometheus-blackbox-exporter:
   - apiVersion: v1
     appVersion: 0.18.0
-    created: "2023-01-27T17:51:43.017721+02:00"
+    created: "2023-01-27T17:58:36.918438+02:00"
     description: Prometheus Blackbox Exporter
     digest: 93b224dcee2cf3ecad01fb4e325b7cfc45d9f8f2344115ec2d702fab9b06ffa4
     home: https://github.com/prometheus/blackbox_exporter
@@ -1376,7 +1376,7 @@ entries:
   prometheus-elasticsearch-exporter:
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2023-01-27T17:51:43.020507+02:00"
+    created: "2023-01-27T17:58:36.922723+02:00"
     description: Elasticsearch stats exporter for Prometheus
     digest: 9d927c2636595ecabfd2627001d65a8953af58187c6be08ded587aea022191f1
     home: https://github.com/justwatchcom/elasticsearch_exporter
@@ -1400,7 +1400,7 @@ entries:
     version: 4.4.0
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2023-01-27T17:51:43.019188+02:00"
+    created: "2023-01-27T17:58:36.920261+02:00"
     description: Elasticsearch stats exporter for Prometheus
     digest: ad2b0f2e70d618aeb0595d620129fc94e0bab1dc22ef7966f51d39aace906832
     home: https://github.com/justwatchcom/elasticsearch_exporter
@@ -1425,7 +1425,7 @@ entries:
   prometheus-postgres-exporter:
   - apiVersion: v2
     appVersion: 0.9.0
-    created: "2023-01-27T17:51:43.022061+02:00"
+    created: "2023-01-27T17:58:36.926198+02:00"
     description: A Helm chart for prometheus postgres-exporter
     digest: 34608f5ce5cb9d85de81f4de712c769751d700ce0b26da1421c33c0a2c5bd732
     home: https://github.com/prometheus-community/postgres_exporter
@@ -1450,7 +1450,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.0.10
-    created: "2023-01-27T17:51:43.026799+02:00"
+    created: "2023-01-27T17:58:36.931757+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -1481,7 +1481,7 @@ entries:
     version: 12.7.5
   redisinsight-chart:
   - apiVersion: v2
-    created: "2023-01-27T17:51:43.027584+02:00"
+    created: "2023-01-27T17:58:36.93274+02:00"
     description: A Helm chart for Kubernetes
     digest: 558b4f4e315596ed7ce3da46d3bc6d38314455e5abf5c3ee6a8df259fb40c286
     name: redisinsight-chart
@@ -1492,7 +1492,7 @@ entries:
   vault:
   - apiVersion: v2
     appVersion: 1.12.0
-    created: "2023-01-27T17:51:43.043196+02:00"
+    created: "2023-01-27T17:58:36.949454+02:00"
     description: Official HashiCorp Vault Chart
     digest: 51a3db99ba3438dbaada11e4ff50addace90cadbe07210955d2b074976e9f315
     home: https://www.vaultproject.io
@@ -1517,7 +1517,7 @@ entries:
     version: 0.22.1
   - apiVersion: v2
     appVersion: 1.9.0
-    created: "2023-01-27T17:51:43.038388+02:00"
+    created: "2023-01-27T17:58:36.945606+02:00"
     description: Official HashiCorp Vault Chart
     digest: 8fd6dcd299cef6d03708041f81c600c247e813609f6a978c2762b344b40cb812
     home: https://www.vaultproject.io
@@ -1542,7 +1542,7 @@ entries:
     version: 0.18.0
   - apiVersion: v2
     appVersion: 1.7.0
-    created: "2023-01-27T17:51:43.034261+02:00"
+    created: "2023-01-27T17:58:36.940505+02:00"
     description: Official HashiCorp Vault Chart
     digest: 68adebd30aa94edffad3f5be687a078e81f44b0b08242a2ab96d5937dcf847af
     home: https://www.vaultproject.io
@@ -1566,7 +1566,7 @@ entries:
     version: 0.11.3
   - apiVersion: v2
     appVersion: 1.7.0
-    created: "2023-01-27T17:51:43.030478+02:00"
+    created: "2023-01-27T17:58:36.93654+02:00"
     description: Official HashiCorp Vault Chart
     digest: 283f9c92dcd8b9fc454be486c1bbb45b77227aa39e712810ea33e1c799fa0c6d
     home: https://www.vaultproject.io
@@ -1591,7 +1591,7 @@ entries:
   verdaccio:
   - apiVersion: v2
     appVersion: 5.18.0
-    created: "2023-01-27T17:51:43.045191+02:00"
+    created: "2023-01-27T17:58:36.951225+02:00"
     description: A lightweight private node.js proxy registry
     digest: 26f5388f2aea817cbfd2570588659906ff366e2df62c7b1982feb96edf87e11f
     home: https://verdaccio.org
@@ -1618,7 +1618,7 @@ entries:
   victoria-metrics-cluster:
   - apiVersion: v1
     appVersion: 1.86.2
-    created: "2023-01-27T17:51:43.049332+02:00"
+    created: "2023-01-27T17:58:36.954895+02:00"
     description: Victoria Metrics Cluster version - high-performance, cost-effective
       and scalable TSDB, long-term remote storage for Prometheus
     digest: 218c650ce5fc205defbbfbde4f8a87bfc4a2274da74cf49701db37cb29c74723
@@ -1631,7 +1631,7 @@ entries:
   victoria-metrics-single:
   - apiVersion: v1
     appVersion: 1.86.2
-    created: "2023-01-27T17:51:43.052466+02:00"
+    created: "2023-01-27T17:58:36.958593+02:00"
     description: Victoria Metrics Single version - high-performance, cost-effective
       and scalable TSDB, long-term remote storage for Prometheus
     digest: c1b601f3539aba47d98dcc034f24eaf324dfa7e8fcf492519c26b5b8b056377d
@@ -1641,4 +1641,4 @@ entries:
     urls:
     - https://vdmpo.github.io/store/charts/victoria-metrics-single-0.8.51.tgz
     version: 0.8.51
-generated: "2023-01-27T17:51:42.79905+02:00"
+generated: "2023-01-27T17:58:36.703029+02:00"
