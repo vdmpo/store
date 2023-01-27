@@ -2953,8 +2953,8 @@
       {
         "current": {
           "selected": false,
-          "text": "MQ-PRD-Prometheus",
-          "value": "MQ-PRD-Prometheus"
+          "text": "AMPR-PRD-Prometheus",
+          "value": "AMPR-PRD-Prometheus"
         },
         "error": null,
         "hide": 0,
@@ -3038,7 +3038,7 @@
           "text": "postgresql",
           "value": "postgresql"
         },
-        "datasource": "MQ-PRD-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "",
         "error": null,
         "hide": 0,
@@ -3065,7 +3065,7 @@
           "text": "prometheus-postgres-exporter",
           "value": "prometheus-postgres-exporter"
         },
-        "datasource": "MQ-PRD-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "",
         "error": null,
         "hide": 0,
@@ -3092,7 +3092,7 @@
           "text": "10.240.20.235:9187",
           "value": "10.240.20.235:9187"
         },
-        "datasource": "MQ-PRD-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "",
         "error": null,
         "hide": 0,
@@ -3123,7 +3123,7 @@
             "$__all"
           ]
         },
-        "datasource": "MQ-PRD-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "",
         "error": null,
         "hide": 0,
@@ -3154,7 +3154,7 @@
             "$__all"
           ]
         },
-        "datasource": "MQ-PRD-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "",
         "error": null,
         "hide": 0,
