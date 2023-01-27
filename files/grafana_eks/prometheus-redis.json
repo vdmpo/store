@@ -1350,8 +1350,8 @@
       {
         "current": {
           "selected": true,
-          "text": "MQ-DEV-Prometheus",
-          "value": "MQ-DEV-Prometheus"
+          "text": "AMPR-PRD-Prometheus",
+          "value": "AMPR-PRD-Prometheus"
         },
         "error": null,
         "hide": 0,

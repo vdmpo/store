@@ -25,7 +25,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "fill": 0,
       "fillGradient": 0,
       "gridPos": {
@@ -121,7 +121,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "fill": 0,
       "fillGradient": 0,
       "gridPos": {
@@ -219,7 +219,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "fill": 0,
       "fillGradient": 0,
       "gridPos": {
@@ -315,7 +315,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "fill": 0,
       "fillGradient": 0,
       "gridPos": {
@@ -411,7 +411,7 @@
       "bars": true,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -518,7 +518,7 @@
           "text": "kubernetes-service-endpoints",
           "value": "kubernetes-service-endpoints"
         },
-        "datasource": "BTC-PRD-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "",
         "description": null,
         "error": null,
@@ -530,7 +530,7 @@
         "options": [],
         "query": {
           "query": "label_values(kafka_consumergroup_current_offset, job)",
-          "refId": "BTC-PRD-Prometheus-job-Variable-Query"
+          "refId": "AMPR-PRD-Prometheus-job-Variable-Query"
         },
         "refresh": 1,
         "regex": "",
@@ -548,7 +548,7 @@
           "text": "10.230.22.228:9308",
           "value": "10.230.22.228:9308"
         },
-        "datasource": "BTC-PRD-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "",
         "description": null,
         "error": null,
@@ -560,7 +560,7 @@
         "options": [],
         "query": {
           "query": "label_values(kafka_consumergroup_current_offset{job=~\"$job\"}, instance)",
-          "refId": "BTC-PRD-Prometheus-instance-Variable-Query"
+          "refId": "AMPR-PRD-Prometheus-instance-Variable-Query"
         },
         "refresh": 1,
         "regex": "",
@@ -578,7 +578,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "BTC-PRD-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "",
         "description": null,
         "error": null,
@@ -590,7 +590,7 @@
         "options": [],
         "query": {
           "query": "label_values(kafka_topic_partition_current_offset{instance='$instance',topic!='__consumer_offsets',topic!='--kafka'}, topic)",
-          "refId": "BTC-PRD-Prometheus-topic-Variable-Query"
+          "refId": "AMPR-PRD-Prometheus-topic-Variable-Query"
         },
         "refresh": 1,
         "regex": "",

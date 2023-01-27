@@ -24,7 +24,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "elk-logs-mq-nginx",
+      "datasource": "elk-logs-ampr-nginx",
       "decimals": 1,
       "fieldConfig": {
         "defaults": {
@@ -148,7 +148,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "elk-logs-mq-nginx",
+      "datasource": "elk-logs-ampr-nginx",
       "decimals": 1,
       "fieldConfig": {
         "defaults": {
@@ -297,7 +297,7 @@
         "label": "Others",
         "threshold": 0
       },
-      "datasource": "elk-logs-mq-nginx",
+      "datasource": "elk-logs-ampr-nginx",
       "decimals": 0,
       "fieldConfig": {
         "defaults": {
@@ -383,7 +383,7 @@
         "label": "Others",
         "threshold": 0
       },
-      "datasource": "elk-logs-mq-nginx",
+      "datasource": "elk-logs-ampr-nginx",
       "decimals": 0,
       "fieldConfig": {
         "defaults": {
@@ -468,7 +468,7 @@
         "label": "Others",
         "threshold": 0
       },
-      "datasource": "elk-logs-mq-nginx",
+      "datasource": "elk-logs-ampr-nginx",
       "decimals": 0,
       "fieldConfig": {
         "defaults": {
@@ -551,7 +551,7 @@
         "label": "Others",
         "threshold": 0
       },
-      "datasource": "elk-logs-mq-nginx",
+      "datasource": "elk-logs-ampr-nginx",
       "decimals": 0,
       "fieldConfig": {
         "defaults": {
@@ -629,7 +629,7 @@
     },
     {
       "columns": [],
-      "datasource": "elk-logs-mq-nginx",
+      "datasource": "elk-logs-ampr-nginx",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -728,7 +728,7 @@
             "$__all"
           ]
         },
-        "datasource": "elk-logs-mq-nginx",
+        "datasource": "elk-logs-ampr-nginx",
         "definition": "{\"find\": \"terms\", \"field\": \"kubernetes.container.name.keyword\", \"size\": 50}",
         "error": null,
         "hide": 0,
@@ -759,7 +759,7 @@
             "$__all"
           ]
         },
-        "datasource": "elk-logs-mq-nginx",
+        "datasource": "elk-logs-ampr-nginx",
         "definition": "{\"find\": \"terms\", \"field\": \"http_request_method.keyword\", \"size\": 50}",
         "error": null,
         "hide": 0,
@@ -810,7 +810,7 @@
     ]
   },
   "timezone": "",
-  "title": "[MQ] Nginx Services",
+  "title": "[AMPR] Nginx Services",
   "uid": "VdB7IhIGk",
   "version": 4
 }

@@ -40,7 +40,7 @@
       "type": "row"
     },
     {
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "fieldConfig": {
         "defaults": {
           "mappings": [],
@@ -103,7 +103,7 @@
       "type": "stat"
     },
     {
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -193,7 +193,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -283,7 +283,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "fieldConfig": {
         "defaults": {
           "mappings": [],
@@ -342,7 +342,7 @@
       "type": "stat"
     },
     {
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -431,7 +431,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -520,7 +520,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -611,7 +611,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -716,7 +716,7 @@
       "type": "row"
     },
     {
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -840,7 +840,7 @@
       "type": "table"
     },
     {
-      "datasource": "BTC-PRD-Prometheus",
+      "datasource": "AMPR-PRD-Prometheus",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -981,7 +981,7 @@
             "$__all"
           ]
         },
-        "datasource": "BTC-PRD-Prometheus",
+        "datasource": "AMPR-PRD-Prometheus",
         "definition": "label_values(kafka_log_Log_Value,topic)",
         "description": null,
         "error": null,
