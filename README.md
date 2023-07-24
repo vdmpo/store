@@ -3,7 +3,7 @@
 ```sh
 helm repo index . --url https://vdmpo.github.io/store/
 git add .
-gc 'consul 1.9.0-1'
+gc 'upd'
 git push origin
 ```
 
