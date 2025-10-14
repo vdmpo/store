@@ -3,7 +3,7 @@ entries:
   akhq:
   - apiVersion: v1
     appVersion: 0.26.0
-    created: "2025-10-14T08:59:10.763982+04:00"
+    created: "2025-10-14T09:00:14.06337+04:00"
     description: Kafka GUI for Apache Kafka to manage topics, topics data, consumers
       group, schema registry, connect and more...
     digest: 5082b9e024c787018f76560913b50f1684dce4ab9b6fd153c68377fd8d794ef5
@@ -26,7 +26,7 @@ entries:
     version: 0.26.0
   - apiVersion: v1
     appVersion: 0.25.1
-    created: "2025-10-14T08:59:10.76332+04:00"
+    created: "2025-10-14T09:00:14.062616+04:00"
     description: Kafka GUI for Apache Kafka to manage topics, topics data, consumers
       group, schema registry, connect and more...
     digest: bda25b0a1f4a79c5131f96ed6d19f55af467f9a8f1b8d428df67e14b91b57d6f
@@ -57,7 +57,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v3.0.12
-    created: "2025-10-14T08:59:10.782366+04:00"
+    created: "2025-10-14T09:00:14.082333+04:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -92,7 +92,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v2.9.2
-    created: "2025-10-14T08:59:10.774473+04:00"
+    created: "2025-10-14T09:00:14.074185+04:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -121,7 +121,7 @@ entries:
   atlantis:
   - apiVersion: v1
     appVersion: v0.27.0
-    created: "2025-10-14T08:59:10.783914+04:00"
+    created: "2025-10-14T09:00:14.084347+04:00"
     description: A Helm chart for Atlantis https://www.runatlantis.io
     digest: 891dccce29e148353956aab73e003c9eda3daeb72a4365c2ff877b49f112c8d0
     home: https://www.runatlantis.io
@@ -144,7 +144,7 @@ entries:
   aws-ebs-csi-driver:
   - apiVersion: v2
     appVersion: 1.20.0
-    created: "2025-10-14T08:59:10.78587+04:00"
+    created: "2025-10-14T09:00:14.085532+04:00"
     description: A Helm chart for AWS EBS CSI Driver
     digest: 383f963db4c58d181972857bca23114a1102cebfe1937fdf645c5da2ee6a50e0
     home: https://github.com/kubernetes-sigs/aws-ebs-csi-driver
@@ -168,7 +168,7 @@ entries:
           description: Custom controller.updateStrategy to set controller deployment strategy.
     apiVersion: v2
     appVersion: 1.13.0
-    created: "2025-10-14T08:59:10.759692+04:00"
+    created: "2025-10-14T09:00:14.058098+04:00"
     description: A Helm chart for AWS EBS CSI Driver
     digest: 1dd0fda73f45c1c0fa19b9aefc149b2667dd4f187992bcf78058a8aa0556f767
     home: https://github.com/kubernetes-sigs/aws-ebs-csi-driver
@@ -194,7 +194,7 @@ entries:
           description: Custom controller.updateStrategy to set controller deployment strategy.
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2025-10-14T08:59:10.76044+04:00"
+    created: "2025-10-14T09:00:14.059037+04:00"
     description: A Helm chart for AWS EBS CSI Driver
     digest: 3f51624c427c34eecee9b50fa8b9b91386804f5077f5e37474ed147dec5cdbfa
     home: https://github.com/kubernetes-sigs/aws-ebs-csi-driver
@@ -215,31 +215,9 @@ entries:
     - https://vdmpo.github.io/store/aws/aws-ebs-csi-driver-2.4.0.tgz
     version: 2.4.0
   aws-efs-csi-driver:
-  - apiVersion: v2
-    appVersion: 1.4.8
-    created: "2025-10-14T08:59:10.786441+04:00"
-    description: A Helm chart for AWS EFS CSI Driver
-    digest: 45b3012f08fcbec9997208991324e5b0d8fe376dc2f1634915d8aea22f9e4b71
-    home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
-    keywords:
-    - aws
-    - efs
-    - csi
-    kubeVersion: '>=1.17.0-0'
-    maintainers:
-    - name: leakingtapan
-      url: https://github.com/leakingtapan
-    - name: krmichel
-      url: https://github.com/krmichel
-    name: aws-efs-csi-driver
-    sources:
-    - https://github.com/kubernetes-sigs/aws-efs-csi-driver
-    urls:
-    - https://vdmpo.github.io/store/charts/aws-efs-csi-driver-2.3.5.tgz
-    version: 2.3.5
   - apiVersion: v1
     appVersion: 2.0.0
-    created: "2025-10-14T08:59:10.761756+04:00"
+    created: "2025-10-14T09:00:14.060656+04:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: ad9d0b588b52231b62fbd370dd2d4cd0480c1c25ebafbc255876ab53ff2546d5
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -261,7 +239,7 @@ entries:
     version: 2.0.0
   - apiVersion: v1
     appVersion: 1.1.1
-    created: "2025-10-14T08:59:10.761498+04:00"
+    created: "2025-10-14T09:00:14.060332+04:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: d2d6fa96266f08607d1e6155f05b16b4e4bbde7deb051d4304804bd4949c32ee
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -283,7 +261,7 @@ entries:
     version: 1.1.1
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2025-10-14T08:59:10.761202+04:00"
+    created: "2025-10-14T09:00:14.06+04:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 2cccf824f43ce9e12c1d6b2f827a7a002234a51fefa2bae78d603f13d4c6b310
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -305,7 +283,7 @@ entries:
     version: 1.1.0
   - apiVersion: v1
     appVersion: 0.0.1
-    created: "2025-10-14T08:59:10.760934+04:00"
+    created: "2025-10-14T09:00:14.059657+04:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 3a3ff4b571a88e778c0a62357c2ea9c960a647985ddce28037f7e84b6341556a
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -328,7 +306,7 @@ entries:
   aws-load-balancer-controller:
   - apiVersion: v1
     appVersion: v2.1.2
-    created: "2025-10-14T08:59:10.762357+04:00"
+    created: "2025-10-14T09:00:14.061345+04:00"
     description: AWS Load Balancer Controller Helm chart for Kubernetes
     digest: 7483dea37797f2ce73d3d31a0768adf33259b4a67584af94eeec2d94f02817a0
     home: https://github.com/aws/eks-charts
@@ -355,7 +333,7 @@ entries:
   aws-vpc-cni:
   - apiVersion: v1
     appVersion: v1.9.0
-    created: "2025-10-14T08:59:10.762779+04:00"
+    created: "2025-10-14T09:00:14.061875+04:00"
     description: A Helm chart for the AWS VPC CNI
     digest: 015d879876f11ca5a84ef112bfc9d70d93fc3d6b0c74f3853caf1106fdad9809
     home: https://github.com/aws/amazon-vpc-cni-k8s
@@ -385,7 +363,7 @@ entries:
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v2
     appVersion: v1.17.2
-    created: "2025-10-14T08:59:10.790928+04:00"
+    created: "2025-10-14T09:00:14.089718+04:00"
     description: A Helm chart for cert-manager
     digest: 9f8eaada785a870112c7b1874952b7e8776fd066608361c83ecee859314393ad
     home: https://cert-manager.io
@@ -409,7 +387,7 @@ entries:
   chartmuseum:
   - apiVersion: v2
     appVersion: 0.16.3
-    created: "2025-10-14T08:59:10.793536+04:00"
+    created: "2025-10-14T09:00:14.091994+04:00"
     description: Host your own Helm Chart Repository
     digest: 8e1aa5c173adbe7b91f4b0c546f146019b6918d83487e5e71591b73dafa0d9b3
     home: https://github.com/helm/chartmuseum
@@ -431,7 +409,7 @@ entries:
     version: 3.10.4
   - apiVersion: v2
     appVersion: 0.16.1
-    created: "2025-10-14T08:59:10.792252+04:00"
+    created: "2025-10-14T09:00:14.090999+04:00"
     description: Host your own Helm Chart Repository
     digest: 70198d9f69e1269b4abaf241ed5dd433d0fc5f1869772ef02a5582df5625d9b9
     home: https://github.com/helm/chartmuseum
@@ -451,20 +429,10 @@ entries:
     urls:
     - https://vdmpo.github.io/store/charts/chartmuseum-3.10.2.tgz
     version: 3.10.2
-  csi-driver-nfs:
-  - apiVersion: v1
-    appVersion: v4.4.0
-    created: "2025-10-14T08:59:10.794347+04:00"
-    description: CSI NFS Driver for Kubernetes
-    digest: 1f92b7a37a3be0ad0d53181ba4f9800227f427638b5db81d9eed0724a6672047
-    name: csi-driver-nfs
-    urls:
-    - https://vdmpo.github.io/store/charts/csi-driver-nfs-v4.4.0.tgz
-    version: v4.4.0
   docker-registry:
   - apiVersion: v1
     appVersion: 3.0.0
-    created: "2025-10-14T08:59:10.796977+04:00"
+    created: "2025-10-14T09:00:14.09364+04:00"
     description: A Helm chart for Docker Registry
     digest: 4279fca80994602f2b43edad632afed3608d88232d3f53fd86137647bb842304
     home: https://hub.docker.com/_/registry/
@@ -481,7 +449,7 @@ entries:
     version: 3.0.0
   - apiVersion: v1
     appVersion: 2.8.1
-    created: "2025-10-14T08:59:10.796191+04:00"
+    created: "2025-10-14T09:00:14.092858+04:00"
     description: A Helm chart for Docker Registry
     digest: 1dd05abfbde9c26de71f4074ec44b26f3008479c2b1714079739c4efef12fc37
     home: https://hub.docker.com/_/registry/
@@ -496,27 +464,10 @@ entries:
     urls:
     - https://vdmpo.github.io/store/charts/docker-registry-2.2.3.tgz
     version: 2.2.3
-  - apiVersion: v1
-    appVersion: 2.8.1
-    created: "2025-10-14T08:59:10.79532+04:00"
-    description: A Helm chart for Docker Registry
-    digest: c6192bf4442a1d7bd81275d136bcf6b3b2b5c754513ebf2d5c09221a1b0ad604
-    home: https://hub.docker.com/_/registry/
-    icon: https://helm.twun.io/docker-registry.png
-    maintainers:
-    - email: devin@canterberry.cc
-      name: Devin Canterberry
-      url: https://canterberry.cc/
-    name: docker-registry
-    sources:
-    - https://github.com/docker/distribution-library-image
-    urls:
-    - https://vdmpo.github.io/store/charts/docker-registry-2.2.2.tgz
-    version: 2.2.2
   elasticsearch:
   - apiVersion: v1
     appVersion: 8.10.2
-    created: "2025-10-14T08:59:10.798875+04:00"
+    created: "2025-10-14T09:00:14.095603+04:00"
     description: Official Elastic helm chart for Elasticsearch
     digest: f17329dadedda1ad763edad2a102f5495fb3d0a1ad22d53071d696a5a47a9d71
     home: https://github.com/elastic/helm-charts
@@ -533,7 +484,7 @@ entries:
   elk-mgmt:
   - apiVersion: v1
     appVersion: 0.3.2
-    created: "2025-10-14T08:59:10.800064+04:00"
+    created: "2025-10-14T09:00:14.09694+04:00"
     description: (in-house) ELK Management
     digest: 279abd5c19387fe1b941e1c4ef7417888b3c44d266c538efded6ce7e501137ef
     name: elk-mgmt
@@ -543,7 +494,7 @@ entries:
   external-dns:
   - apiVersion: v2
     appVersion: 0.19.0
-    created: "2025-10-14T08:59:10.801152+04:00"
+    created: "2025-10-14T09:00:14.098089+04:00"
     description: ExternalDNS synchronizes exposed Kubernetes Services and Ingresses
       with DNS providers.
     digest: d605bb59bed1504911e9ed652d85e7c56c4ee33bb34d085ffd5d8bdfbfe1b500
@@ -571,7 +522,7 @@ entries:
   filebeat:
   - apiVersion: v1
     appVersion: 8.10.2
-    created: "2025-10-14T08:59:10.804218+04:00"
+    created: "2025-10-14T09:00:14.099666+04:00"
     description: Official Elastic helm chart for Filebeat
     digest: 5ded929f906cecb21f7d3dd78b6b0ad0341d20cb9710aae05d0b0b36fc61d41d
     home: https://github.com/elastic/helm-charts
@@ -585,22 +536,6 @@ entries:
     urls:
     - https://vdmpo.github.io/store/charts/filebeat-8.10.2.tgz
     version: 8.10.2
-  - apiVersion: v1
-    appVersion: 8.5.0
-    created: "2025-10-14T08:59:10.805046+04:00"
-    description: Official Elastic helm chart for Filebeat
-    digest: 356480b3035b79b003d4ec1a6f67c7c789ceaada75ec840ffe3a6ba1909e58f4
-    home: https://github.com/elastic/helm-charts
-    icon: https://helm.elastic.co/icons/beats.png
-    maintainers:
-    - email: helm-charts@elastic.co
-      name: Elastic
-    name: filebeat
-    sources:
-    - https://github.com/elastic/beats
-    urls:
-    - https://vdmpo.github.io/store/charts/filebeat-8.5.0.tgz
-    version: 8.5.0
   fluent-bit:
   - annotations:
       artifacthub.io/changes: |
@@ -608,7 +543,7 @@ entries:
           description: "Updated Fluent Bit OCI image to v4.0.3."
     apiVersion: v1
     appVersion: 4.0.3
-    created: "2025-10-14T08:59:10.80598+04:00"
+    created: "2025-10-14T09:00:14.100844+04:00"
     description: Fast and lightweight log processor and forwarder or Linux, OSX and
       BSD family operating systems.
     digest: f6ee9f7df728ee720c2b30ff34036aec1f45b8a231a9a86ea83b4841b2bcdfeb
@@ -636,7 +571,7 @@ entries:
   fluentd:
   - apiVersion: v2
     appVersion: v1.17.1
-    created: "2025-10-14T08:59:10.806788+04:00"
+    created: "2025-10-14T09:00:14.101589+04:00"
     description: A Helm chart for Kubernetes
     digest: 3e506454cfa06d696e07cdc499eaa5f4dc2a119c4e6f28969430528467e3bf82
     home: https://www.fluentd.org/
@@ -653,61 +588,10 @@ entries:
     urls:
     - https://vdmpo.github.io/store/charts/fluentd-0.5.3.tgz
     version: 0.5.3
-  gitea:
-  - apiVersion: v2
-    appVersion: 1.18.5
-    created: "2025-10-14T08:59:10.812558+04:00"
-    dependencies:
-    - condition: memcached.enabled
-      name: memcached
-      repository: https://raw.githubusercontent.com/bitnami/charts/pre-2022/bitnami
-      version: 5.9.0
-    - condition: mysql.enabled
-      name: mysql
-      repository: https://raw.githubusercontent.com/bitnami/charts/pre-2022/bitnami
-      version: 6.14.10
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: https://raw.githubusercontent.com/bitnami/charts/pre-2022/bitnami
-      version: 10.3.17
-    - condition: mariadb.enabled
-      name: mariadb
-      repository: https://raw.githubusercontent.com/bitnami/charts/pre-2022/bitnami
-      version: 9.3.6
-    description: Gitea Helm chart for Kubernetes
-    digest: 732392a49de6271e35238ca95e64b211c9a6a1d299aa82a7e5670c92d1166fb2
-    icon: https://docs.gitea.io/images/gitea.png
-    keywords:
-    - git
-    - issue tracker
-    - code review
-    - wiki
-    - gitea
-    - gogs
-    maintainers:
-    - email: charlie@charliedrage.com
-      name: Charlie Drage
-    - email: maintainers@gitea.io
-      name: Gitea Authors
-    - email: konrad.lother@novum-rgi.de
-      name: Konrad Lother
-    - email: lucas.hahn@novum-rgi.de
-      name: Lucas Hahn
-    - email: sk.bunsenbrenner@gmail.com
-      name: Steven Kriegler
-    name: gitea
-    sources:
-    - https://gitea.com/gitea/helm-chart
-    - https://github.com/go-gitea/gitea
-    - https://hub.docker.com/r/gitea/gitea/
-    type: application
-    urls:
-    - https://vdmpo.github.io/store/charts/gitea-7.0.4.tgz
-    version: 7.0.4
   gitlab-runner:
   - apiVersion: v1
     appVersion: 18.4.0
-    created: "2025-10-14T08:59:10.81398+04:00"
+    created: "2025-10-14T09:00:14.10294+04:00"
     description: GitLab Runner
     digest: e8f1812d3ff9d7ca887201f22aaba0bfd80076b5370c234dea975725fe216ffe
     icon: https://gitlab.com/uploads/-/system/project/avatar/250833/runner_logo.png
@@ -736,7 +620,7 @@ entries:
           url: https://github.com/grafana/grafana
     apiVersion: v2
     appVersion: 10.4.0
-    created: "2025-10-14T08:59:10.816401+04:00"
+    created: "2025-10-14T09:00:14.105321+04:00"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: 7e273851e7eb72417327dfd5115e42ebb032ff88a362c716f4a8666864c2a8ad
     home: https://grafana.com
@@ -771,7 +655,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 1.12.1
-    created: "2025-10-14T08:59:10.819097+04:00"
+    created: "2025-10-14T09:00:14.108761+04:00"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: 59f6647b8c0aa12267722fa0ade16713fb0b16a1af932227af2065fdd1a7f3bc
@@ -795,7 +679,7 @@ entries:
   job:
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2025-10-14T08:59:10.820241+04:00"
+    created: "2025-10-14T09:00:14.10964+04:00"
     dependencies:
     - name: common
       repository: https://kubernetes-charts-incubator.storage.googleapis.com/
@@ -817,7 +701,7 @@ entries:
   kibana:
   - apiVersion: v1
     appVersion: 8.10.2
-    created: "2025-10-14T08:59:10.821629+04:00"
+    created: "2025-10-14T09:00:14.110809+04:00"
     description: Official Elastic helm chart for Kibana
     digest: e7f3fcaad1b5faed2941e248366b85220279f7a6a851a22741da9ef0a4c6b21f
     home: https://github.com/elastic/helm-charts
@@ -834,7 +718,7 @@ entries:
   kminion:
   - apiVersion: v2
     appVersion: v2.2.5
-    created: "2025-10-14T08:59:10.822272+04:00"
+    created: "2025-10-14T09:00:14.111402+04:00"
     description: A Helm chart to deploy KMinion - a Prometheus Exporter for Apache
       Kafka
     digest: 32e2ee36d0b0a045061d4e1490780fef905b4c85d7a23659819c5cb128aaa119
@@ -856,7 +740,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.80.1
-    created: "2025-10-14T08:59:10.842436+04:00"
+    created: "2025-10-14T09:00:14.130529+04:00"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -926,7 +810,7 @@ entries:
   logstash:
   - apiVersion: v1
     appVersion: 8.10.2
-    created: "2025-10-14T08:59:10.844102+04:00"
+    created: "2025-10-14T09:00:14.13209+04:00"
     description: Official Elastic helm chart for Logstash
     digest: d2f5b189e4e40bafb5cae7394260163a2dacedd3b8c99ab32178c83a389aa3e3
     home: https://github.com/elastic/helm-charts
@@ -943,7 +827,7 @@ entries:
   loki:
   - apiVersion: v2
     appVersion: 3.5.3
-    created: "2025-10-14T08:59:10.863026+04:00"
+    created: "2025-10-14T09:00:14.150267+04:00"
     dependencies:
     - alias: minio
       condition: minio.enabled
@@ -979,7 +863,7 @@ entries:
     version: 6.40.0
   - apiVersion: v2
     appVersion: 3.3.2
-    created: "2025-10-14T08:59:10.85417+04:00"
+    created: "2025-10-14T09:00:14.142036+04:00"
     dependencies:
     - alias: minio
       condition: minio.enabled
@@ -1026,7 +910,7 @@ entries:
           description: "Update the _Metrics Server_ OCI image to [`0.8.0`](https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.8.0)."
     apiVersion: v2
     appVersion: 0.8.0
-    created: "2025-10-14T08:59:10.863769+04:00"
+    created: "2025-10-14T09:00:14.151023+04:00"
     description: Metrics Server is a scalable, efficient source of container resource
       metrics for Kubernetes built-in autoscaling pipelines.
     digest: fb929902e3b7565663cdd1734f31d63735c932be1541a7228b5aeef6d2348a1f
@@ -1050,35 +934,10 @@ entries:
     urls:
     - https://vdmpo.github.io/store/charts/metrics-server-3.13.0.tgz
     version: 3.13.0
-  nexus-iq-server:
-  - apiVersion: v2
-    appVersion: 1.167.0
-    created: "2025-10-14T08:59:10.864563+04:00"
-    description: Sonatype Nexus IQ Server continuously monitors your entire software
-      supply chain
-    digest: b5e59a6db51f4428103a38fac274fe853e06ac44d4d6d6cef49c98468c099b2c
-    home: https://www.sonatype.com/product-nexus-lifecycle
-    icon: https://sonatype.github.io/helm3-charts/NexusIQServer_Vertical.svg
-    keywords:
-    - sonatype
-    - nexus
-    - lifecycle
-    - iq
-    - remediate
-    - vulnerabilities
-    - policy
-    maintainers:
-    - email: support@sonatype.com
-      name: Sonatype
-    name: nexus-iq-server
-    type: application
-    urls:
-    - https://vdmpo.github.io/store/charts/nexus-iq-server-167.0.0.tgz
-    version: 167.0.0
   nexus-repository-manager:
   - apiVersion: v2
     appVersion: 3.64.0
-    created: "2025-10-14T08:59:10.866024+04:00"
+    created: "2025-10-14T09:00:14.152551+04:00"
     deprecated: true
     description: DEPRECATED Sonatype Nexus Repository Manager - Universal Binary repository
     digest: d50e9e3c0576e4e69bc9a12b7ec6139fc1acb2453c0a4fe1f80139d004a919c2
@@ -1104,7 +963,7 @@ entries:
     version: 64.2.1
   - apiVersion: v2
     appVersion: 3.64.0
-    created: "2025-10-14T08:59:10.865294+04:00"
+    created: "2025-10-14T09:00:14.151816+04:00"
     deprecated: true
     description: DEPRECATED Sonatype Nexus Repository Manager - Universal Binary repository
     digest: 763ea1d9270b291eaba817e2990e77e8204befb4e4ce920c37c636048383224b
@@ -1131,7 +990,7 @@ entries:
   nfs-subdir-external-provisioner:
   - apiVersion: v1
     appVersion: 4.0.2
-    created: "2025-10-14T08:59:10.866587+04:00"
+    created: "2025-10-14T09:00:14.153289+04:00"
     description: nfs-subdir-external-provisioner is an automatic provisioner that
       used your *already configured* NFS server, automatically creating Persistent
       Volumes.
@@ -1151,7 +1010,7 @@ entries:
   nxrm-ha:
   - apiVersion: v2
     appVersion: 3.66.0
-    created: "2025-10-14T08:59:10.868996+04:00"
+    created: "2025-10-14T09:00:14.154817+04:00"
     description: Resilient Deployment of Sonatype Nexus Repository - Universal Binary
       repository
     digest: 30fd32fd4640ba2a041069c57706a3188592038a7ea24d3a33a5e479af218819
@@ -1178,7 +1037,7 @@ entries:
   pgadmin4:
   - apiVersion: v1
     appVersion: "9.2"
-    created: "2025-10-14T08:59:10.869876+04:00"
+    created: "2025-10-14T09:00:14.155811+04:00"
     description: pgAdmin4 is a web based administration tool for PostgreSQL database
     digest: 29d84ff5559251218967b78d339899c8632248cb10682549921d2ff2cbe4b4b8
     home: https://www.pgadmin.org/
@@ -1200,7 +1059,7 @@ entries:
   postgres-operator:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2025-10-14T08:59:10.871222+04:00"
+    created: "2025-10-14T09:00:14.156834+04:00"
     description: Postgres Operator creates and manages PostgreSQL clusters running
       in Kubernetes
     digest: 36e1571f3f455b213f16cdda7b1158648e8e84deb804ba47ed6b9b6d19263ba8
@@ -1223,7 +1082,7 @@ entries:
   postgres-operator-ui:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2025-10-14T08:59:10.871728+04:00"
+    created: "2025-10-14T09:00:14.157346+04:00"
     description: Postgres Operator UI provides a graphical interface for a convenient
       database-as-a-service user experience
     digest: e87ed898079a852957a67a4caf3fbd27b9098e413f5d961b7a771a6ae8b3e17c
@@ -1244,267 +1103,10 @@ entries:
     urls:
     - https://vdmpo.github.io/store/charts/postgres-operator-ui-1.14.0.tgz
     version: 1.14.0
-  postgresql:
-  - annotations:
-      category: Database
-    apiVersion: v2
-    appVersion: 15.1.0
-    created: "2025-10-14T08:59:10.876476+04:00"
-    dependencies:
-    - name: common
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: PostgreSQL (Postgres) is an open source object-relational database
-      known for reliability and data integrity. ACID-compliant, it supports foreign
-      keys, joins, views, triggers and stored procedures.
-    digest: 3de3249bae51324b4a620af925704dee9eaef54d67dbdbf374a59d64caaa6e4c
-    home: https://github.com/bitnami/charts/tree/main/bitnami/postgresql
-    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
-    keywords:
-    - postgresql
-    - postgres
-    - database
-    - sql
-    - replication
-    - cluster
-    maintainers:
-    - name: Bitnami
-      url: https://github.com/bitnami/charts
-    name: postgresql
-    sources:
-    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
-    - https://www.postgresql.org/
-    urls:
-    - https://vdmpo.github.io/store/charts/postgresql-12.1.6.tgz
-    version: 12.1.6
-  - annotations:
-      category: Database
-    apiVersion: v2
-    appVersion: 14.5.0
-    created: "2025-10-14T08:59:10.874061+04:00"
-    dependencies:
-    - name: common
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: PostgreSQL (Postgres) is an open source object-relational database
-      known for reliability and data integrity. ACID-compliant, it supports foreign
-      keys, joins, views, triggers and stored procedures.
-    digest: fd7937464e52c1e643c45cbbf3758bcedfab41753d6cb34c6b4969ec1d77d0e8
-    home: https://github.com/bitnami/charts/tree/main/bitnami/postgresql
-    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
-    keywords:
-    - postgresql
-    - postgres
-    - database
-    - sql
-    - replication
-    - cluster
-    maintainers:
-    - name: Bitnami
-      url: https://github.com/bitnami/charts
-    name: postgresql
-    sources:
-    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
-    - https://www.postgresql.org/
-    urls:
-    - https://vdmpo.github.io/store/charts/postgresql-11.9.13.tgz
-    version: 11.9.13
-  postgresql-ha:
-  - annotations:
-      category: Database
-    apiVersion: v2
-    appVersion: 15.1.0
-    created: "2025-10-14T08:59:10.879227+04:00"
-    dependencies:
-    - name: common
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: This PostgreSQL cluster solution includes the PostgreSQL replication
-      manager, an open-source tool for managing replication and failover on PostgreSQL
-      clusters.
-    digest: 82677e7c284c251505910316d75b5380cfc94e2be474ab96cbb02742981d6906
-    home: https://github.com/bitnami/charts/tree/main/bitnami/postgresql-ha
-    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
-    keywords:
-    - postgresql
-    - repmgr
-    - pgpool
-    - postgres
-    - database
-    - sql
-    - replication
-    - cluster
-    - high availability
-    maintainers:
-    - name: Bitnami
-      url: https://github.com/bitnami/charts
-    name: postgresql-ha
-    sources:
-    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
-    - https://www.postgresql.org/
-    urls:
-    - https://vdmpo.github.io/store/charts/postgresql-ha-10.0.7.tgz
-    version: 10.0.7
-  - annotations:
-      category: Database
-    apiVersion: v2
-    appVersion: 14.5.0
-    created: "2025-10-14T08:59:10.881446+04:00"
-    dependencies:
-    - name: common
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: This PostgreSQL cluster solution includes the PostgreSQL replication
-      manager, an open-source tool for managing replication and failover on PostgreSQL
-      clusters.
-    digest: 7e5cfd966373d89d1820b9c84011e455e595180af182870330213262a4a29957
-    home: https://github.com/bitnami/charts/tree/main/bitnami/postgresql-ha
-    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
-    keywords:
-    - postgresql
-    - repmgr
-    - pgpool
-    - postgres
-    - database
-    - sql
-    - replication
-    - cluster
-    - high availability
-    maintainers:
-    - name: Bitnami
-      url: https://github.com/bitnami/charts
-    name: postgresql-ha
-    sources:
-    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
-    - https://www.postgresql.org/
-    urls:
-    - https://vdmpo.github.io/store/charts/postgresql-ha-9.4.11.tgz
-    version: 9.4.11
-  prometheus:
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/links: |
-        - name: Chart Source
-          url: https://github.com/prometheus-community/helm-charts
-        - name: Upstream Project
-          url: https://github.com/prometheus/prometheus
-    apiVersion: v2
-    appVersion: v2.47.0
-    created: "2025-10-14T08:59:10.888722+04:00"
-    dependencies:
-    - condition: alertmanager.enabled
-      name: alertmanager
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 1.6.*
-    - condition: kube-state-metrics.enabled
-      name: kube-state-metrics
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 5.13.*
-    - condition: prometheus-node-exporter.enabled
-      name: prometheus-node-exporter
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 4.23.*
-    - condition: prometheus-pushgateway.enabled
-      name: prometheus-pushgateway
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 2.4.*
-    description: Prometheus is a monitoring system and time series database.
-    digest: dc797bf6a3613b9aa590d3f54330c7b0ad4969206b697eabc129c1ba685e5e9f
-    home: https://prometheus.io/
-    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
-    keywords:
-    - monitoring
-    - prometheus
-    kubeVersion: '>=1.19.0-0'
-    maintainers:
-    - email: gianrubio@gmail.com
-      name: gianrubio
-    - email: zanhsieh@gmail.com
-      name: zanhsieh
-    - email: miroslav.hadzhiev@gmail.com
-      name: Xtigyro
-    - email: naseem@transit.app
-      name: naseemkullah
-    - email: rootsandtrees@posteo.de
-      name: zeritti
-    name: prometheus
-    sources:
-    - https://github.com/prometheus/alertmanager
-    - https://github.com/prometheus/prometheus
-    - https://github.com/prometheus/pushgateway
-    - https://github.com/prometheus/node_exporter
-    - https://github.com/kubernetes/kube-state-metrics
-    type: application
-    urls:
-    - https://vdmpo.github.io/store/charts/prometheus-24.5.0.tgz
-    version: 24.5.0
-  - annotations:
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/links: |
-        - name: Chart Source
-          url: https://github.com/prometheus-community/helm-charts
-        - name: Upstream Project
-          url: https://github.com/prometheus/prometheus
-    apiVersion: v2
-    appVersion: v2.41.0
-    created: "2025-10-14T08:59:10.884853+04:00"
-    dependencies:
-    - condition: alertmanager.enabled
-      name: alertmanager
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 0.24.*
-    - condition: kube-state-metrics.enabled
-      name: kube-state-metrics
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 4.24.*
-    - condition: prometheus-node-exporter.enabled
-      name: prometheus-node-exporter
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 4.8.*
-    - condition: prometheus-pushgateway.enabled
-      name: prometheus-pushgateway
-      repository: https://prometheus-community.github.io/helm-charts
-      version: 2.0.*
-    description: Prometheus is a monitoring system and time series database.
-    digest: 445200ca77344794e038cbc369931170cde8fde7be11bcec4b3303ac4e862a14
-    home: https://prometheus.io/
-    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
-    keywords:
-    - monitoring
-    - prometheus
-    kubeVersion: '>=1.16.0-0'
-    maintainers:
-    - email: gianrubio@gmail.com
-      name: gianrubio
-    - email: zanhsieh@gmail.com
-      name: zanhsieh
-    - email: miroslav.hadzhiev@gmail.com
-      name: Xtigyro
-    - email: naseem@transit.app
-      name: naseemkullah
-    name: prometheus
-    sources:
-    - https://github.com/prometheus/alertmanager
-    - https://github.com/prometheus/prometheus
-    - https://github.com/prometheus/pushgateway
-    - https://github.com/prometheus/node_exporter
-    - https://github.com/kubernetes/kube-state-metrics
-    type: application
-    urls:
-    - https://vdmpo.github.io/store/charts/prometheus-19.3.3.tgz
-    version: 19.3.3
   prometheus-blackbox-exporter:
   - apiVersion: v2
     appVersion: v0.25.0
-    created: "2025-10-14T08:59:10.890255+04:00"
+    created: "2025-10-14T09:00:14.158269+04:00"
     description: Prometheus Blackbox Exporter
     digest: da8e1ecf585b9b7b4a2fa21601732cfa047e636f620b683a4e9dcc7c84c44739
     home: https://github.com/prometheus/blackbox_exporter
@@ -1533,7 +1135,7 @@ entries:
   prometheus-postgres-exporter:
   - apiVersion: v2
     appVersion: v0.17.1
-    created: "2025-10-14T08:59:10.891673+04:00"
+    created: "2025-10-14T09:00:14.159822+04:00"
     description: A Helm chart for prometheus postgres-exporter
     digest: 1cfeb4d09f8245f7218eae9481ee8bef699e54137792dc6c892ee8ab702573c6
     home: https://github.com/prometheus-community/postgres_exporter
@@ -1560,7 +1162,7 @@ entries:
     version: 7.1.1
   - apiVersion: v2
     appVersion: v0.16.0
-    created: "2025-10-14T08:59:10.89093+04:00"
+    created: "2025-10-14T09:00:14.159072+04:00"
     description: A Helm chart for prometheus postgres-exporter
     digest: 7cc3455dcc4c6cc893f86f5f6d97080754bac8bd4effeccb6976e6b51a162926
     home: https://github.com/prometheus-community/postgres_exporter
@@ -1585,7 +1187,7 @@ entries:
   promtail:
   - apiVersion: v2
     appVersion: 3.5.1
-    created: "2025-10-14T08:59:10.893981+04:00"
+    created: "2025-10-14T09:00:14.16219+04:00"
     description: Promtail is an agent which ships the contents of local logs to a
       Loki instance
     digest: 9923cbe8a49e0b15c9ffcc4174adaa5a728bb5c425c03b2a1922cfbd70545547
@@ -1606,7 +1208,7 @@ entries:
     version: 6.17.0
   - apiVersion: v2
     appVersion: 2.8.4
-    created: "2025-10-14T08:59:10.892774+04:00"
+    created: "2025-10-14T09:00:14.160984+04:00"
     description: Promtail is an agent which ships the contents of local logs to a
       Loki instance
     digest: aa24c89a49c4941fabc5a5048f294d9538f0a5e7ae0331c6b02db67f9ea2d8bf
@@ -1636,7 +1238,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.12.13
-    created: "2025-10-14T08:59:10.896764+04:00"
+    created: "2025-10-14T09:00:14.165061+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1677,7 +1279,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.12.1
-    created: "2025-10-14T08:59:10.899943+04:00"
+    created: "2025-10-14T09:00:14.168111+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1707,7 +1309,7 @@ entries:
     version: 4.4.6
   raw:
   - apiVersion: v2
-    created: "2025-10-14T08:59:10.900146+04:00"
+    created: "2025-10-14T09:00:14.16834+04:00"
     description: A place for all the Kubernetes resources which don't already have
       a home
     digest: 936b33d5e15a7ead0580c8ad1bf62af2ce41d57ab7bba877bf5712faa5ec27e3
@@ -1743,7 +1345,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-10-14T08:59:10.907428+04:00"
+    created: "2025-10-14T09:00:14.175877+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1785,7 +1387,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-10-14T08:59:10.903971+04:00"
+    created: "2025-10-14T09:00:14.172263+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1824,7 +1426,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.4
-    created: "2025-10-14T08:59:10.910437+04:00"
+    created: "2025-10-14T09:00:14.179317+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1853,7 +1455,7 @@ entries:
   strimzi-kafka-operator:
   - apiVersion: v2
     appVersion: 0.45.0
-    created: "2025-10-14T08:59:10.914318+04:00"
+    created: "2025-10-14T09:00:14.183628+04:00"
     description: 'Strimzi: Apache Kafka running on Kubernetes'
     digest: 1e406e60b0dc2e66555f6c1080c07ae047efbffef6a06f169c46139dd02e0bc7
     home: https://strimzi.io/
@@ -1885,7 +1487,7 @@ entries:
   tempo-distributed:
   - apiVersion: v2
     appVersion: 2.7.1
-    created: "2025-10-14T08:59:10.925302+04:00"
+    created: "2025-10-14T09:00:14.19408+04:00"
     dependencies:
     - alias: minio
       condition: minio.enabled
@@ -1928,7 +1530,7 @@ entries:
     version: 1.35.0
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2025-10-14T08:59:10.919853+04:00"
+    created: "2025-10-14T09:00:14.188752+04:00"
     dependencies:
     - alias: minio
       condition: minio.enabled
@@ -1974,7 +1576,7 @@ entries:
       charts.openshift.io/name: HashiCorp Vault
     apiVersion: v2
     appVersion: 1.20.4
-    created: "2025-10-14T08:59:10.932288+04:00"
+    created: "2025-10-14T09:00:14.201446+04:00"
     description: Official HashiCorp Vault Chart
     digest: fe80fae6a8838c75da9fbde1398f2c10bb4b5c31c425e559507ba99373297de2
     home: https://www.vaultproject.io
@@ -2001,7 +1603,7 @@ entries:
       charts.openshift.io/name: HashiCorp Vault
     apiVersion: v2
     appVersion: 1.20.1
-    created: "2025-10-14T08:59:10.929877+04:00"
+    created: "2025-10-14T09:00:14.199237+04:00"
     description: Official HashiCorp Vault Chart
     digest: a52b3b16aa9afae2deeb3d63500578a62c3daa777551f2c5eb6c2cd07bfd79cc
     home: https://www.vaultproject.io
@@ -2028,7 +1630,7 @@ entries:
       charts.openshift.io/name: HashiCorp Vault
     apiVersion: v2
     appVersion: 1.17.2
-    created: "2025-10-14T08:59:10.927763+04:00"
+    created: "2025-10-14T09:00:14.19669+04:00"
     description: Official HashiCorp Vault Chart
     digest: 99efe00f5527182e76d6e7a0ccf9d4797badd248cb8fe070fbe117e0b6cb58d7
     home: https://www.vaultproject.io
@@ -2054,7 +1656,7 @@ entries:
   vault-secrets-operator:
   - apiVersion: v2
     appVersion: 0.10.0
-    created: "2025-10-14T08:59:10.934979+04:00"
+    created: "2025-10-14T09:00:14.203973+04:00"
     description: Official Vault Secrets Operator Chart
     digest: 04ecd1ce2a8d980347dac9db44e2c6e12411d15d2838b05add55657a53ca7813
     kubeVersion: '>=1.21.0-0'
@@ -2067,7 +1669,7 @@ entries:
     version: 0.10.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-10-14T08:59:10.933135+04:00"
+    created: "2025-10-14T09:00:14.202379+04:00"
     description: (CUSTOM - SA REMOVED, WE CREATE IN TF) Official Vault Secrets Operator
       Chart
     digest: 40afdfd2b85591f24413c10a3a2bd99cd4be0cec6eaae9d653245da32150dab8
@@ -2103,7 +1705,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 3.19.1
-    created: "2025-10-14T08:59:10.936467+04:00"
+    created: "2025-10-14T09:00:14.205738+04:00"
     description: A Prometheus exporter for certificates focusing on expiration monitoring
     digest: 1429c8e42be54b7813170f2a3f10e3d387ceb127d609204ef5a86148a94d58c7
     home: https://github.com/enix/x509-certificate-exporter
@@ -2129,25 +1731,4 @@ entries:
     urls:
     - https://vdmpo.github.io/store/charts/x509-certificate-exporter-3.19.1.tgz
     version: 3.19.1
-  yet-another-cloudwatch-exporter:
-  - apiVersion: v2
-    appVersion: v0.49.2
-    created: "2025-10-14T08:59:10.93704+04:00"
-    description: Yace - Yet Another Cloudwatch Exporter
-    digest: 61247b1ad9ef317f075d5ece82ea3daa58fac728d5951fd3f47b9d44c9d4bdfb
-    home: https://github.com/nerdswords/helm-charts
-    keywords:
-    - aws
-    - cloudwatch
-    - prometheus
-    - exporter
-    - yet-another-cloudwatch-exporter
-    - yace
-    name: yet-another-cloudwatch-exporter
-    sources:
-    - https://github.com/nerdswords/yet-another-cloudwatch-exporter
-    type: application
-    urls:
-    - https://vdmpo.github.io/store/charts/yet-another-cloudwatch-exporter-0.18.0.tgz
-    version: 0.18.0
-generated: "2025-10-14T08:59:10.7586+04:00"
+generated: "2025-10-14T09:00:14.056375+04:00"
