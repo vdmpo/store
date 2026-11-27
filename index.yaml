@@ -3,7 +3,7 @@ entries:
   akhq:
   - apiVersion: v2
     appVersion: 0.29.0
-    created: "2026-11-26T11:30:06.207157+04:00"
+    created: "2026-11-27T17:23:03.361028+04:00"
     description: Helm chart for AKHQ, the Kafka GUI for Apache Kafka to manage topics,
       topics data, consumers group, schema registry, connect and more...
     digest: c94c406c8c8d1f8681e508c7af7b98bc665070c05834aba78b900947c49ba20a
@@ -26,7 +26,7 @@ entries:
     version: 0.29.0
   - apiVersion: v2
     appVersion: 0.27.1
-    created: "2026-11-26T11:30:06.206621+04:00"
+    created: "2026-11-27T17:23:03.359981+04:00"
     description: Helm chart for AKHQ, the Kafka GUI for Apache Kafka to manage topics,
       topics data, consumers group, schema registry, connect and more...
     digest: 81b0458af3a115350e1dcb9754bfb42b2a8d22699fa1948965d27050c23e1d8b
@@ -50,7 +50,7 @@ entries:
   allure-server:
   - apiVersion: v2
     appVersion: 2.13.4
-    created: "2026-11-26T11:30:06.207615+04:00"
+    created: "2026-11-27T17:23:03.361596+04:00"
     description: Allure Server application Helm chart for Kubernetes
     digest: 52dbd9e06d9aeef1681b3e461cd6d6a1e146043199ce2dbfdeea57bc1dbaaf19
     kubeVersion: '>=1.25.0-0'
@@ -62,7 +62,7 @@ entries:
   altinity-clickhouse-operator:
   - apiVersion: v2
     appVersion: 0.27.2
-    created: "2026-11-26T11:30:06.210897+04:00"
+    created: "2026-11-27T17:23:03.365558+04:00"
     description: 'Helm chart to deploy [altinity-clickhouse-operator](https://github.com/Altinity/clickhouse-operator).  The
       ClickHouse Operator creates, configures and manages ClickHouse clusters running
       on Kubernetes.  ## CRD Management  CRDs are automatically installed and updated
@@ -88,6 +88,41 @@ entries:
   argo-cd:
   - annotations:
       artifacthub.io/changes: |
+        - kind: security
+          description: Stop mounting a service account token into the Redis pod, and into the repo server pod unless repo server RBAC is configured
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+    apiVersion: v2
+    appVersion: v3.6.3
+    created: "2026-11-27T17:23:03.374919+04:00"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.38.0
+    description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: 1b0a923d9deba35ea51058434c12c102ea03d6b24e6d496bf44f559b0da01dda
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    kubeVersion: '>=1.25.0-0'
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-cd
+    sources:
+    - https://github.com/argoproj/argo-cd
+    - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
+    urls:
+    - https://vdmpo.github.io/store/charts/argo-cd-10.20.0.tgz
+    version: 10.20.0
+  - annotations:
+      artifacthub.io/changes: |
         - kind: fixed
           description: Honor per-component gRPC TXT service config settings
       artifacthub.io/signKey: |
@@ -95,7 +130,7 @@ entries:
         url: https://argoproj.github.io/argo-helm/pgp_keys.asc
     apiVersion: v2
     appVersion: v3.5.3
-    created: "2026-11-26T11:30:06.218918+04:00"
+    created: "2026-11-27T17:23:03.383581+04:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -124,7 +159,7 @@ entries:
   atlantis:
   - apiVersion: v1
     appVersion: v0.36.0
-    created: "2026-11-26T11:30:06.220447+04:00"
+    created: "2026-11-27T17:23:03.385269+04:00"
     description: A Helm chart for Atlantis https://www.runatlantis.io
     digest: 7b5d060f9b455147df49aa0cf5facb17012bf482791150698a3085fe95707c1b
     home: https://www.runatlantis.io
@@ -147,7 +182,7 @@ entries:
   aws-ebs-csi-driver:
   - apiVersion: v2
     appVersion: 1.20.0
-    created: "2026-11-26T11:30:06.221219+04:00"
+    created: "2026-11-27T17:23:03.386069+04:00"
     description: A Helm chart for AWS EBS CSI Driver
     digest: 383f963db4c58d181972857bca23114a1102cebfe1937fdf645c5da2ee6a50e0
     home: https://github.com/kubernetes-sigs/aws-ebs-csi-driver
@@ -171,7 +206,7 @@ entries:
           description: Custom controller.updateStrategy to set controller deployment strategy.
     apiVersion: v2
     appVersion: 1.13.0
-    created: "2026-11-26T11:30:06.202538+04:00"
+    created: "2026-11-27T17:23:03.355967+04:00"
     description: A Helm chart for AWS EBS CSI Driver
     digest: 1dd0fda73f45c1c0fa19b9aefc149b2667dd4f187992bcf78058a8aa0556f767
     home: https://github.com/kubernetes-sigs/aws-ebs-csi-driver
@@ -197,7 +232,7 @@ entries:
           description: Custom controller.updateStrategy to set controller deployment strategy.
     apiVersion: v2
     appVersion: 1.4.0
-    created: "2026-11-26T11:30:06.203138+04:00"
+    created: "2026-11-27T17:23:03.356713+04:00"
     description: A Helm chart for AWS EBS CSI Driver
     digest: 3f51624c427c34eecee9b50fa8b9b91386804f5077f5e37474ed147dec5cdbfa
     home: https://github.com/kubernetes-sigs/aws-ebs-csi-driver
@@ -220,7 +255,7 @@ entries:
   aws-efs-csi-driver:
   - apiVersion: v1
     appVersion: 2.0.0
-    created: "2026-11-26T11:30:06.205191+04:00"
+    created: "2026-11-27T17:23:03.358342+04:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: ad9d0b588b52231b62fbd370dd2d4cd0480c1c25ebafbc255876ab53ff2546d5
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -242,7 +277,7 @@ entries:
     version: 2.0.0
   - apiVersion: v1
     appVersion: 1.1.1
-    created: "2026-11-26T11:30:06.204845+04:00"
+    created: "2026-11-27T17:23:03.357928+04:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: d2d6fa96266f08607d1e6155f05b16b4e4bbde7deb051d4304804bd4949c32ee
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -264,7 +299,7 @@ entries:
     version: 1.1.1
   - apiVersion: v1
     appVersion: 1.1.0
-    created: "2026-11-26T11:30:06.204448+04:00"
+    created: "2026-11-27T17:23:03.357512+04:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 2cccf824f43ce9e12c1d6b2f827a7a002234a51fefa2bae78d603f13d4c6b310
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -286,7 +321,7 @@ entries:
     version: 1.1.0
   - apiVersion: v1
     appVersion: 0.0.1
-    created: "2026-11-26T11:30:06.203488+04:00"
+    created: "2026-11-27T17:23:03.357121+04:00"
     description: A Helm chart for AWS EFS CSI Driver
     digest: 3a3ff4b571a88e778c0a62357c2ea9c960a647985ddce28037f7e84b6341556a
     home: https://github.com/kubernetes-sigs/aws-efs-csi-driver
@@ -309,7 +344,7 @@ entries:
   aws-load-balancer-controller:
   - apiVersion: v2
     appVersion: v3.6.2
-    created: "2026-11-26T11:30:06.222755+04:00"
+    created: "2026-11-27T17:23:03.387497+04:00"
     description: AWS Load Balancer Controller Helm chart for Kubernetes
     digest: 9255bf39873b6cb31106dbe61dc87c3617bff4197783b5b94381811a13f99c3c
     home: https://github.com/aws/eks-charts
@@ -336,7 +371,7 @@ entries:
     version: 3.6.2
   - apiVersion: v1
     appVersion: v2.1.2
-    created: "2026-11-26T11:30:06.205678+04:00"
+    created: "2026-11-27T17:23:03.358935+04:00"
     description: AWS Load Balancer Controller Helm chart for Kubernetes
     digest: 7483dea37797f2ce73d3d31a0768adf33259b4a67584af94eeec2d94f02817a0
     home: https://github.com/aws/eks-charts
@@ -363,7 +398,7 @@ entries:
   aws-vpc-cni:
   - apiVersion: v1
     appVersion: v1.9.0
-    created: "2026-11-26T11:30:06.20618+04:00"
+    created: "2026-11-27T17:23:03.359487+04:00"
     description: A Helm chart for the AWS VPC CNI
     digest: 015d879876f11ca5a84ef112bfc9d70d93fc3d6b0c74f3853caf1106fdad9809
     home: https://github.com/aws/amazon-vpc-cni-k8s
@@ -386,7 +421,7 @@ entries:
   base:
   - apiVersion: v2
     appVersion: 1.32.0
-    created: "2026-11-26T11:30:06.226231+04:00"
+    created: "2026-11-27T17:23:03.391387+04:00"
     description: Helm chart for deploying Istio cluster resources and CRDs
     digest: 505ce0d9b6cf5d73a9998728fdf0821510a237470567e6c332164937c6850f05
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -400,7 +435,7 @@ entries:
     version: 1.32.0
   - apiVersion: v2
     appVersion: 1.31.1
-    created: "2026-11-26T11:30:06.224372+04:00"
+    created: "2026-11-27T17:23:03.389219+04:00"
     description: Helm chart for deploying Istio cluster resources and CRDs
     digest: 6a5f3a628e31ea03994f5c8ff44804fcec54ac1b13893f1a3f3c26340c8f2015
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -422,7 +457,7 @@ entries:
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v2
     appVersion: v1.21.1
-    created: "2026-11-26T11:30:06.229753+04:00"
+    created: "2026-11-27T17:23:03.39523+04:00"
     description: A Helm chart for cert-manager
     digest: c27101f3f3e2349fb4a9e704316105bf7b52ad73b8c8257d3498ef7f2f6a4adc
     home: https://cert-manager.io
@@ -446,7 +481,7 @@ entries:
   chartmuseum:
   - apiVersion: v2
     appVersion: 0.16.3
-    created: "2026-11-26T11:30:06.230589+04:00"
+    created: "2026-11-27T17:23:03.396164+04:00"
     description: Host your own Helm Chart Repository
     digest: 8e1aa5c173adbe7b91f4b0c546f146019b6918d83487e5e71591b73dafa0d9b3
     home: https://github.com/helm/chartmuseum
@@ -469,7 +504,7 @@ entries:
   clickhouse:
   - apiVersion: v2
     appVersion: 25.3.6.10034
-    created: "2026-11-26T11:30:06.233894+04:00"
+    created: "2026-11-27T17:23:03.399931+04:00"
     dependencies:
     - alias: operator
       condition: operator.enabled
@@ -487,7 +522,7 @@ entries:
   cni:
   - apiVersion: v2
     appVersion: 1.32.0
-    created: "2026-11-26T11:30:06.235009+04:00"
+    created: "2026-11-27T17:23:03.401172+04:00"
     description: Helm chart for istio-cni components
     digest: 8fa98238dd8dbf11ac1ebd00e27af9874f83ff40b54d2732c23941e251881c9a
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -502,7 +537,7 @@ entries:
     version: 1.32.0
   - apiVersion: v2
     appVersion: 1.31.1
-    created: "2026-11-26T11:30:06.234464+04:00"
+    created: "2026-11-27T17:23:03.400568+04:00"
     description: Helm chart for istio-cni components
     digest: e7cfcbd6842f0b23026dc81bd99edd0e5da87d9f5e2e75b45a2dc2a69f873127
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -518,7 +553,7 @@ entries:
   connector:
   - apiVersion: v1
     appVersion: latest
-    created: "2026-11-26T11:30:06.235433+04:00"
+    created: "2026-11-27T17:23:03.401588+04:00"
     description: Twingate Connector helm chart
     digest: adda3a1fe3dea9b6f68de3bad43ed6033184ab364697ec1443f0d0f1205f683e
     home: https://www.twingate.com
@@ -530,7 +565,7 @@ entries:
   docker-auth:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2026-11-26T11:30:06.236736+04:00"
+    created: "2026-11-27T17:23:03.401934+04:00"
     description: Docker Registry V2 authentication server
     digest: 1f968367c9fbd8e3b322c0986fc501d3827f180c5f81969646220ffd262fec9b
     home: https://github.com/cesanta/docker_auth
@@ -557,7 +592,7 @@ entries:
   docker-registry:
   - apiVersion: v1
     appVersion: 3.0.0
-    created: "2026-11-26T11:30:06.237465+04:00"
+    created: "2026-11-27T17:23:03.402737+04:00"
     description: A Helm chart for Docker Registry
     digest: 4279fca80994602f2b43edad632afed3608d88232d3f53fd86137647bb842304
     home: https://hub.docker.com/_/registry/
@@ -575,7 +610,7 @@ entries:
   dragonfly-operator:
   - apiVersion: v2
     appVersion: v1.1.10
-    created: "2026-11-26T11:30:06.238161+04:00"
+    created: "2026-11-27T17:23:03.403504+04:00"
     description: A Helm chart for dragonfly-operator
     digest: f571c2c3ac970b51123ab0fc0d8c4cc9e24cd1ea9089d93cf23f088d917a961b
     name: dragonfly-operator
@@ -604,7 +639,7 @@ entries:
           description: "Ensure container arguments are passed in as strings when extraArgs is a map (#6284) @vflaux."
     apiVersion: v2
     appVersion: 0.21.0
-    created: "2026-11-26T11:30:06.238916+04:00"
+    created: "2026-11-27T17:23:03.404822+04:00"
     description: ExternalDNS synchronizes exposed Kubernetes Services and Ingresses
       with DNS providers.
     digest: 5dd033a4b872bf641860695705ee460031d0bc695f114bf8926fee6736814e19
@@ -632,7 +667,7 @@ entries:
   gateway:
   - apiVersion: v2
     appVersion: 1.32.0
-    created: "2026-11-26T11:30:06.240016+04:00"
+    created: "2026-11-27T17:23:03.405993+04:00"
     description: Helm chart for deploying Istio gateways
     digest: 61d1d24cd0d6f79fbd8a3367c7e0e0b873989309db673b64c13a37c3fbc5c546
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -648,7 +683,7 @@ entries:
     version: 1.32.0
   - apiVersion: v2
     appVersion: 1.31.1
-    created: "2026-11-26T11:30:06.239439+04:00"
+    created: "2026-11-27T17:23:03.405409+04:00"
     description: Helm chart for deploying Istio gateways
     digest: bfeb6ecf73586e6992c038daae518d11795e932a7c2d034f6e16c7e60638757e
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -665,7 +700,7 @@ entries:
   gitlab-runner:
   - apiVersion: v1
     appVersion: 18.4.0
-    created: "2026-11-26T11:30:06.2412+04:00"
+    created: "2026-11-27T17:23:03.406994+04:00"
     description: GitLab Runner
     digest: e8f1812d3ff9d7ca887201f22aaba0bfd80076b5370c234dea975725fe216ffe
     icon: https://gitlab.com/uploads/-/system/project/avatar/250833/runner_logo.png
@@ -691,7 +726,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 1.12.1
-    created: "2026-11-26T11:30:06.243142+04:00"
+    created: "2026-11-27T17:23:03.40915+04:00"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: 59f6647b8c0aa12267722fa0ade16713fb0b16a1af932227af2065fdd1a7f3bc
@@ -715,7 +750,7 @@ entries:
   istiod:
   - apiVersion: v2
     appVersion: 1.32.0
-    created: "2026-11-26T11:30:06.245995+04:00"
+    created: "2026-11-27T17:23:03.411976+04:00"
     description: Helm chart for istio control plane
     digest: 17d275e3661e2e943a1ab630386bacab0cda76ea007978351a3a10fe9f4050d4
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -731,7 +766,7 @@ entries:
     version: 1.32.0
   - apiVersion: v2
     appVersion: 1.31.1
-    created: "2026-11-26T11:30:06.244263+04:00"
+    created: "2026-11-27T17:23:03.410696+04:00"
     description: Helm chart for istio control plane
     digest: d49e3ac3100e9c24efbd3a7c26e8e6dd707431f8c06f203182ba54a2e8651a74
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -748,7 +783,7 @@ entries:
   job:
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-11-26T11:30:06.246471+04:00"
+    created: "2026-11-27T17:23:03.412473+04:00"
     dependencies:
     - name: common
       repository: https://kubernetes-charts-incubator.storage.googleapis.com/
@@ -770,7 +805,7 @@ entries:
   kminion:
   - apiVersion: v2
     appVersion: v2.2.5
-    created: "2026-11-26T11:30:06.246871+04:00"
+    created: "2026-11-27T17:23:03.412899+04:00"
     description: A Helm chart to deploy KMinion - a Prometheus Exporter for Apache
       Kafka
     digest: 32e2ee36d0b0a045061d4e1490780fef905b4c85d7a23659819c5cb128aaa119
@@ -792,7 +827,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.95.2
-    created: "2026-11-26T11:30:06.278097+04:00"
+    created: "2026-11-27T17:23:03.446437+04:00"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -868,7 +903,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.92.1
-    created: "2026-11-26T11:30:06.262331+04:00"
+    created: "2026-11-27T17:23:03.429158+04:00"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -940,7 +975,7 @@ entries:
           url: https://github.com/ownkube/kubernetes-events-exporter
     apiVersion: v2
     appVersion: 0.1.2
-    created: "2026-11-26T11:30:06.278531+04:00"
+    created: "2026-11-27T17:23:03.446875+04:00"
     description: Export Kubernetes events to multiple destinations with routing and
       filtering
     digest: eef3fb6c004a13247e3e11bd4d0d0cee525a5c016d585e09ad1a29d3eb53380f
@@ -963,7 +998,7 @@ entries:
   loki:
   - apiVersion: v2
     appVersion: 3.5.3
-    created: "2026-11-26T11:30:06.284973+04:00"
+    created: "2026-11-27T17:23:03.454076+04:00"
     dependencies:
     - alias: minio
       condition: minio.enabled
@@ -1014,7 +1049,7 @@ entries:
           description: "Stop rendering `annotations: null` on the cert-manager `Issuer`, which referenced an undefined `additionalAnnotations` value. This mirrors the earlier APIService fix and prevents permanent GitOps `OutOfSync`."
     apiVersion: v2
     appVersion: 0.9.0
-    created: "2026-11-26T11:30:06.285638+04:00"
+    created: "2026-11-27T17:23:03.4548+04:00"
     description: Metrics Server is a scalable, efficient source of container resource
       metrics for Kubernetes built-in autoscaling pipelines.
     digest: c2ca1185c01e6e7f53dd1b7d131f0c9b3fa50e003ed068b784563a1b5a3422a1
@@ -1041,7 +1076,7 @@ entries:
   nexus-repository-manager:
   - apiVersion: v2
     appVersion: 3.64.0
-    created: "2026-11-26T11:30:06.286156+04:00"
+    created: "2026-11-27T17:23:03.455339+04:00"
     deprecated: true
     description: DEPRECATED Sonatype Nexus Repository Manager - Universal Binary repository
     digest: d50e9e3c0576e4e69bc9a12b7ec6139fc1acb2453c0a4fe1f80139d004a919c2
@@ -1068,7 +1103,7 @@ entries:
   nfs-subdir-external-provisioner:
   - apiVersion: v1
     appVersion: 4.0.2
-    created: "2026-11-26T11:30:06.28653+04:00"
+    created: "2026-11-27T17:23:03.455724+04:00"
     description: nfs-subdir-external-provisioner is an automatic provisioner that
       used your *already configured* NFS server, automatically creating Persistent
       Volumes.
@@ -1088,7 +1123,7 @@ entries:
   opensearch:
   - apiVersion: v2
     appVersion: 3.6.0
-    created: "2026-11-26T11:30:06.287436+04:00"
+    created: "2026-11-27T17:23:03.456653+04:00"
     description: A Helm chart for OpenSearch
     digest: ca273ab819658024253fac6a81d289d8cace24b668f8d50c6995910e658d7d90
     home: https://opensearch.org
@@ -1109,7 +1144,7 @@ entries:
   opensearch-dashboards:
   - apiVersion: v2
     appVersion: 3.6.0
-    created: "2026-11-26T11:30:06.287968+04:00"
+    created: "2026-11-27T17:23:03.457196+04:00"
     description: A Helm chart for OpenSearch Dashboards
     digest: b56342cd19377c125cb50a644434e8f5967ce86556587b47731944decb1b1bf2
     maintainers:
@@ -1128,7 +1163,7 @@ entries:
       artifacthub.io/license: Apache-2.0
     apiVersion: v2
     appVersion: "9.19"
-    created: "2026-11-26T11:30:06.289578+04:00"
+    created: "2026-11-27T17:23:03.458966+04:00"
     description: pgAdmin4 is a web based administration tool for PostgreSQL database
     digest: 48d3c50269daa7aab8c3c6ea80334a3ad1e99eb7110079d0e2b410582242023e
     home: https://www.pgadmin.org/
@@ -1149,7 +1184,7 @@ entries:
     version: 1.72.0
   - apiVersion: v1
     appVersion: "9.2"
-    created: "2026-11-26T11:30:06.288528+04:00"
+    created: "2026-11-27T17:23:03.45782+04:00"
     description: pgAdmin4 is a web based administration tool for PostgreSQL database
     digest: 29d84ff5559251218967b78d339899c8632248cb10682549921d2ff2cbe4b4b8
     home: https://www.pgadmin.org/
@@ -1171,7 +1206,7 @@ entries:
   policy-reporter:
   - apiVersion: v2
     appVersion: 3.7.3
-    created: "2026-11-26T11:30:06.291843+04:00"
+    created: "2026-11-27T17:23:03.461318+04:00"
     description: 'Policy Reporter watches for PolicyReport Resources. It creates Prometheus
       Metrics and can send rule validation events to different targets like Loki,
       Elasticsearch, Slack or Discord '
@@ -1191,7 +1226,7 @@ entries:
   postgres-operator:
   - apiVersion: v2
     appVersion: 2.0.3
-    created: "2026-11-26T11:30:06.295312+04:00"
+    created: "2026-11-27T17:23:03.465267+04:00"
     description: Postgres Operator creates and manages PostgreSQL clusters running
       in Kubernetes
     digest: 3e8607ab3a76d0ae097e767050dd7d5349eca9074614c561dc50953e2445c992
@@ -1213,7 +1248,7 @@ entries:
     version: 2.0.3
   - apiVersion: v2
     appVersion: 1.15.1
-    created: "2026-11-26T11:30:06.292663+04:00"
+    created: "2026-11-27T17:23:03.462161+04:00"
     description: Postgres Operator creates and manages PostgreSQL clusters running
       in Kubernetes
     digest: 9f3edc3d796105c02c04eaae28a78e58fb08c1847a9de012245fd6ac2c0d2c00
@@ -1236,7 +1271,7 @@ entries:
   postgres-operator-ui:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2026-11-26T11:30:06.295682+04:00"
+    created: "2026-11-27T17:23:03.465648+04:00"
     description: Postgres Operator UI provides a graphical interface for a convenient
       database-as-a-service user experience
     digest: e87ed898079a852957a67a4caf3fbd27b9098e413f5d961b7a771a6ae8b3e17c
@@ -1260,7 +1295,7 @@ entries:
   prometheus-blackbox-exporter:
   - apiVersion: v2
     appVersion: v0.25.0
-    created: "2026-11-26T11:30:06.296301+04:00"
+    created: "2026-11-27T17:23:03.466371+04:00"
     description: Prometheus Blackbox Exporter
     digest: da8e1ecf585b9b7b4a2fa21601732cfa047e636f620b683a4e9dcc7c84c44739
     home: https://github.com/prometheus/blackbox_exporter
@@ -1289,7 +1324,7 @@ entries:
   prometheus-cloudwatch-exporter:
   - apiVersion: v1
     appVersion: 0.16.0
-    created: "2026-11-26T11:30:06.296773+04:00"
+    created: "2026-11-27T17:23:03.467283+04:00"
     description: A Helm chart for prometheus cloudwatch-exporter
     digest: 08092b2ee466c626118281512da3b147206172aea72b58203e6a7eaa31aca631
     home: https://github.com/prometheus/cloudwatch_exporter
@@ -1317,7 +1352,7 @@ entries:
   prometheus-postgres-exporter:
   - apiVersion: v2
     appVersion: v0.17.1
-    created: "2026-11-26T11:30:06.297273+04:00"
+    created: "2026-11-27T17:23:03.467822+04:00"
     description: A Helm chart for prometheus postgres-exporter
     digest: 1cfeb4d09f8245f7218eae9481ee8bef699e54137792dc6c892ee8ab702573c6
     home: https://github.com/prometheus-community/postgres_exporter
@@ -1345,7 +1380,7 @@ entries:
   prometheus-redis-exporter:
   - apiVersion: v2
     appVersion: v1.94.0
-    created: "2026-11-26T11:30:06.297737+04:00"
+    created: "2026-11-27T17:23:03.468288+04:00"
     description: Prometheus exporter for Redis metrics
     digest: 61bb2790da800b32ace67052aed802b2d66cdd8817b7abaccf03043227855786
     home: https://github.com/oliver006/redis_exporter
@@ -1382,7 +1417,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.12.1
-    created: "2026-11-26T11:30:06.300151+04:00"
+    created: "2026-11-27T17:23:03.470787+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1412,7 +1447,7 @@ entries:
     version: 4.4.6
   raw:
   - apiVersion: v2
-    created: "2026-11-26T11:30:06.300387+04:00"
+    created: "2026-11-27T17:23:03.471048+04:00"
     description: A place for all the Kubernetes resources which don't already have
       a home
     digest: 936b33d5e15a7ead0580c8ad1bf62af2ce41d57ab7bba877bf5712faa5ec27e3
@@ -1434,7 +1469,7 @@ entries:
   strimzi-kafka-operator:
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2026-11-26T11:30:06.305311+04:00"
+    created: "2026-11-27T17:23:03.476351+04:00"
     description: 'Strimzi: Apache Kafka running on Kubernetes'
     digest: d80c9500049594926d2258345ffd04556abef0cbef9aa3f9ae8be25d96635c74
     home: https://strimzi.io/
@@ -1459,7 +1494,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-11-26T11:30:06.303032+04:00"
+    created: "2026-11-27T17:23:03.473384+04:00"
     description: 'Strimzi: Apache Kafka running on Kubernetes'
     digest: afb2e7c9fd95eefef689097fc57740975f588f5285d1af1c00ef26cceff5f7c3
     home: https://strimzi.io/
@@ -1485,7 +1520,7 @@ entries:
   tempo-distributed:
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2026-11-26T11:30:06.310068+04:00"
+    created: "2026-11-27T17:23:03.480855+04:00"
     dependencies:
     - alias: minio
       condition: minio.enabled
@@ -1532,7 +1567,7 @@ entries:
   valkey:
   - apiVersion: v2
     appVersion: 9.1.2
-    created: "2026-11-26T11:30:06.311324+04:00"
+    created: "2026-11-27T17:23:03.481901+04:00"
     description: A Helm chart for Kubernetes
     digest: 64d43433d6b80addb012dd7c21a1bf674bf034dc51210b6bf8eae9ddaf83740f
     home: https://valkey.io/valkey-helm/
@@ -1557,7 +1592,7 @@ entries:
       charts.openshift.io/name: HashiCorp Vault
     apiVersion: v2
     appVersion: 2.0.4
-    created: "2026-11-26T11:30:06.312995+04:00"
+    created: "2026-11-27T17:23:03.48368+04:00"
     description: Official HashiCorp Vault Chart
     digest: df4c37fac32496892ff1e1d6fd7954d3a402cc7b1b2b4c2226af11b8a57564c4
     home: https://www.vaultproject.io
@@ -1583,7 +1618,7 @@ entries:
   vault-secrets-operator:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2026-11-26T11:30:06.315931+04:00"
+    created: "2026-11-27T17:23:03.486666+04:00"
     description: Official Vault Secrets Operator Chart
     digest: 5c360b71b7813a321b0c522a08435b1edf62f9e0dbad5672030d9e56624fcd05
     kubeVersion: '>=1.21.0-0'
@@ -1596,7 +1631,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2026-11-26T11:30:06.314259+04:00"
+    created: "2026-11-27T17:23:03.484987+04:00"
     description: Official Vault Secrets Operator Chart
     digest: 5019344a8781114a42e125551bdd9578885f512921ba4a76fd1186c11dce02db
     kubeVersion: '>=1.21.0-0'
@@ -1621,7 +1656,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 0.57.0-distroless-libc
-    created: "2026-11-26T11:30:06.317008+04:00"
+    created: "2026-11-27T17:23:03.487883+04:00"
     description: A lightweight, ultra-fast tool for building observability pipelines
     digest: 51c9ac4d4e248437a12245ba837be1bb3b1d9e97971369ee67efedc13904cbd4
     home: https://vector.dev/
@@ -1668,7 +1703,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 3.19.1
-    created: "2026-11-26T11:30:06.31801+04:00"
+    created: "2026-11-27T17:23:03.488923+04:00"
     description: A Prometheus exporter for certificates focusing on expiration monitoring
     digest: 1429c8e42be54b7813170f2a3f10e3d387ceb127d609204ef5a86148a94d58c7
     home: https://github.com/enix/x509-certificate-exporter
@@ -1697,7 +1732,7 @@ entries:
   ztunnel:
   - apiVersion: v2
     appVersion: 1.32.0
-    created: "2026-11-26T11:30:06.31882+04:00"
+    created: "2026-11-27T17:23:03.4898+04:00"
     description: Helm chart for istio ztunnel components
     digest: 1ee5cc123b8f13d668b79f1cb25ef052a30fad1c772e4d000607b931b5cc9d93
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -1712,7 +1747,7 @@ entries:
     version: 1.32.0
   - apiVersion: v2
     appVersion: 1.31.1
-    created: "2026-11-26T11:30:06.318432+04:00"
+    created: "2026-11-27T17:23:03.489374+04:00"
     description: Helm chart for istio ztunnel components
     digest: 6fa9f7f88ae68fe7c84df4ef09711639bc8bc38b31769e85336676ebd8ae70b5
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -1725,4 +1760,4 @@ entries:
     urls:
     - https://vdmpo.github.io/store/charts/ztunnel-1.31.1.tgz
     version: 1.31.1
-generated: "2026-11-26T11:30:06.200886+04:00"
+generated: "2026-11-27T17:23:03.354869+04:00"
